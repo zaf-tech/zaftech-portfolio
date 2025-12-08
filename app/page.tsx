@@ -58,8 +58,12 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="section bg-pattern-dense">
-        <div className="container-custom">
+      <section className="section bg-gradient-animated relative overflow-hidden">
+        {/* Decorative geometric shapes */}
+        <div className="absolute top-20 right-10 w-32 h-32 bg-accent/5 rounded-full blur-3xl float-up hidden lg:block"></div>
+        <div className="absolute bottom-20 left-10 w-40 h-40 bg-accent-teal/5 rounded-full blur-3xl float-up hidden lg:block" style={{ animationDelay: '2s' }}></div>
+        
+        <div className="container-custom relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <div className="inline-block mb-4">
               <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
@@ -132,8 +136,9 @@ export default function Home() {
       </section>
 
       {/* Why Choose ZafTech */}
-      <section className="section bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
-        <div className="decorative-blob w-72 h-72 top-20 right-10"></div>
+      <section className="section bg-gradient-to-b from-gray-50 via-white to-gray-50/50 relative overflow-hidden">
+        <div className="decorative-blob w-72 h-72 top-20 right-10 pulse-glow"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-pattern opacity-30"></div>
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 md:mb-16">
@@ -149,8 +154,8 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent flex items-center justify-center mt-1">
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -163,8 +168,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent flex items-center justify-center mt-1">
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -177,8 +182,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent flex items-center justify-center mt-1">
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -191,8 +196,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent flex items-center justify-center mt-1">
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -205,8 +210,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent flex items-center justify-center mt-1">
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -219,8 +224,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent flex items-center justify-center mt-1">
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
                   <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -238,8 +243,10 @@ export default function Home() {
       </section>
 
       {/* Stats / Trust Indicators */}
-      <section className="section bg-gradient-to-b from-white to-gray-50">
-        <div className="container-custom">
+      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
+        {/* Subtle animated background */}
+        <div className="absolute inset-0 bg-pattern opacity-20"></div>
+        <div className="container-custom relative z-10">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
               <div className="inline-block mb-4">
@@ -254,8 +261,8 @@ export default function Home() {
             </div>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-              <div className="card text-center">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4">
+              <div className="card text-center group hover:scale-105 transition-transform duration-300">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -264,8 +271,8 @@ export default function Home() {
                 <div className="text-sm font-medium text-primary mb-1">Monitoring</div>
                 <div className="text-xs text-text-light">Continuous oversight</div>
               </div>
-              <div className="card text-center">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4">
+              <div className="card text-center group hover:scale-105 transition-transform duration-300">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
@@ -274,8 +281,8 @@ export default function Home() {
                 <div className="text-sm font-medium text-primary mb-1">Response Time</div>
                 <div className="text-xs text-text-light">Fast support</div>
               </div>
-              <div className="card text-center">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4">
+              <div className="card text-center group hover:scale-105 transition-transform duration-300">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
@@ -284,8 +291,8 @@ export default function Home() {
                 <div className="text-sm font-medium text-primary mb-1">Uptime SLA</div>
                 <div className="text-xs text-text-light">Guaranteed reliability</div>
               </div>
-              <div className="card text-center">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4">
+              <div className="card text-center group hover:scale-105 transition-transform duration-300">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
@@ -300,8 +307,12 @@ export default function Home() {
       </section>
 
       {/* Our Process */}
-      <section className="section bg-pattern-dense">
-        <div className="container-custom">
+      <section className="section bg-gradient-to-b from-white via-gray-50/30 to-white relative overflow-hidden">
+        {/* Animated background elements */}
+        <div className="absolute top-0 left-1/4 w-64 h-64 bg-accent/3 rounded-full blur-3xl float-up hidden lg:block"></div>
+        <div className="absolute bottom-0 right-1/4 w-56 h-56 bg-accent-teal/3 rounded-full blur-3xl float-up hidden lg:block" style={{ animationDelay: '3s' }}></div>
+        
+        <div className="container-custom relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <div className="inline-block mb-4">
               <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
@@ -350,8 +361,11 @@ export default function Home() {
         <div className="absolute inset-0 opacity-10">
           <div className="bg-pattern-dense w-full h-full"></div>
         </div>
-        <div className="decorative-blob w-96 h-96 -top-32 -left-32 opacity-20"></div>
+        <div className="decorative-blob w-96 h-96 -top-32 -left-32 opacity-20 pulse-glow"></div>
         <div className="decorative-blob w-80 h-80 -bottom-24 -right-24 opacity-20"></div>
+        {/* Additional floating elements */}
+        <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-white/5 rounded-full blur-2xl float-up"></div>
+        <div className="absolute bottom-1/4 right-1/3 w-40 h-40 bg-accent-teal/10 rounded-full blur-3xl float-up" style={{ animationDelay: '1.5s' }}></div>
         
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">

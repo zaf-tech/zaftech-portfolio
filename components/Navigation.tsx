@@ -7,14 +7,14 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-accent to-accent-teal rounded-lg opacity-20 group-hover:opacity-30 blur transition-opacity"></div>
-              <span className="relative text-2xl md:text-3xl font-heading font-bold text-primary">
+              <div className="absolute -inset-1 bg-gradient-to-r from-accent to-accent-teal rounded-lg opacity-20 group-hover:opacity-40 blur transition-all duration-300 group-hover:scale-110"></div>
+              <span className="relative text-2xl md:text-3xl font-heading font-bold text-primary group-hover:bg-gradient-to-r group-hover:from-accent group-hover:to-accent-teal group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
                 ZafTech
               </span>
             </div>
@@ -22,14 +22,17 @@ export default function Navigation() {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-text hover:text-accent transition-colors font-medium">
-              Home
+            <Link href="/" className="text-text hover:text-accent transition-all duration-300 font-medium relative group">
+              <span className="relative z-10">Home</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
             </Link>
-            <Link href="/services" className="text-text hover:text-accent transition-colors font-medium">
-              Services
+            <Link href="/services" className="text-text hover:text-accent transition-all duration-300 font-medium relative group">
+              <span className="relative z-10">Services</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
             </Link>
-            <Link href="/about" className="text-text hover:text-accent transition-colors font-medium">
-              About
+            <Link href="/about" className="text-text hover:text-accent transition-all duration-300 font-medium relative group">
+              <span className="relative z-10">About</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link href="/contact" className="btn-primary">
               Free IT Assessment
