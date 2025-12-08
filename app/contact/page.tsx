@@ -40,9 +40,13 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="section bg-gradient-to-b from-white to-gray-50">
-        <div className="container-custom">
+      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-pattern relative overflow-hidden">
+        <div className="decorative-blob w-96 h-96 -top-48 -left-48"></div>
+        <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
+            <div className="inline-block mb-4">
+              <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+            </div>
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
               Request Your Free IT Assessment
             </h1>

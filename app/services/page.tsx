@@ -7,9 +7,13 @@ export default function Services() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="section bg-gradient-to-b from-white to-gray-50">
-        <div className="container-custom">
+      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-pattern relative overflow-hidden">
+        <div className="decorative-blob w-96 h-96 -top-48 -right-48"></div>
+        <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
+            <div className="inline-block mb-4">
+              <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+            </div>
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
               Our Managed IT Services
             </h1>
@@ -324,8 +328,12 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="section bg-primary text-white">
-        <div className="container-custom">
+      <section className="section bg-gradient-primary text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="bg-pattern-dense w-full h-full"></div>
+        </div>
+        <div className="decorative-blob w-96 h-96 -top-32 -left-32 opacity-20"></div>
+        <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
               Ready to Simplify Your IT?

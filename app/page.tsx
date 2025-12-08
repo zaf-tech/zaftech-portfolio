@@ -6,12 +6,20 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="section bg-gradient-to-b from-white to-gray-50">
-        <div className="container-custom">
+      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-pattern relative overflow-hidden">
+        {/* Decorative blobs */}
+        <div className="decorative-blob w-96 h-96 -top-48 -right-48"></div>
+        <div className="decorative-blob w-80 h-80 -bottom-32 -left-32"></div>
+        
+        <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full mb-6">
+              <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+              <span className="text-sm font-medium text-accent">Managed IT Services Provider</span>
+            </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6 leading-tight">
               We Manage Your IT So You Can
-              <span className="text-accent"> Focus on Your Business</span>
+              <span className="bg-gradient-to-r from-accent to-accent-teal bg-clip-text text-transparent"> Focus on Your Business</span>
             </h1>
             <p className="text-xl md:text-2xl text-text-light mb-8 leading-relaxed">
               Proactive IT support, security, and monitoring—all in one predictable monthly plan. 
@@ -25,9 +33,12 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="section">
+      <section className="section bg-pattern-dense">
         <div className="container-custom">
           <div className="text-center mb-12 md:mb-16">
+            <div className="inline-block mb-4">
+              <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+            </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
               Our Managed IT Services
             </h2>
@@ -96,10 +107,14 @@ export default function Home() {
       </section>
 
       {/* Why Choose ZafTech */}
-      <section className="section bg-gray-50">
-        <div className="container-custom">
+      <section className="section bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        <div className="decorative-blob w-72 h-72 top-20 right-10"></div>
+        <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 md:mb-16">
+              <div className="inline-block mb-4">
+                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+              </div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
                 Why Choose ZafTech
               </h2>
@@ -198,9 +213,12 @@ export default function Home() {
       </section>
 
       {/* Our Process */}
-      <section className="section">
+      <section className="section bg-pattern-dense">
         <div className="container-custom">
           <div className="text-center mb-12 md:mb-16">
+            <div className="inline-block mb-4">
+              <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+            </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
               How We Get Started
             </h2>
@@ -240,8 +258,15 @@ export default function Home() {
       </section>
 
       {/* Call To Action Section */}
-      <section className="section bg-primary text-white">
-        <div className="container-custom">
+      <section className="section bg-gradient-primary text-white relative overflow-hidden">
+        {/* Decorative grid pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="bg-pattern-dense w-full h-full"></div>
+        </div>
+        <div className="decorative-blob w-96 h-96 -top-32 -left-32 opacity-20"></div>
+        <div className="decorative-blob w-80 h-80 -bottom-24 -right-24 opacity-20"></div>
+        
+        <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
               Stop Worrying About IT. Let Us Manage It for You.

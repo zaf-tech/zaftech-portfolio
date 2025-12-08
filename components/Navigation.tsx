@@ -11,10 +11,13 @@ export default function Navigation() {
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl md:text-3xl font-heading font-bold text-primary">
-              ZafTech
-            </span>
+          <Link href="/" className="flex items-center space-x-2 group">
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-r from-accent to-accent-teal rounded-lg opacity-20 group-hover:opacity-30 blur transition-opacity"></div>
+              <span className="relative text-2xl md:text-3xl font-heading font-bold text-primary">
+                ZafTech
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
