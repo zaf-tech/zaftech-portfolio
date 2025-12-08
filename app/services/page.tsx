@@ -7,19 +7,51 @@ export default function Services() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-pattern relative overflow-hidden">
-        <div className="decorative-blob w-96 h-96 -top-48 -right-48"></div>
+      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-grid-animated relative overflow-hidden min-h-[70vh] flex items-center">
+        <div className="decorative-blob w-96 h-96 -top-48 -right-48 pulse-glow"></div>
+        <div className="decorative-blob w-72 h-72 -bottom-32 -left-32"></div>
+        
+        {/* Floating service icons */}
+        <div className="absolute top-32 left-16 w-14 h-14 text-accent/20 float-icon hidden lg:block">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+        </div>
+        <div className="absolute bottom-32 right-20 w-12 h-12 text-accent/15 float-icon hidden lg:block" style={{ animationDelay: '1.5s' }}>
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+          </svg>
+        </div>
+        
         <div className="container-custom relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-4">
-              <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="inline-block mb-6">
+                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
+                Our Managed IT Services
+              </h1>
+              <p className="text-xl md:text-2xl text-text-light max-w-2xl mx-auto leading-relaxed">
+                Complete IT management designed to keep your business running smoothly and securely
+              </p>
             </div>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-              Our Managed IT Services
-            </h1>
-            <p className="text-xl text-text-light">
-              Complete IT management designed to keep your business running smoothly and securely
-            </p>
+            
+            {/* Service highlights */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-3xl mx-auto">
+              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
+                <div className="text-2xl font-heading font-bold text-accent mb-2">6</div>
+                <div className="text-sm text-text-light">Core Services</div>
+              </div>
+              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
+                <div className="text-2xl font-heading font-bold text-accent mb-2">24/7</div>
+                <div className="text-sm text-text-light">Support Available</div>
+              </div>
+              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
+                <div className="text-2xl font-heading font-bold text-accent mb-2">All-in-One</div>
+                <div className="text-sm text-text-light">Monthly Plan</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

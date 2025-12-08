@@ -6,28 +6,53 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-pattern relative overflow-hidden">
+      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-grid-animated relative overflow-hidden min-h-[90vh] flex items-center">
         {/* Decorative blobs */}
-        <div className="decorative-blob w-96 h-96 -top-48 -right-48"></div>
+        <div className="decorative-blob w-96 h-96 -top-48 -right-48 pulse-glow"></div>
         <div className="decorative-blob w-80 h-80 -bottom-32 -left-32"></div>
         
+        {/* Floating tech icons */}
+        <div className="absolute top-20 left-10 w-16 h-16 text-accent/20 float-icon hidden lg:block">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+        </div>
+        <div className="absolute top-40 right-20 w-12 h-12 text-accent/15 float-icon hidden lg:block" style={{ animationDelay: '1s' }}>
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <div className="absolute bottom-40 left-20 w-14 h-14 text-accent/15 float-icon hidden lg:block" style={{ animationDelay: '2s' }}>
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+          </svg>
+        </div>
+        
         <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full mb-6">
-              <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-              <span className="text-sm font-medium text-accent">Managed IT Services Provider</span>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full mb-8 backdrop-blur-sm border border-accent/20">
+                <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-accent">Managed IT Services Provider</span>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary mb-8 leading-tight">
+                We Manage Your IT So You Can
+                <br />
+                <span className="gradient-text-animated">Focus on Your Business</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-text-light mb-10 leading-relaxed max-w-3xl mx-auto">
+                Proactive IT support, security, and monitoring—all in one predictable monthly plan. 
+                Stop worrying about technology. Let us handle it.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Link href="/contact" className="btn-primary inline-block text-lg px-8 py-4">
+                  Schedule a Free IT Assessment
+                </Link>
+                <Link href="/services" className="text-primary font-medium hover:text-accent transition-colors">
+                  Learn more about our services →
+                </Link>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6 leading-tight">
-              We Manage Your IT So You Can
-              <span className="bg-gradient-to-r from-accent to-accent-teal bg-clip-text text-transparent"> Focus on Your Business</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-text-light mb-8 leading-relaxed">
-              Proactive IT support, security, and monitoring—all in one predictable monthly plan. 
-              Stop worrying about technology. Let us handle it.
-            </p>
-            <Link href="/contact" className="btn-primary inline-block text-lg px-8 py-4">
-              Schedule a Free IT Assessment
-            </Link>
           </div>
         </div>
       </section>
@@ -206,6 +231,68 @@ export default function Home() {
                     We're not just a vendor—we're your IT partner. We invest in understanding your business and building lasting relationships.
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Stats / Trust Indicators */}
+      <section className="section bg-gradient-to-b from-white to-gray-50">
+        <div className="container-custom">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <div className="inline-block mb-4">
+                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                Our Service Commitments
+              </h2>
+              <p className="text-lg text-text-light max-w-2xl mx-auto">
+                Transparent metrics that demonstrate our commitment to your IT success
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+              <div className="card text-center">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent mx-auto mb-4">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="text-3xl md:text-4xl font-heading font-bold text-accent mb-2">24/7</div>
+                <div className="text-sm font-medium text-primary mb-1">Monitoring</div>
+                <div className="text-xs text-text-light">Continuous oversight</div>
+              </div>
+              <div className="card text-center">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent mx-auto mb-4">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div className="text-3xl md:text-4xl font-heading font-bold text-accent mb-2">&lt;1hr</div>
+                <div className="text-sm font-medium text-primary mb-1">Response Time</div>
+                <div className="text-xs text-text-light">Fast support</div>
+              </div>
+              <div className="card text-center">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent mx-auto mb-4">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="text-3xl md:text-4xl font-heading font-bold text-accent mb-2">99.9%</div>
+                <div className="text-sm font-medium text-primary mb-1">Uptime SLA</div>
+                <div className="text-xs text-text-light">Guaranteed reliability</div>
+              </div>
+              <div className="card text-center">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent mx-auto mb-4">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                </div>
+                <div className="text-3xl md:text-4xl font-heading font-bold text-accent mb-2">100%</div>
+                <div className="text-sm font-medium text-primary mb-1">Proactive</div>
+                <div className="text-xs text-text-light">Preventive approach</div>
               </div>
             </div>
           </div>

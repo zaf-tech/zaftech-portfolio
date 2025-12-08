@@ -7,19 +7,71 @@ export default function About() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-pattern relative overflow-hidden">
-        <div className="decorative-blob w-80 h-80 -top-40 -left-40"></div>
+      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-grid-animated relative overflow-hidden min-h-[70vh] flex items-center">
+        <div className="decorative-blob w-96 h-96 -top-48 -left-48 pulse-glow"></div>
+        <div className="decorative-blob w-72 h-72 -bottom-32 -right-32"></div>
+        
+        {/* Floating partnership icons */}
+        <div className="absolute top-24 right-16 w-16 h-16 text-accent/20 float-icon hidden lg:block">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </div>
+        <div className="absolute bottom-40 left-24 w-14 h-14 text-accent/15 float-icon hidden lg:block" style={{ animationDelay: '2s' }}>
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        
         <div className="container-custom relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-4">
-              <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="inline-block mb-6">
+                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
+                About <span className="gradient-text-animated">ZafTech</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-text-light max-w-2xl mx-auto leading-relaxed">
+                Your trusted partner for managed IT services
+              </p>
             </div>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-              About ZafTech
-            </h1>
-            <p className="text-xl text-text-light">
-              Your trusted partner for managed IT services
-            </p>
+            
+            {/* Values preview */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 max-w-3xl mx-auto">
+              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent mx-auto mb-3">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div className="text-sm font-medium text-primary">Reliable</div>
+              </div>
+              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent mx-auto mb-3">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                </div>
+                <div className="text-sm font-medium text-primary">Partnership</div>
+              </div>
+              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent mx-auto mb-3">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <div className="text-sm font-medium text-primary">Proactive</div>
+              </div>
+              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
+                <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center text-accent mx-auto mb-3">
+                  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <div className="text-sm font-medium text-primary">Focused</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

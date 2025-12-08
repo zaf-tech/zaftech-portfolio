@@ -40,19 +40,51 @@ export default function Contact() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-pattern relative overflow-hidden">
-        <div className="decorative-blob w-96 h-96 -top-48 -left-48"></div>
+      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-grid-animated relative overflow-hidden min-h-[70vh] flex items-center">
+        <div className="decorative-blob w-96 h-96 -top-48 -left-48 pulse-glow"></div>
+        <div className="decorative-blob w-80 h-80 -bottom-32 -right-32"></div>
+        
+        {/* Floating contact icons */}
+        <div className="absolute top-32 right-20 w-14 h-14 text-accent/20 float-icon hidden lg:block">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <div className="absolute bottom-40 left-16 w-12 h-12 text-accent/15 float-icon hidden lg:block" style={{ animationDelay: '1.5s' }}>
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+          </svg>
+        </div>
+        
         <div className="container-custom relative z-10">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="inline-block mb-4">
-              <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <div className="inline-block mb-6">
+                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
+                Request Your <span className="gradient-text-animated">Free IT Assessment</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-text-light max-w-2xl mx-auto leading-relaxed">
+                Talk to an MSP expert and discover how managed IT services can help your business
+              </p>
             </div>
-            <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-              Request Your Free IT Assessment
-            </h1>
-            <p className="text-xl text-text-light">
-              Talk to an MSP expert and discover how managed IT services can help your business
-            </p>
+            
+            {/* Contact highlights */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-3xl mx-auto">
+              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
+                <div className="text-2xl font-heading font-bold text-accent mb-2">Free</div>
+                <div className="text-sm text-text-light">No Obligation</div>
+              </div>
+              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
+                <div className="text-2xl font-heading font-bold text-accent mb-2">&lt;24hr</div>
+                <div className="text-sm text-text-light">Response Time</div>
+              </div>
+              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
+                <div className="text-2xl font-heading font-bold text-accent mb-2">Expert</div>
+                <div className="text-sm text-text-light">MSP Consultation</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
