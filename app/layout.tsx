@@ -4,8 +4,8 @@ import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
-  title: 'ZafTech - Professional IT Consulting & Software Development',
-  description: 'Expert IT consulting, software development, cloud solutions, and DevOps services. Scalable, secure, and reliable technology solutions for your business.',
+  title: 'ZafTech - Managed IT Services Provider | Proactive IT Support & Monitoring',
+  description: 'Managed IT services for growing businesses. Proactive monitoring, helpdesk support, cybersecurity, and cloud management. Predictable monthly IT management so you can focus on your business.',
 }
 
 export default function RootLayout({

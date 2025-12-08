@@ -10,15 +10,15 @@ export default function Home() {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6 leading-tight">
-              Transform Your Business with
-              <span className="text-accent"> Expert IT Solutions</span>
+              We Manage Your IT So You Can
+              <span className="text-accent"> Focus on Your Business</span>
             </h1>
             <p className="text-xl md:text-2xl text-text-light mb-8 leading-relaxed">
-              We deliver scalable software development, cloud infrastructure, and strategic consulting 
-              to help your business thrive in the digital age.
+              Proactive IT support, security, and monitoring—all in one predictable monthly plan. 
+              Stop worrying about technology. Let us handle it.
             </p>
             <Link href="/contact" className="btn-primary inline-block text-lg px-8 py-4">
-              Book a Consultation
+              Schedule a Free IT Assessment
             </Link>
           </div>
         </div>
@@ -29,10 +29,10 @@ export default function Home() {
         <div className="container-custom">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-              Our Services
+              Our Managed IT Services
             </h2>
             <p className="text-lg text-text-light max-w-2xl mx-auto">
-              Comprehensive IT solutions tailored to your business needs
+              Comprehensive IT management designed to keep your business running smoothly
             </p>
           </div>
 
@@ -40,47 +40,11 @@ export default function Home() {
             <ServiceCard
               icon={
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                </svg>
-              }
-              title="Software Development"
-              description="Custom applications built with modern technologies, following best practices for scalability and maintainability."
-            />
-            <ServiceCard
-              icon={
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-                </svg>
-              }
-              title="Web Applications"
-              description="Responsive, fast, and user-friendly web applications that deliver exceptional user experiences."
-            />
-            <ServiceCard
-              icon={
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-                </svg>
-              }
-              title="Cloud & DevOps"
-              description="Modern cloud infrastructure and CI/CD pipelines to accelerate deployment and ensure reliability."
-            />
-            <ServiceCard
-              icon={
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               }
-              title="Security & Compliance"
-              description="Robust security measures and compliance frameworks to protect your data and systems."
-            />
-            <ServiceCard
-              icon={
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-              }
-              title="IT Consulting"
-              description="Strategic guidance to help you make informed technology decisions and optimize your IT infrastructure."
+              title="Managed IT Services"
+              description="Complete IT management including proactive monitoring, maintenance, and support. We handle your technology so you can focus on growth."
             />
             <ServiceCard
               icon={
@@ -88,8 +52,44 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
               }
-              title="Support & Maintenance"
-              description="Ongoing support and maintenance to keep your systems running smoothly and efficiently."
+              title="Helpdesk Support"
+              description="Fast, reliable IT support when you need it. Remote and on-site assistance with quick response times to keep your team productive."
+            />
+            <ServiceCard
+              icon={
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              }
+              title="Cybersecurity"
+              description="Protect your business with endpoint protection, security monitoring, and best practices. Stay ahead of threats with proactive security management."
+            />
+            <ServiceCard
+              icon={
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                </svg>
+              }
+              title="Cloud & Backup"
+              description="Microsoft 365 management, secure cloud backups, and disaster recovery planning. Keep your data safe and accessible from anywhere."
+            />
+            <ServiceCard
+              icon={
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              }
+              title="Network Management"
+              description="Ongoing network monitoring, maintenance, and optimization. Ensure your infrastructure runs reliably and efficiently."
+            />
+            <ServiceCard
+              icon={
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              }
+              title="IT Consulting & vCIO"
+              description="Strategic IT guidance and virtual CIO services. Make informed technology decisions aligned with your business goals."
             />
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function Home() {
                 Why Choose ZafTech
               </h2>
               <p className="text-lg text-text-light">
-                What sets us apart in delivering exceptional IT solutions
+                What makes us the right managed IT services partner for your business
               </p>
             </div>
 
@@ -116,9 +116,9 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">Experienced Team</h3>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">Proactive Monitoring & Support</h3>
                   <p className="text-text-light">
-                    Our team brings years of industry experience and deep technical expertise to every project.
+                    We prevent problems before they impact your business. Our proactive approach means fewer disruptions and more uptime.
                   </p>
                 </div>
               </div>
@@ -130,9 +130,9 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">Scalable Solutions</h3>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">Fast Response Times</h3>
                   <p className="text-text-light">
-                    We build systems that grow with your business, ensuring long-term value and flexibility.
+                    When issues arise, we respond quickly. Our team is available when you need us, minimizing downtime and keeping your business running.
                   </p>
                 </div>
               </div>
@@ -144,9 +144,9 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">Secure & Reliable</h3>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">Predictable Monthly Pricing</h3>
                   <p className="text-text-light">
-                    Security and reliability are at the core of everything we build, protecting your business and data.
+                    No surprise IT bills. Our flat monthly fee gives you budget certainty and includes all the IT support your business needs.
                   </p>
                 </div>
               </div>
@@ -158,9 +158,37 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">Long-term Support</h3>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">Reduced Downtime</h3>
                   <p className="text-text-light">
-                    We're committed to your success with ongoing support, maintenance, and partnership.
+                    Our proactive maintenance and monitoring significantly reduce system failures and keep your operations running smoothly.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent flex items-center justify-center mt-1">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">Security-First Approach</h3>
+                  <p className="text-text-light">
+                    We prioritize your security with continuous monitoring, regular updates, and best practices to protect your business data.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent flex items-center justify-center mt-1">
+                  <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">Long-Term IT Partnership</h3>
+                  <p className="text-text-light">
+                    We're not just a vendor—we're your IT partner. We invest in understanding your business and building lasting relationships.
                   </p>
                 </div>
               </div>
@@ -174,38 +202,38 @@ export default function Home() {
         <div className="container-custom">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-              Our Process
+              How We Get Started
             </h2>
             <p className="text-lg text-text-light max-w-2xl mx-auto">
-              A proven methodology to deliver successful projects
+              Our proven MSP onboarding process ensures a smooth transition
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8 md:space-y-12">
             <ProcessStep
               number="1"
-              title="Discover"
-              description="We start by understanding your business goals, challenges, and requirements through detailed consultation and analysis."
+              title="Assess Your IT Environment"
+              description="We conduct a comprehensive assessment of your current IT infrastructure, identifying strengths, risks, and opportunities for improvement."
             />
             <ProcessStep
               number="2"
-              title="Plan"
-              description="Our team creates a comprehensive strategy and roadmap tailored to your specific needs and timeline."
+              title="Identify Risks & Improvements"
+              description="Our team analyzes your systems and provides a clear roadmap for addressing security gaps, performance issues, and operational inefficiencies."
             />
             <ProcessStep
               number="3"
-              title="Build"
-              description="We develop your solution using best practices, modern technologies, and agile methodologies for quality delivery."
+              title="Implement Monitoring & Security"
+              description="We set up proactive monitoring tools and security measures to protect your business and catch issues before they become problems."
             />
             <ProcessStep
               number="4"
-              title="Deploy"
-              description="Careful deployment and testing ensure a smooth launch with minimal disruption to your operations."
+              title="Ongoing Management & Support"
+              description="Your dedicated team handles day-to-day IT management, provides helpdesk support, and ensures your systems run smoothly."
             />
             <ProcessStep
               number="5"
-              title="Support"
-              description="Ongoing monitoring, maintenance, and optimization keep your systems running at peak performance."
+              title="Continuous Optimization"
+              description="We regularly review and optimize your IT infrastructure, making improvements to enhance performance, security, and efficiency."
             />
           </div>
         </div>
@@ -216,13 +244,14 @@ export default function Home() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Ready to Transform Your Business?
+              Stop Worrying About IT. Let Us Manage It for You.
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Let's discuss how our IT solutions can drive growth and efficiency for your organization.
+              Experience the peace of mind that comes with reliable, proactive IT management. 
+              Focus on growing your business while we handle your technology.
             </p>
             <Link href="/contact" className="btn-secondary inline-block bg-white text-primary hover:bg-gray-100">
-              Get Started Today
+              Schedule a Free IT Assessment
             </Link>
           </div>
         </div>
@@ -230,4 +259,3 @@ export default function Home() {
     </>
   )
 }
-

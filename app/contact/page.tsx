@@ -44,10 +44,10 @@ export default function Contact() {
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-6">
-              Get in Touch
+              Request Your Free IT Assessment
             </h1>
             <p className="text-xl text-text-light">
-              Ready to discuss your project? We'd love to hear from you.
+              Talk to an MSP expert and discover how managed IT services can help your business
             </p>
           </div>
         </div>
@@ -58,6 +58,15 @@ export default function Contact() {
         <div className="container-custom">
           <div className="max-w-2xl mx-auto">
             <div className="card">
+              <div className="mb-6">
+                <h2 className="text-2xl font-heading font-semibold text-primary mb-2">
+                  Schedule a Consultation
+                </h2>
+                <p className="text-text-light">
+                  Fill out the form below and we'll get back to you within one business day to schedule 
+                  your free IT assessment. Perfect for business owners, office managers, and operations managers.
+                </p>
+              </div>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-primary mb-2">
@@ -93,12 +102,13 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="company" className="block text-sm font-medium text-primary mb-2">
-                    Company
+                    Company *
                   </label>
                   <input
                     type="text"
                     id="company"
                     name="company"
+                    required
                     value={formData.company}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all"
@@ -108,7 +118,7 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-primary mb-2">
-                    Message *
+                    Tell Us About Your IT Needs *
                   </label>
                   <textarea
                     id="message"
@@ -118,19 +128,19 @@ export default function Contact() {
                     value={formData.message}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent outline-none transition-all resize-none"
-                    placeholder="Tell us about your project or inquiry..."
+                    placeholder="What IT challenges are you facing? What would you like to discuss in your assessment?"
                   />
                 </div>
 
                 {submitStatus === 'success' && (
                   <div className="p-4 bg-green-50 border border-green-200 rounded-lg text-green-800">
-                    Thank you for your message! We'll get back to you soon.
+                    Thank you for your request! We'll contact you within one business day to schedule your free IT assessment.
                   </div>
                 )}
 
                 {submitStatus === 'error' && (
                   <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-800">
-                    Something went wrong. Please try again or email us directly.
+                    Something went wrong. Please try again or email us directly at info@zaftech.com.
                   </div>
                 )}
 
@@ -139,7 +149,7 @@ export default function Contact() {
                   disabled={isSubmitting}
                   className="w-full btn-primary disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? 'Sending...' : 'Request Free IT Assessment'}
                 </button>
               </form>
             </div>
@@ -155,6 +165,9 @@ export default function Contact() {
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
                 Contact Information
               </h2>
+              <p className="text-lg text-text-light">
+                Prefer to reach out directly? We're here to help.
+              </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -171,6 +184,7 @@ export default function Contact() {
                 >
                   info@zaftech.com
                 </a>
+                <p className="text-sm text-text-light mt-2">We respond within one business day</p>
               </div>
 
               <div className="card text-center">
@@ -180,8 +194,9 @@ export default function Contact() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
                 </div>
-                <h3 className="text-xl font-heading font-semibold text-primary mb-2">Location</h3>
-                <p className="text-text-light">Available for remote and on-site projects</p>
+                <h3 className="text-xl font-heading font-semibold text-primary mb-2">Service Area</h3>
+                <p className="text-text-light">Remote and on-site support available</p>
+                <p className="text-sm text-text-light mt-2">Serving businesses nationwide</p>
               </div>
             </div>
           </div>
@@ -190,4 +205,3 @@ export default function Contact() {
     </div>
   )
 }
-

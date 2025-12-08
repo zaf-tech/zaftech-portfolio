@@ -9,8 +9,8 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-2xl font-heading font-bold mb-4">ZafTech</h3>
             <p className="text-gray-300 mb-4 max-w-md">
-              Professional IT consulting and software development services. 
-              Building scalable, secure, and reliable technology solutions for your business.
+              Managed IT services provider offering proactive monitoring, helpdesk support, cybersecurity, 
+              and cloud management. We manage your IT so you can focus on your business.
             </p>
           </div>
 

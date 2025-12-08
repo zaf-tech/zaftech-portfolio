@@ -29,7 +29,7 @@ export default function Navigation() {
               About
             </Link>
             <Link href="/contact" className="btn-primary">
-              Contact Us
+              Free IT Assessment
             </Link>
           </div>
 
@@ -87,7 +87,7 @@ export default function Navigation() {
                 onClick={() => setIsOpen(false)}
                 className="btn-primary inline-block text-center"
               >
-                Contact Us
+                Free IT Assessment
               </Link>
             </div>
           </div>
