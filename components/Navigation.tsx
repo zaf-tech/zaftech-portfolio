@@ -24,21 +24,21 @@ export default function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="text-text hover:text-accent transition-all duration-300 font-medium relative group"
+              className="text-text hover:text-accent-teal transition-all duration-300 font-medium relative group"
             >
               <span className="relative z-10">Home</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
               href="/services"
-              className="text-text hover:text-accent transition-all duration-300 font-medium relative group"
+              className="text-text hover:text-accent-teal transition-all duration-300 font-medium relative group"
             >
               <span className="relative z-10">Services</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
               href="/about"
-              className="text-text hover:text-accent transition-all duration-300 font-medium relative group"
+              className="text-text hover:text-accent-teal transition-all duration-300 font-medium relative group"
             >
               <span className="relative z-10">About</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
@@ -79,21 +79,21 @@ export default function Navigation() {
               <Link
                 href="/"
                 onClick={() => setIsOpen(false)}
-                className="text-text hover:text-accent transition-colors font-medium py-2"
+                className="text-text hover:text-accent-teal transition-colors font-medium py-2"
               >
                 Home
               </Link>
               <Link
                 href="/services"
                 onClick={() => setIsOpen(false)}
-                className="text-text hover:text-accent transition-colors font-medium py-2"
+                className="text-text hover:text-accent-teal transition-colors font-medium py-2"
               >
                 Services
               </Link>
               <Link
                 href="/about"
                 onClick={() => setIsOpen(false)}
-                className="text-text hover:text-accent transition-colors font-medium py-2"
+                className="text-text hover:text-accent-teal transition-colors font-medium py-2"
               >
                 About
               </Link>

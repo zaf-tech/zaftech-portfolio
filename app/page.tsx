@@ -12,7 +12,7 @@ export default function Home() {
         <div className="decorative-blob w-80 h-80 -bottom-32 -left-32"></div>
 
         {/* Floating tech icons */}
-        <div className="absolute top-20 left-10 w-16 h-16 text-accent/20 float-icon hidden lg:block">
+        <div className="absolute top-20 left-10 w-16 h-16 text-accent-teal/20 float-icon hidden lg:block">
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
@@ -23,7 +23,7 @@ export default function Home() {
           </svg>
         </div>
         <div
-          className="absolute top-40 right-20 w-12 h-12 text-accent/15 float-icon hidden lg:block"
+          className="absolute top-40 right-20 w-12 h-12 text-accent-teal/15 float-icon hidden lg:block"
           style={{ animationDelay: "1s" }}
         >
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,7 +36,7 @@ export default function Home() {
           </svg>
         </div>
         <div
-          className="absolute bottom-40 left-20 w-14 h-14 text-accent/15 float-icon hidden lg:block"
+          className="absolute bottom-40 left-20 w-14 h-14 text-accent-teal/15 float-icon hidden lg:block"
           style={{ animationDelay: "2s" }}
         >
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -52,9 +52,9 @@ export default function Home() {
         <div className="container-custom relative z-10">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 rounded-full mb-8 backdrop-blur-sm border border-accent/20">
-                <div className="w-2 h-2 bg-accent rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-accent">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-teal/10 rounded-full mb-8 backdrop-blur-sm border border-accent-teal/20">
+                <div className="w-2 h-2 bg-accent-teal rounded-full animate-pulse"></div>
+                <span className="text-sm font-medium text-accent-teal">
                   Managed IT Services Provider
                 </span>
               </div>
@@ -79,7 +79,7 @@ export default function Home() {
                 </Link>
                 <Link
                   href="/services"
-                  className="text-primary font-medium hover:text-accent transition-colors"
+                  className="text-primary font-medium hover:text-accent-teal transition-colors"
                 >
                   Learn more about our services →
                 </Link>
@@ -443,7 +443,7 @@ export default function Home() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
               <div className="card text-center group hover:scale-105 transition-transform duration-300">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -469,7 +469,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="card text-center group hover:scale-105 transition-transform duration-300">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -493,7 +493,7 @@ export default function Home() {
                 <div className="text-xs text-text-light">Fast support</div>
               </div>
               <div className="card text-center group hover:scale-105 transition-transform duration-300">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -519,7 +519,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="card text-center group hover:scale-105 transition-transform duration-300">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
                   <svg
                     className="w-6 h-6"
                     fill="none"

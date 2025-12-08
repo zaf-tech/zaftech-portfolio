@@ -13,7 +13,7 @@ export default function Services() {
         <div className="decorative-blob w-72 h-72 -bottom-32 -left-32"></div>
 
         {/* Floating service icons */}
-        <div className="absolute top-32 left-16 w-14 h-14 text-accent/20 float-icon hidden lg:block">
+        <div className="absolute top-32 left-16 w-14 h-14 text-accent-teal/20 float-icon hidden lg:block">
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
@@ -24,7 +24,7 @@ export default function Services() {
           </svg>
         </div>
         <div
-          className="absolute bottom-32 right-20 w-12 h-12 text-accent/15 float-icon hidden lg:block"
+          className="absolute bottom-32 right-20 w-12 h-12 text-accent-teal/15 float-icon hidden lg:block"
           style={{ animationDelay: "1.5s" }}
         >
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,19 +55,19 @@ export default function Services() {
             {/* Service highlights */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-3xl mx-auto">
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent mb-2">
+                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">
                   6
                 </div>
                 <div className="text-sm text-text-light">Core Services</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent mb-2">
+                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">
                   24/7
                 </div>
                 <div className="text-sm text-text-light">Support Available</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent mb-2">
+                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">
                   All-in-One
                 </div>
                 <div className="text-sm text-text-light">Monthly Plan</div>
@@ -83,7 +83,7 @@ export default function Services() {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mb-6">
+                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-6">
                   <svg
                     className="w-8 h-8"
                     fill="none"
@@ -118,7 +118,7 @@ export default function Services() {
                 <ul className="space-y-2 text-text-light">
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -134,7 +134,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -150,7 +150,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -166,7 +166,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -182,7 +182,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -230,7 +230,7 @@ export default function Services() {
                 </div>
               </div>
               <div className="order-1 md:order-2">
-                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mb-6">
+                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-6">
                   <svg
                     className="w-8 h-8"
                     fill="none"
@@ -261,7 +261,7 @@ export default function Services() {
                 <ul className="space-y-2 text-text-light">
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -277,7 +277,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -293,7 +293,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -309,7 +309,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -336,7 +336,7 @@ export default function Services() {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mb-6">
+                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-6">
                   <svg
                     className="w-8 h-8"
                     fill="none"
@@ -368,7 +368,7 @@ export default function Services() {
                 <ul className="space-y-2 text-text-light">
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -384,7 +384,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -400,7 +400,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -416,7 +416,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -459,7 +459,7 @@ export default function Services() {
                 </div>
               </div>
               <div className="order-1 md:order-2">
-                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mb-6">
+                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-6">
                   <svg
                     className="w-8 h-8"
                     fill="none"
@@ -490,7 +490,7 @@ export default function Services() {
                 <ul className="space-y-2 text-text-light">
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -506,7 +506,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -522,7 +522,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -538,7 +538,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -565,7 +565,7 @@ export default function Services() {
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mb-6">
+                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-6">
                   <svg
                     className="w-8 h-8"
                     fill="none"
@@ -596,7 +596,7 @@ export default function Services() {
                 <ul className="space-y-2 text-text-light">
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -612,7 +612,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -628,7 +628,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -644,7 +644,7 @@ export default function Services() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-5 h-5 text-accent mr-2 mt-0.5 flex-shrink-0"
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"

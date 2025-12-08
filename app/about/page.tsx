@@ -13,7 +13,7 @@ export default function About() {
         <div className="decorative-blob w-72 h-72 -bottom-32 -right-32"></div>
 
         {/* Floating partnership icons */}
-        <div className="absolute top-24 right-16 w-16 h-16 text-accent/20 float-icon hidden lg:block">
+        <div className="absolute top-24 right-16 w-16 h-16 text-accent-teal/20 float-icon hidden lg:block">
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
@@ -24,7 +24,7 @@ export default function About() {
           </svg>
         </div>
         <div
-          className="absolute bottom-40 left-24 w-14 h-14 text-accent/15 float-icon hidden lg:block"
+          className="absolute bottom-40 left-24 w-14 h-14 text-accent-teal/15 float-icon hidden lg:block"
           style={{ animationDelay: "2s" }}
         >
           <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ export default function About() {
             {/* Values preview */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 max-w-3xl mx-auto">
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-3">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-3">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -72,7 +72,7 @@ export default function About() {
                 <div className="text-sm font-medium text-primary">Reliable</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-3">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-3">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -92,7 +92,7 @@ export default function About() {
                 </div>
               </div>
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-3">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-3">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -112,7 +112,7 @@ export default function About() {
                 </div>
               </div>
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mx-auto mb-3">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-3">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -183,7 +183,7 @@ export default function About() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
               <div className="card">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-4">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -209,7 +209,7 @@ export default function About() {
               </div>
 
               <div className="card">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-4">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -236,7 +236,7 @@ export default function About() {
               </div>
 
               <div className="card">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-4">
                   <svg
                     className="w-6 h-6"
                     fill="none"
@@ -262,7 +262,7 @@ export default function About() {
               </div>
 
               <div className="card">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent mb-4">
+                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-4">
                   <svg
                     className="w-6 h-6"
                     fill="none"

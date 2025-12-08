@@ -17,7 +17,7 @@ export default function ProcessStep({ number, title, description }: ProcessStepP
         )}
       </div>
       <div className="flex-1">
-        <h3 className="text-xl font-heading font-semibold text-primary mb-2 group-hover:text-accent transition-colors duration-300">{title}</h3>
+        <h3 className="text-xl font-heading font-semibold text-primary mb-2 group-hover:text-accent-teal transition-colors duration-300">{title}</h3>
         <p className="text-text-light group-hover:text-text transition-colors duration-300">{description}</p>
       </div>
     </div>
