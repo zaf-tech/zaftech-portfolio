@@ -73,15 +73,15 @@ export default function Contact() {
             {/* Contact highlights */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-3xl mx-auto">
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent mb-2">Free</div>
+                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">Free</div>
                 <div className="text-sm text-text-light">No Obligation</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent mb-2">&lt;24hr</div>
+                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">&lt;24hr</div>
                 <div className="text-sm text-text-light">Response Time</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent mb-2">Expert</div>
+                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">Expert</div>
                 <div className="text-sm text-text-light">MSP Consultation</div>
               </div>
             </div>
