@@ -57,32 +57,104 @@ export default function Contact() {
         </div>
         
         <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-8">
+          <div className="grid items-center gap-10 lg:gap-16 md:grid-cols-2">
+            <div>
               <div className="inline-block mb-6">
-                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto md:mx-0 rounded-full"></div>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
                 Request Your <span className="gradient-text-animated">Free IT Assessment</span>
               </h1>
-              <p className="text-xl md:text-2xl text-text-light max-w-2xl mx-auto leading-relaxed">
+              <p className="text-xl md:text-2xl text-text-light max-w-2xl leading-relaxed">
                 Talk to an MSP expert and discover how managed IT services can help your business
               </p>
+
+              {/* Contact highlights */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
+                <div className="text-left p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-gray-100 shadow-sm">
+                  <div className="text-2xl font-heading font-bold text-accent-teal mb-2">Free</div>
+                  <div className="text-sm text-text-light">No Obligation</div>
+                </div>
+                <div className="text-left p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-gray-100 shadow-sm">
+                  <div className="text-2xl font-heading font-bold text-accent-teal mb-2">&lt;24hr</div>
+                  <div className="text-sm text-text-light">Response Time</div>
+                </div>
+                <div className="text-left p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-gray-100 shadow-sm">
+                  <div className="text-2xl font-heading font-bold text-accent-teal mb-2">Expert</div>
+                  <div className="text-sm text-text-light">MSP Consultation</div>
+                </div>
+              </div>
             </div>
-            
-            {/* Contact highlights */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-3xl mx-auto">
-              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">Free</div>
-                <div className="text-sm text-text-light">No Obligation</div>
-              </div>
-              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">&lt;24hr</div>
-                <div className="text-sm text-text-light">Response Time</div>
-              </div>
-              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">Expert</div>
-                <div className="text-sm text-text-light">MSP Consultation</div>
+
+            {/* Hero Illustration */}
+            <div className="relative">
+              <div className="absolute -top-8 -left-10 w-24 h-24 bg-accent-teal/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-8 -right-10 w-28 h-28 bg-accent/10 rounded-full blur-3xl"></div>
+              <div className="relative overflow-hidden rounded-2xl bg-white/85 backdrop-blur shadow-2xl border border-accent-teal/15 p-8">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-white to-accent-teal/10 pointer-events-none"></div>
+                <div className="relative">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <p className="text-sm font-medium text-text-light">Assessment pipeline · Secure intake</p>
+                  </div>
+                  <svg
+                    viewBox="0 0 360 240"
+                    className="w-full mb-4 text-accent-teal"
+                    role="img"
+                    aria-label="Assessment workflow illustration"
+                  >
+                    <defs>
+                      <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stopColor="#14B8A6" />
+                        <stop offset="100%" stopColor="#2563EB" />
+                      </linearGradient>
+                    </defs>
+                    <rect x="40" y="70" width="120" height="110" rx="14" fill="white" opacity="0.9" stroke="rgba(20,184,166,0.25)" strokeWidth="2" />
+                    <rect x="200" y="70" width="120" height="110" rx="14" fill="white" opacity="0.9" stroke="rgba(37,99,235,0.25)" strokeWidth="2" />
+                    <rect x="55" y="90" width="90" height="14" rx="7" fill="#14B8A6" opacity="0.15" />
+                    <rect x="55" y="112" width="70" height="12" rx="6" fill="#14B8A6" opacity="0.1" />
+                    <rect x="55" y="132" width="80" height="12" rx="6" fill="#2563EB" opacity="0.12" />
+                    <rect x="55" y="152" width="65" height="12" rx="6" fill="#14B8A6" opacity="0.1" />
+
+                    <rect x="215" y="90" width="90" height="14" rx="7" fill="#2563EB" opacity="0.15" />
+                    <rect x="215" y="112" width="70" height="12" rx="6" fill="#14B8A6" opacity="0.12" />
+                    <rect x="215" y="132" width="80" height="12" rx="6" fill="#2563EB" opacity="0.1" />
+                    <rect x="215" y="152" width="65" height="12" rx="6" fill="#14B8A6" opacity="0.08" />
+
+                    <path
+                      d="M160 120 C190 120, 190 120, 220 120"
+                      fill="none"
+                      stroke="url(#flowGradient)"
+                      strokeWidth="6"
+                      strokeLinecap="round"
+                      opacity="0.9"
+                    />
+                    <circle cx="160" cy="120" r="10" fill="white" stroke="url(#flowGradient)" strokeWidth="4" />
+                    <circle cx="220" cy="120" r="10" fill="white" stroke="url(#flowGradient)" strokeWidth="4" />
+                    <circle cx="190" cy="120" r="14" fill="#14B8A6" opacity="0.2" />
+
+                    <rect x="125" y="32" width="110" height="24" rx="12" fill="url(#flowGradient)" opacity="0.9" />
+                    <text x="180" y="50" textAnchor="middle" fill="white" fontSize="11" fontWeight="600">Assessment Signal</text>
+                  </svg>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
+                      <p className="text-xs text-text-light">Discovery</p>
+                      <p className="text-base font-semibold text-primary">Intake Form</p>
+                    </div>
+                    <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
+                      <p className="text-xs text-text-light">Analysis</p>
+                      <p className="text-base font-semibold text-primary">Rapid Review</p>
+                    </div>
+                    <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
+                      <p className="text-xs text-text-light">Plan</p>
+                      <p className="text-base font-semibold text-primary">Roadmap</p>
+                    </div>
+                    <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
+                      <p className="text-xs text-text-light">Security</p>
+                      <p className="text-base font-semibold text-primary">Hardened</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

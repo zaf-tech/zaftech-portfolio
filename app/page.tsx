@@ -50,8 +50,8 @@ export default function Home() {
         </div>
 
         <div className="container-custom relative z-10">
-          <div className="max-w-5xl mx-auto">
-            <div className="text-center mb-8">
+          <div className="grid items-center gap-12 lg:gap-16 md:grid-cols-2">
+            <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-teal/10 rounded-full mb-8 backdrop-blur-sm border border-accent-teal/20">
                 <div className="w-2 h-2 bg-accent-teal rounded-full animate-pulse"></div>
                 <span className="text-sm font-medium text-accent-teal">
@@ -65,12 +65,12 @@ export default function Home() {
                   Focus on Your Business
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-text-light mb-10 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-xl md:text-2xl text-text-light mb-10 leading-relaxed max-w-3xl">
                 Proactive IT support, security, and monitoring—all in one
                 predictable monthly plan. Stop worrying about technology. Let us
                 handle it.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="flex flex-col sm:flex-row gap-4">
                 <Link
                   href="/contact"
                   className="btn-primary inline-block text-lg px-8 py-4"
@@ -83,6 +83,189 @@ export default function Home() {
                 >
                   Learn more about our services →
                 </Link>
+              </div>
+            </div>
+
+            {/* Hero Illustration */}
+            <div className="relative">
+              <div className="absolute -top-6 -left-6 w-20 h-20 bg-accent-teal/10 rounded-full blur-3xl"></div>
+              <div className="absolute -bottom-8 -right-10 w-28 h-28 bg-accent/10 rounded-full blur-3xl"></div>
+              <div className="relative overflow-hidden rounded-2xl bg-white/80 backdrop-blur shadow-2xl border border-accent-teal/15 p-8">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-white to-accent-teal/10 pointer-events-none"></div>
+                <div className="relative">
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <p className="text-sm font-medium text-text-light">
+                      Live status · Secure · Managed
+                    </p>
+                  </div>
+                  <svg
+                    viewBox="0 0 360 220"
+                    className="w-full mb-4 text-accent-teal"
+                    role="img"
+                    aria-label="Managed IT illustration"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="nodeGradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" stopColor="#14B8A6" />
+                        <stop offset="100%" stopColor="#2563EB" />
+                      </linearGradient>
+                      <linearGradient
+                        id="panelGradient"
+                        x1="0%"
+                        y1="0%"
+                        x2="0%"
+                        y2="100%"
+                      >
+                        <stop offset="0%" stopColor="rgba(20,184,166,0.25)" />
+                        <stop offset="100%" stopColor="rgba(37,99,235,0.15)" />
+                      </linearGradient>
+                    </defs>
+                    <rect
+                      x="40"
+                      y="50"
+                      width="280"
+                      height="140"
+                      rx="18"
+                      fill="url(#panelGradient)"
+                      stroke="rgba(37,99,235,0.25)"
+                      strokeWidth="2"
+                    />
+                    <rect
+                      x="70"
+                      y="78"
+                      width="220"
+                      height="18"
+                      rx="9"
+                      fill="white"
+                      opacity="0.9"
+                    />
+                    <rect
+                      x="70"
+                      y="106"
+                      width="140"
+                      height="14"
+                      rx="7"
+                      fill="white"
+                      opacity="0.75"
+                    />
+                    <rect
+                      x="70"
+                      y="128"
+                      width="110"
+                      height="14"
+                      rx="7"
+                      fill="white"
+                      opacity="0.65"
+                    />
+                    <rect
+                      x="70"
+                      y="150"
+                      width="90"
+                      height="14"
+                      rx="7"
+                      fill="white"
+                      opacity="0.55"
+                    />
+                    <circle
+                      cx="260"
+                      cy="170"
+                      r="10"
+                      fill="#14B8A6"
+                      opacity="0.9"
+                    />
+                    <circle
+                      cx="290"
+                      cy="170"
+                      r="10"
+                      fill="#2563EB"
+                      opacity="0.9"
+                    />
+                    {/* <path
+                      d="M120 190 C150 150, 210 150, 240 190"
+                      fill="none"
+                      stroke="url(#nodeGradient)"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      opacity="0.8"
+                    />
+                    <circle
+                      cx="120"
+                      cy="190"
+                      r="10"
+                      fill="white"
+                      stroke="url(#nodeGradient)"
+                      strokeWidth="4"
+                    /> */}
+                    <circle
+                      cx="230"
+                      cy="170"
+                      r="10"
+                      fill="#14B8A6"
+                      opacity="0.9"
+                    />
+                    {/* <circle
+                      cx="240"
+                      cy="190"
+                      r="10"
+                      fill="white"
+                      stroke="url(#nodeGradient)"
+                      strokeWidth="4"
+                    />
+                    <circle
+                      cx="200"
+                      cy="88"
+                      r="22"
+                      fill="white"
+                      stroke="url(#nodeGradient)"
+                      strokeWidth="6"
+                    /> */}
+                    {/* <path
+                      d="M200 4v 66c10 0 18 8 18 18s-8 18-18 18-18-8-18-18 8-18 18-18z"
+                      fill="url(#nodeGradient)"
+                      opacity="0.2"
+                    />
+                    <path
+                      d="M200 52v-14M200 138v-14M164 88h-18M254 88h-18"
+                      stroke="url(#nodeGradient)"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      opacity="0.7"
+                    /> */}
+                  </svg>
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
+                      <p className="text-xs text-text-light">Monitoring</p>
+                      <p className="text-base font-semibold text-primary">
+                        24/7 Live
+                      </p>
+                    </div>
+                    <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
+                      <p className="text-xs text-text-light">Response</p>
+                      <p className="text-base font-semibold text-primary">
+                        &lt; 1 hour
+                      </p>
+                    </div>
+                    <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
+                      <p className="text-xs text-text-light">Reliability</p>
+                      <p className="text-base font-semibold text-primary">
+                        99.9% SLA
+                      </p>
+                    </div>
+                    <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
+                      <p className="text-xs text-text-light">Approach</p>
+                      <p className="text-base font-semibold text-primary">
+                        Proactive
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
