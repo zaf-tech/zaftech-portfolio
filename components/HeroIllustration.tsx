@@ -3,15 +3,15 @@ export default function HeroIllustration() {
     <div className="relative">
       <div className="absolute -top-6 -left-6 w-20 h-20 bg-accent-teal/10 rounded-full blur-3xl"></div>
       <div className="absolute -bottom-8 -right-10 w-28 h-28 bg-accent/10 rounded-full blur-3xl"></div>
-      <div className="relative overflow-hidden rounded-2xl bg-white/80 backdrop-blur shadow-2xl border border-accent-teal/15 p-8">
-        <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-white to-accent-teal/10 pointer-events-none"></div>
+      <div className="relative overflow-hidden ">
+        {/* <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-white to-accent-teal/10 pointer-events-none"></div> */}
         <div className="relative">
-          <div className="flex items-center gap-3 mb-4">
+          {/* <div className="flex items-center gap-3 mb-4">
             <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
             <p className="text-sm font-medium text-text-light">
               Live status · Secure · Managed
             </p>
-          </div>
+          </div> */}
           <svg
             viewBox="0 0 380 240"
             className="w-full mb-4 text-accent-teal"
@@ -115,6 +115,7 @@ export default function HeroIllustration() {
               fill="rgba(37,99,235,0.9)"
               fontSize="10"
               fontWeight="700"
+              fontStyle="italic"
               fontFamily="system-ui, sans-serif"
             >
               System Status
@@ -321,7 +322,7 @@ export default function HeroIllustration() {
               opacity="0.8"
             />
           </svg>
-          <div className="grid grid-cols-2 gap-3">
+          {/* <div className="grid grid-cols-2 gap-3">
             <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
               <p className="text-xs text-text-light">Monitoring</p>
               <p className="text-base font-semibold text-primary">
@@ -346,7 +347,7 @@ export default function HeroIllustration() {
                 Proactive
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
