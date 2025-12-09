@@ -172,6 +172,26 @@ export default function Home() {
                       opacity="0.9"
                     />
 
+                    {/* Dashboard header indicator */}
+                    {/* <circle cx="70" cy="70" r="4" fill="#14B8A6" opacity="0.9">
+                      <animate
+                        attributeName="opacity"
+                        values="0.9;0.4;0.9"
+                        dur="2s"
+                        repeatCount="indefinite"
+                      />
+                    </circle> */}
+                    <text
+                      x="58"
+                      y="74"
+                      fill="rgba(37,99,235,0.85)"
+                      fontSize="11"
+                      fontWeight="600"
+                      fontFamily="system-ui, sans-serif"
+                    >
+                      System Status
+                    </text>
+
                     {/* Security shield badge */}
                     <circle
                       cx="250"
@@ -329,28 +349,66 @@ export default function Home() {
                       opacity="0.6"
                     />
 
-                    {/* Status chips in top right */}
-                    <rect
-                      x="280"
-                      y="100"
-                      width="60"
-                      height="20"
-                      rx="10"
+                    {/* Cloud sync illustration - successful sync */}
+                    {/* Cloud shape */}
+                    <circle
+                      cx="285"
+                      cy="110"
+                      r="10"
                       fill="url(#nodeGradient)"
                       opacity="0.9"
                     />
+                    <circle
+                      cx="295"
+                      cy="105"
+                      r="12"
+                      fill="url(#nodeGradient)"
+                      opacity="0.9"
+                    />
+                    <circle
+                      cx="307"
+                      cy="111"
+                      r="8"
+                      fill="url(#nodeGradient)"
+                      opacity="0.9"
+                    />
+                    <rect
+                      x="280"
+                      y="108"
+                      width="30"
+                      height="12"
+                      rx="6"
+                      fill="url(#nodeGradient)"
+                      opacity="0.9"
+                    />
+                    {/* Success checkmark */}
+                    {/* <circle
+                      cx="295"
+                      cy="105"
+                      r="9"
+                      fill="#22C55E"
+                      opacity="0.95"
+                    /> */}
                     <text
-                      x="310"
-                      y="114"
+                      x="295"
+                      y="115"
                       textAnchor="middle"
                       fill="white"
-                      fontSize="10"
-                      fontWeight="600"
+                      fontSize="20"
+                      fontWeight="900"
                     >
-                      99.9%
+                      ✔
                     </text>
+                    {/* <path
+                      d="M312 105 L314.5 107.5 L318 104"
+                      stroke="white"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      fill="none"
+                    /> */}
 
-                    <rect
+                    {/* <rect
                       x="280"
                       y="128"
                       width="60"
@@ -368,7 +426,7 @@ export default function Home() {
                       fontWeight="600"
                     >
                       SECURED
-                    </text>
+                    </text> */}
                   </svg>
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
