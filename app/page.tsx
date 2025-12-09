@@ -100,10 +100,10 @@ export default function Home() {
                     </p>
                   </div>
                   <svg
-                    viewBox="0 0 360 220"
+                    viewBox="0 0 380 240"
                     className="w-full mb-4 text-accent-teal"
                     role="img"
-                    aria-label="Managed IT illustration"
+                    aria-label="MSP monitoring dashboard illustration"
                   >
                     <defs>
                       <linearGradient
@@ -127,117 +127,248 @@ export default function Home() {
                         <stop offset="100%" stopColor="rgba(37,99,235,0.15)" />
                       </linearGradient>
                     </defs>
+
+                    {/* Main monitoring dashboard panel */}
                     <rect
-                      x="40"
-                      y="50"
-                      width="280"
-                      height="140"
-                      rx="18"
+                      x="30"
+                      y="40"
+                      width="320"
+                      height="160"
+                      rx="20"
                       fill="url(#panelGradient)"
-                      stroke="rgba(37,99,235,0.25)"
-                      strokeWidth="2"
+                      stroke="rgba(37,99,235,0.3)"
+                      strokeWidth="2.5"
                     />
+
+                    {/* Dashboard header with security badge */}
                     <rect
-                      x="70"
-                      y="78"
-                      width="220"
-                      height="18"
-                      rx="9"
+                      x="50"
+                      y="58"
+                      width="280"
+                      height="24"
+                      rx="12"
+                      fill="white"
+                      opacity="0.95"
+                    />
+                    <circle
+                      cx="280"
+                      cy="70"
+                      r="8"
+                      fill="#14B8A6"
+                      opacity="0.9"
+                    />
+                    <circle
+                      cx="300"
+                      cy="70"
+                      r="8"
+                      fill="#2563EB"
+                      opacity="0.9"
+                    />
+                    <circle
+                      cx="320"
+                      cy="70"
+                      r="8"
+                      fill="#22C55E"
+                      opacity="0.9"
+                    />
+
+                    {/* Security shield badge */}
+                    <circle
+                      cx="250"
+                      cy="70"
+                      r="18"
+                      fill="white"
+                      stroke="url(#nodeGradient)"
+                      strokeWidth="3"
+                    />
+                    <path
+                      d="M250 58 L242 62 L242 70 Q242 74 246 76 L250 78 L254 76 Q258 74 258 70 L258 62 Z"
+                      fill="url(#nodeGradient)"
+                      opacity="0.8"
+                    />
+
+                    {/* Server/device status rows */}
+                    <rect
+                      x="60"
+                      y="98"
+                      width="200"
+                      height="16"
+                      rx="8"
                       fill="white"
                       opacity="0.9"
                     />
+                    <circle
+                      cx="280"
+                      cy="106"
+                      r="6"
+                      fill="#22C55E"
+                      opacity="0.9"
+                    />
+
                     <rect
-                      x="70"
-                      y="106"
-                      width="140"
+                      x="60"
+                      y="122"
+                      width="160"
                       height="14"
                       rx="7"
                       fill="white"
                       opacity="0.75"
                     />
+                    <circle
+                      cx="240"
+                      cy="129"
+                      r="6"
+                      fill="#22C55E"
+                      opacity="0.9"
+                    />
+
                     <rect
-                      x="70"
-                      y="128"
-                      width="110"
+                      x="60"
+                      y="144"
+                      width="140"
                       height="14"
                       rx="7"
                       fill="white"
                       opacity="0.65"
                     />
+                    <circle
+                      cx="220"
+                      cy="151"
+                      r="6"
+                      fill="#F59E0B"
+                      opacity="0.9"
+                    />
+
                     <rect
-                      x="70"
-                      y="150"
-                      width="90"
+                      x="60"
+                      y="166"
+                      width="120"
                       height="14"
                       rx="7"
                       fill="white"
                       opacity="0.55"
                     />
                     <circle
-                      cx="260"
-                      cy="170"
-                      r="10"
-                      fill="#14B8A6"
+                      cx="200"
+                      cy="173"
+                      r="6"
+                      fill="#22C55E"
                       opacity="0.9"
                     />
+
+                    {/* Network nodes and connections */}
+                    {/* Central hub node */}
                     <circle
-                      cx="290"
-                      cy="170"
-                      r="10"
-                      fill="#2563EB"
-                      opacity="0.9"
-                    />
-                    {/* <path
-                      d="M120 190 C150 150, 210 150, 240 190"
-                      fill="none"
+                      cx="190"
+                      cy="200"
+                      r="16"
+                      fill="white"
                       stroke="url(#nodeGradient)"
                       strokeWidth="4"
-                      strokeLinecap="round"
+                    />
+                    <circle
+                      cx="190"
+                      cy="200"
+                      r="10"
+                      fill="url(#nodeGradient)"
                       opacity="0.8"
+                    />
+
+                    {/* Connected nodes */}
+                    <circle
+                      cx="120"
+                      cy="200"
+                      r="12"
+                      fill="white"
+                      stroke="url(#nodeGradient)"
+                      strokeWidth="3"
                     />
                     <circle
                       cx="120"
-                      cy="190"
-                      r="10"
-                      fill="white"
-                      stroke="url(#nodeGradient)"
-                      strokeWidth="4"
-                    /> */}
-                    <circle
-                      cx="230"
-                      cy="170"
-                      r="10"
+                      cy="200"
+                      r="7"
                       fill="#14B8A6"
                       opacity="0.9"
                     />
-                    {/* <circle
-                      cx="240"
-                      cy="190"
-                      r="10"
+
+                    <circle
+                      cx="260"
+                      cy="200"
+                      r="12"
                       fill="white"
                       stroke="url(#nodeGradient)"
-                      strokeWidth="4"
+                      strokeWidth="3"
                     />
                     <circle
-                      cx="200"
-                      cy="88"
-                      r="22"
-                      fill="white"
-                      stroke="url(#nodeGradient)"
-                      strokeWidth="6"
-                    /> */}
-                    {/* <path
-                      d="M200 4v 66c10 0 18 8 18 18s-8 18-18 18-18-8-18-18 8-18 18-18z"
-                      fill="url(#nodeGradient)"
-                      opacity="0.2"
+                      cx="260"
+                      cy="200"
+                      r="7"
+                      fill="#2563EB"
+                      opacity="0.9"
                     />
-                    <path
-                      d="M200 52v-14M200 138v-14M164 88h-18M254 88h-18"
+
+                    {/* Connection lines */}
+                    <line
+                      x1="136"
+                      y1="200"
+                      x2="174"
+                      y2="200"
                       stroke="url(#nodeGradient)"
-                      strokeWidth="4"
+                      strokeWidth="3"
                       strokeLinecap="round"
-                      opacity="0.7"
-                    /> */}
+                      opacity="0.6"
+                    />
+                    <line
+                      x1="206"
+                      y1="200"
+                      x2="248"
+                      y2="200"
+                      stroke="url(#nodeGradient)"
+                      strokeWidth="3"
+                      strokeLinecap="round"
+                      opacity="0.6"
+                    />
+
+                    {/* Status chips in top right */}
+                    <rect
+                      x="280"
+                      y="100"
+                      width="60"
+                      height="20"
+                      rx="10"
+                      fill="url(#nodeGradient)"
+                      opacity="0.9"
+                    />
+                    <text
+                      x="310"
+                      y="114"
+                      textAnchor="middle"
+                      fill="white"
+                      fontSize="10"
+                      fontWeight="600"
+                    >
+                      99.9%
+                    </text>
+
+                    <rect
+                      x="280"
+                      y="128"
+                      width="60"
+                      height="20"
+                      rx="10"
+                      fill="#22C55E"
+                      opacity="0.9"
+                    />
+                    <text
+                      x="310"
+                      y="142"
+                      textAnchor="middle"
+                      fill="white"
+                      fontSize="9"
+                      fontWeight="600"
+                    >
+                      SECURED
+                    </text>
                   </svg>
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">
