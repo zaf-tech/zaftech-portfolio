@@ -51,35 +51,35 @@ export default function Home() {
 
         <div className="container-custom relative z-10">
           <div className="grid items-center gap-12 lg:gap-16 md:grid-cols-2">
-            <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent-teal/10 rounded-full mb-8 backdrop-blur-sm border border-accent-teal/20">
-                <div className="w-2 h-2 bg-accent-teal rounded-full animate-pulse"></div>
-                <span className="text-sm font-medium text-accent-teal">
+            <div className="flex flex-col">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-accent-teal/10 rounded-full mb-6 backdrop-blur-sm border border-accent-teal/20 w-fit">
+                <div className="w-1.5 h-1.5 bg-accent-teal rounded-full animate-pulse"></div>
+                <span className="text-xs font-medium text-accent-teal">
                   Managed IT Services Provider
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-7xl font-heading font-bold text-primary mb-8 leading-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-6xl font-heading font-bold text-primary mb-6 leading-tight">
                 We Manage Your IT So You Can
                 <br />
                 <span className="gradient-text-animated">
                   Focus on Your Business
                 </span>
               </h1>
-              <p className="text-xl md:text-2xl text-text-light mb-10 leading-relaxed max-w-3xl">
+              <p className="text-lg md:text-xl text-text-light mb-8 leading-relaxed">
                 Proactive IT support, security, and monitoring—all in one
                 predictable monthly plan. Stop worrying about technology. Let us
                 handle it.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
                 <Link
                   href="/contact"
-                  className="btn-primary inline-block text-lg px-8 py-4"
+                  className="btn-primary inline-block text-base px-6 py-3"
                 >
                   Schedule a Free IT Assessment
                 </Link>
                 <Link
                   href="/services"
-                  className="text-primary font-medium hover:text-accent-teal transition-colors"
+                  className="text-primary font-medium hover:text-accent-teal transition-colors text-sm sm:text-base"
                 >
                   Learn more about our services →
                 </Link>
@@ -182,14 +182,14 @@ export default function Home() {
                       strokeWidth="3"
                     />
                     <path
-                      d="M250 58 L242 62 L242 70 Q242 74 246 76 L250 78 L254 76 Q258 74 258 70 L258 62 Z"
+                      d="M250 60 L242 64 L242 72 Q242 76 246 78 L250 80 L254 78 Q258 76 258 72 L258 64 Z"
                       fill="url(#nodeGradient)"
                       opacity="0.8"
                     />
 
                     {/* Server/device status rows */}
                     <rect
-                      x="60"
+                      x="50"
                       y="98"
                       width="200"
                       height="16"
@@ -198,7 +198,7 @@ export default function Home() {
                       opacity="0.9"
                     />
                     <circle
-                      cx="280"
+                      cx="58"
                       cy="106"
                       r="6"
                       fill="#22C55E"
@@ -206,7 +206,7 @@ export default function Home() {
                     />
 
                     <rect
-                      x="60"
+                      x="50"
                       y="122"
                       width="160"
                       height="14"
@@ -215,15 +215,15 @@ export default function Home() {
                       opacity="0.75"
                     />
                     <circle
-                      cx="240"
+                      cx="58"
                       cy="129"
-                      r="6"
+                      r="5"
                       fill="#22C55E"
                       opacity="0.9"
                     />
 
                     <rect
-                      x="60"
+                      x="50"
                       y="144"
                       width="140"
                       height="14"
@@ -232,15 +232,15 @@ export default function Home() {
                       opacity="0.65"
                     />
                     <circle
-                      cx="220"
+                      cx="58"
                       cy="151"
-                      r="6"
+                      r="5"
                       fill="#F59E0B"
                       opacity="0.9"
                     />
 
                     <rect
-                      x="60"
+                      x="50"
                       y="166"
                       width="120"
                       height="14"
@@ -249,9 +249,9 @@ export default function Home() {
                       opacity="0.55"
                     />
                     <circle
-                      cx="200"
+                      cx="58"
                       cy="173"
-                      r="6"
+                      r="5"
                       fill="#22C55E"
                       opacity="0.9"
                     />
