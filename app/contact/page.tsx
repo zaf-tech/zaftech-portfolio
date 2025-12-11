@@ -133,8 +133,8 @@ export default function Contact() {
                     <circle cx="220" cy="120" r="10" fill="white" stroke="url(#flowGradient)" strokeWidth="4" />
                     <circle cx="190" cy="120" r="14" fill="#14B8A6" opacity="0.2" />
 
-                    <rect x="125" y="32" width="110" height="24" rx="12" fill="url(#flowGradient)" opacity="0.9" />
-                    <text x="180" y="50" textAnchor="middle" fill="white" fontSize="11" fontWeight="600">Assessment Signal</text>
+                    <rect x="120" y="32" width="120" height="24" rx="12" fill="url(#flowGradient)" opacity="0.9" />
+                    <text x="180" y="48" textAnchor="middle" fill="white" fontSize="11" fontWeight="600">Assessment Signal</text>
                   </svg>
                   <div className="grid grid-cols-2 gap-3">
                     <div className="p-3 rounded-xl bg-white/70 border border-accent-teal/20 shadow-sm">

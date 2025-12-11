@@ -66,6 +66,15 @@ export default function Footer() {
                   info@zaftech.com
                 </a>
               </li>
+              <li>
+                <a
+                  href="tel:+1 (289) 632-5658"
+                  className="hover:text-white transition-colors"
+                >
+                  +1 (289) 802-5001
+                </a>
+              </li>
+              <li>400 Applewood Crescent, Concord, On L4K 0C3</li>
             </ul>
           </div>
         </div>
