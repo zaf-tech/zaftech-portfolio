@@ -1,4 +1,4 @@
-# ZafTech Portfolio Website
+# Zaftech Portfolio Website
 
 A modern, professional IT consulting website built with Next.js and Tailwind CSS.
 
@@ -30,4 +30,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 - `/app` - Next.js app router pages
 - `/components` - Reusable React components
 - `/public` - Static assets
-
