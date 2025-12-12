@@ -13,10 +13,12 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-accent to-accent-teal rounded-lg opacity-20 group-hover:opacity-40 blur transition-all duration-300 group-hover:scale-110"></div>
-              <span className="relative text-2xl md:text-3xl font-heading font-bold text-primary group-hover:bg-gradient-to-r group-hover:from-accent group-hover:to-accent-teal group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
-                Zaftech
-              </span>
+              {/* <div className="absolute -inset-1 bg-gradient-to-r from-accent to-accent-teal rounded-lg opacity-20 group-hover:opacity-40 blur transition-all duration-300 group-hover:scale-110"></div> */}
+              <img
+                src="/logos/transparent-logo.svg"
+                alt="Zaftech Logo"
+                className="relative h-10 md:h-14 transition-all duration-300 "
+              />
             </div>
           </Link>
 
