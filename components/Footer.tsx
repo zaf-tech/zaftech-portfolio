@@ -7,7 +7,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-heading font-bold mb-4">Zaftech</h3>
+            <img
+              src="/logos/transparent-logo.svg"
+              alt="Zaftech Logo"
+              className="h-10 md:h-12 w-auto mb-4 brightness-0 invert"
+            />
             <p className="text-gray-300 mb-4 max-w-md">
               Managed IT services provider offering proactive monitoring,
               helpdesk support, cybersecurity, and cloud management. We manage
