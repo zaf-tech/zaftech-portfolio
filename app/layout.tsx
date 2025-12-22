@@ -8,6 +8,9 @@ export const metadata: Metadata = {
     "Zaftech - Managed IT Services Provider | Proactive IT Support & Monitoring",
   description:
     "Managed IT services for growing businesses. Proactive monitoring, helpdesk support, cybersecurity, and cloud management. Predictable monthly IT management so you can focus on your business.",
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 export default function RootLayout({

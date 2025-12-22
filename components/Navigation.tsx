@@ -15,7 +15,7 @@ export default function Navigation() {
             <div className="relative">
               {/* <div className="absolute -inset-1 bg-gradient-to-r from-accent to-accent-teal rounded-lg opacity-20 group-hover:opacity-40 blur transition-all duration-300 group-hover:scale-110"></div> */}
               <img
-                src="/logos/transparent-logo.svg"
+                src="/images/logo.svg"
                 alt="Zaftech Logo"
                 className="relative h-10 md:h-14 transition-all duration-300 "
               />

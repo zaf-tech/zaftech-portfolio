@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <img
-              src="/logos/transparent-logo.svg"
+              src="/images/logo.svg"
               alt="Zaftech Logo"
               className="h-10 md:h-12 w-auto mb-4 brightness-0 invert"
             />
