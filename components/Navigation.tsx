@@ -32,6 +32,13 @@ export default function Navigation() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
             </Link>
             <Link
+              href="/blog"
+              className="text-text hover:text-accent-teal transition-all duration-300 font-medium relative group"
+            >
+              <span className="relative z-10">Blog</span>
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
+            </Link>
+            <Link
               href="/services"
               className="text-text hover:text-accent-teal transition-all duration-300 font-medium relative group"
             >
@@ -84,6 +91,13 @@ export default function Navigation() {
                 className="text-text hover:text-accent-teal transition-colors font-medium py-2"
               >
                 Home
+              </Link>
+              <Link
+                href="/blog"
+                onClick={() => setIsOpen(false)}
+                className="text-text hover:text-accent-teal transition-colors font-medium py-2"
+              >
+                Blog
               </Link>
               <Link
                 href="/services"

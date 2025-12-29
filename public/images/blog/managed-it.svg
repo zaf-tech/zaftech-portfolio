@@ -1,0 +1,49 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.55" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+    <radialGradient id="r" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 240) rotate(135) scale(650 520)">
+      <stop stop-color="#FFFFFF" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <rect width="1600" height="900" fill="url(#r)"/>
+
+  <!-- subtle grid -->
+  <g opacity="0.18">
+    <path d="M0 140H1600" stroke="#FFFFFF" stroke-opacity="0.18"/>
+    <path d="M0 280H1600" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <path d="M0 420H1600" stroke="#FFFFFF" stroke-opacity="0.10"/>
+    <path d="M0 560H1600" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <path d="M0 700H1600" stroke="#FFFFFF" stroke-opacity="0.06"/>
+    <path d="M240 0V900" stroke="#FFFFFF" stroke-opacity="0.10"/>
+    <path d="M520 0V900" stroke="#FFFFFF" stroke-opacity="0.08"/>
+    <path d="M800 0V900" stroke="#FFFFFF" stroke-opacity="0.06"/>
+    <path d="M1080 0V900" stroke="#FFFFFF" stroke-opacity="0.06"/>
+    <path d="M1360 0V900" stroke="#FFFFFF" stroke-opacity="0.06"/>
+  </g>
+
+  <!-- icon-ish nodes -->
+  <g opacity="0.9">
+    <circle cx="360" cy="520" r="10" fill="#14B8A6"/>
+    <circle cx="520" cy="420" r="10" fill="#2563EB"/>
+    <circle cx="700" cy="520" r="10" fill="#14B8A6"/>
+    <path d="M370 520H510" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="3"/>
+    <path d="M530 420H690" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="3"/>
+    <path d="M520 430V510" stroke="#FFFFFF" stroke-opacity="0.6" stroke-width="3"/>
+  </g>
+
+  <g>
+    <text x="110" y="290" fill="#FFFFFF" font-family="Inter, system-ui, sans-serif" font-size="54" font-weight="700">
+      Managed IT Services
+    </text>
+    <text x="110" y="355" fill="#FFFFFF" fill-opacity="0.86" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="500">
+      Proactive support • Security-first • Predictable costs
+    </text>
+  </g>
+</svg>
