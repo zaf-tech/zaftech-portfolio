@@ -39,18 +39,18 @@ const services = [
   },
   {
     type: "ai",
-    title: "100% Data Privacy - Your Data Never Leaves Your Infrastructure",
+    title: "Complete Data Privacy & Sovereignty",
     content: "Your sensitive data never leaves your infrastructure. Deploy AI models on-premises or in your private cloud, maintaining full control over your intellectual property."
   },
   {
     type: "ai",
-    title: "Cutting-Edge AI Capabilities",
+    title: "Advanced AI Technology Stack",
     content: "Leverage the latest AI technologies including Large Language Models, Computer Vision, and Machine Learning - all running securely within your environment."
   },
   {
     type: "ai",
-    title: "Bank-Level Security for Your AI Infrastructure",
-    content: "Built with security-first approach. Every AI solution includes encryption, access controls, audit logging, and compliance with industry standards."
+    title: "Enterprise-Grade Security & Compliance",
+    content: "Security-first architecture with end-to-end encryption, granular access controls, comprehensive audit logging, and full compliance with industry regulations including GDPR, HIPAA, and SOC 2."
   }
 ];
 
@@ -134,7 +134,7 @@ export default function ServicesSlider() {
               <div className="w-full max-w-4xl">
                 <div className="flex items-center gap-3 mb-3">
                   <span className="text-3xl">🤖</span>
-                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-purple-300">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-cyan-300">
                     {service.title}
                   </h3>
                 </div>
@@ -155,8 +155,8 @@ export default function ServicesSlider() {
             onClick={() => setCurrentService(index)}
             className={`h-2 rounded-full transition-all duration-300 ${
               index === currentService
-                ? "w-8 " + (service.type === "ai" ? "bg-purple-400" : service.type === "mlops" ? "bg-blue-400" : "bg-cyan-400")
-                : "w-2 " + (service.type === "ai" ? "bg-purple-600 hover:bg-purple-500" : service.type === "mlops" ? "bg-blue-600 hover:bg-blue-500" : "bg-cyan-600 hover:bg-cyan-500")
+                ? "w-8 " + (service.type === "ai" ? "bg-cyan-400" : service.type === "mlops" ? "bg-blue-400" : "bg-cyan-400")
+                : "w-2 " + (service.type === "ai" ? "bg-cyan-600 hover:bg-cyan-500" : service.type === "mlops" ? "bg-blue-600 hover:bg-blue-500" : "bg-cyan-600 hover:bg-cyan-500")
             }`}
             aria-label={`Go to service ${index + 1}`}
           ></button>
