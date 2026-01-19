@@ -3,11 +3,32 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 
+const services = [
+  "End-to-End IAC Build Pipelines",
+  "Kubernetes Clusters • IAM Roles • AWS EKS & GKE",
+  "GPU Pipelines for AI Projects",
+  "VM Scale Sets in Azure",
+  "MVP & POC Services for Cloud Migration",
+  "Workload Migration with Full Privacy"
+];
+
 export default function SplashScreen() {
   const [isVisible, setIsVisible] = useState(true);
+  const [currentService, setCurrentService] = useState(0);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
+    // Service rotation - change every 1.2 seconds
+    const serviceInterval = setInterval(() => {
+      setCurrentService((prev) => {
+        if (prev >= services.length - 1) {
+          clearInterval(serviceInterval);
+          return prev;
+        }
+        return prev + 1;
+      });
+    }, 1200);
+
     // Progress animation
     const progressInterval = setInterval(() => {
       setProgress((prev) => {
@@ -15,18 +36,19 @@ export default function SplashScreen() {
           clearInterval(progressInterval);
           return 100;
         }
-        return prev + 2;
+        return prev + 1.5;
       });
     }, 30);
 
-    // Hide splash screen after 8 seconds (extended for reading time)
+    // Hide splash screen after all services shown (7.5 seconds)
     const timer = setTimeout(() => {
       setIsVisible(false);
-    }, 8000);
+    }, 7500);
 
     return () => {
       clearTimeout(timer);
       clearInterval(progressInterval);
+      clearInterval(serviceInterval);
     };
   }, []);
 
@@ -47,9 +69,9 @@ export default function SplashScreen() {
       <div className="absolute inset-0 scan-lines"></div>
       
       {/* Main Content */}
-      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         {/* AI Hexagon Frame with Logo */}
-        <div className="relative mb-6 flex items-center justify-center">
+        <div className="relative mb-8 flex items-center justify-center">
           <div className="ai-hexagon-frame">
             <div className="ai-rotating-border"></div>
             <div className="ai-logo-container">
@@ -68,58 +90,50 @@ export default function SplashScreen() {
         </div>
 
         {/* AI System Text */}
-        <div className="mb-6">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 mb-2 ai-glitch-text">
+        <div className="mb-8">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 mb-2 ai-glitch-text">
             ZAFTECH
           </h1>
-          <p className="text-cyan-400 text-xs md:text-sm tracking-[0.3em] font-mono mb-4 ai-typing">
-            CLOUD INFRASTRUCTURE AS CODE SOLUTIONS
+          <p className="text-cyan-400 text-sm md:text-base tracking-[0.3em] font-mono mb-2 ai-typing">
+            CLOUD INFRASTRUCTURE AS CODE
           </p>
         </div>
         
-        {/* Main Message */}
-        <div className="mb-6 max-w-4xl mx-auto">
-          <div className="bg-gradient-to-r from-cyan-500/10 via-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-cyan-400/30 rounded-lg p-6 md:p-8 shadow-2xl">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-cyan-300 mb-4">
-              Pre-Built Cloud Based IAC Solutions
-            </h2>
-            <div className="text-sm md:text-base text-cyan-100/90 space-y-3 text-left">
-              <p className="leading-relaxed">
-                <span className="text-green-400 font-bold">✓</span> End-to-End IAC Build Pipelines
-              </p>
-              <p className="leading-relaxed">
-                <span className="text-green-400 font-bold">✓</span> Kubernetes Clusters • IAM Roles • AWS EKS & GKE
-              </p>
-              <p className="leading-relaxed">
-                <span className="text-green-400 font-bold">✓</span> GPU Pipelines for Your Next AI Project
-              </p>
-              <p className="leading-relaxed">
-                <span className="text-green-400 font-bold">✓</span> VM Scale Sets in Azure • Fully Code-Based Solutions
-              </p>
-              <p className="text-center mt-4 text-cyan-200 font-semibold">
-                We help small, medium, and enterprise environments setup POC to production-level infrastructure in days on any cloud!
-              </p>
+        {/* Rotating Services Display */}
+        <div className="mb-8 min-h-[120px] flex items-center justify-center">
+          <div className="bg-gradient-to-r from-cyan-500/10 via-blue-500/15 to-purple-500/10 backdrop-blur-sm border border-cyan-400/30 rounded-lg p-6 md:p-8 w-full max-w-3xl">
+            <div className="flex items-start gap-4 justify-center">
+              <span className="text-green-400 text-2xl md:text-3xl font-bold flex-shrink-0 animate-pulse">✓</span>
+              <div className="text-left flex-1">
+                <p 
+                  key={currentService}
+                  className="text-xl md:text-2xl lg:text-3xl font-bold text-cyan-100 leading-relaxed animate-fade-in"
+                >
+                  {services[currentService]}
+                </p>
+              </div>
             </div>
             
-            {/* CTA Button */}
-            <div className="mt-6">
-              <a
-                href="https://calendly.com/talha-jilal-zaftech/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/50 text-sm md:text-base"
-              >
-                📅 Book Your FREE 30-Min Consultation
-              </a>
-              <p className="text-xs md:text-sm text-cyan-300/70 mt-3">
-                One-click away • Full privacy guaranteed • Meet with a leading IT professional
-              </p>
+            {/* Service Counter */}
+            <div className="mt-4 flex justify-center gap-2">
+              {services.map((_, index) => (
+                <div
+                  key={index}
+                  className={`h-1.5 rounded-full transition-all duration-300 ${
+                    index === currentService
+                      ? 'w-8 bg-cyan-400'
+                      : index < currentService
+                      ? 'w-4 bg-cyan-600'
+                      : 'w-2 bg-cyan-900'
+                  }`}
+                ></div>
+              ))}
             </div>
           </div>
         </div>
         
         {/* Progress Bar */}
-        <div className="max-w-md mx-auto mb-3">
+        <div className="max-w-md mx-auto mb-4">
           <div className="ai-progress-container">
             <div 
               className="ai-progress-bar"
@@ -128,8 +142,13 @@ export default function SplashScreen() {
           </div>
           <div className="flex justify-between mt-2 text-xs text-cyan-400/70 font-mono">
             <span>LOADING SERVICES</span>
-            <span>{progress}%</span>
+            <span>{Math.round(progress)}%</span>
           </div>
+        </div>
+        
+        {/* System Status */}
+        <div className="text-sm text-cyan-400/60 font-mono">
+          <p className="ai-typing">Initializing cloud infrastructure solutions...</p>
         </div>
       </div>
       

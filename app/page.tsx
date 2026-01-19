@@ -2,6 +2,7 @@ import Link from "next/link";
 import ServiceCard from "@/components/ServiceCard";
 import ProcessStep from "@/components/ProcessStep";
 import HeroIllustration from "@/components/HeroIllustration";
+import ServicesSlider from "@/components/ServicesSlider";
 
 export default function Home() {
   return (
@@ -44,49 +45,10 @@ export default function Home() {
 
             {/* Main Content Card */}
             <div className="bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-cyan-400/30 rounded-2xl p-8 md:p-10 shadow-2xl">
-              {/* Services Grid */}
-              <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-8">
-                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
-                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
-                  <span className="text-cyan-100 text-base md:text-lg font-medium">
-                    End-to-End IAC Build Pipelines
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
-                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
-                  <span className="text-cyan-100 text-base md:text-lg font-medium">
-                    Kubernetes Clusters • IAM Roles • AWS EKS & GKE
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
-                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
-                  <span className="text-cyan-100 text-base md:text-lg font-medium">
-                    GPU Pipelines for Your Next AI Project
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
-                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
-                  <span className="text-cyan-100 text-base md:text-lg font-medium">
-                    VM Scale Sets in Azure • Fully Code-Based Solutions
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
-                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
-                  <span className="text-cyan-100 text-base md:text-lg font-medium">
-                    MVP & POC Services for Cloud Migration
-                  </span>
-                </div>
-                
-                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
-                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
-                  <span className="text-cyan-100 text-base md:text-lg font-medium">
-                    Workload Migration with Full Privacy
-                  </span>
-                </div>
+              
+              {/* Rotating Services Slider */}
+              <div className="mb-8">
+                <ServicesSlider />
               </div>
 
               {/* Value Proposition */}
