@@ -44,11 +44,10 @@ export default function Services() {
                 <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
-                Our Managed IT Services
+                Our Cloud & DevOps Services
               </h1>
               <p className="text-xl md:text-2xl text-text-light max-w-2xl mx-auto leading-relaxed">
-                Complete IT management designed to keep your business running
-                smoothly and securely
+                Production-ready infrastructure solutions to accelerate your cloud adoption and innovation
               </p>
             </div>
 
@@ -58,19 +57,19 @@ export default function Services() {
                 <div className="text-2xl font-heading font-bold text-accent-teal mb-2">
                   6
                 </div>
-                <div className="text-sm text-text-light">Core Services</div>
+                <div className="text-sm text-text-light">Cloud Solutions</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
                 <div className="text-2xl font-heading font-bold text-accent-teal mb-2">
-                  24/7
+                  Days
                 </div>
-                <div className="text-sm text-text-light">Support Available</div>
+                <div className="text-sm text-text-light">To Production</div>
               </div>
               <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
                 <div className="text-2xl font-heading font-bold text-accent-teal mb-2">
-                  All-in-One
+                  100%
                 </div>
-                <div className="text-sm text-text-light">Monthly Plan</div>
+                <div className="text-sm text-text-light">IaC Automation</div>
               </div>
             </div>
           </div>
@@ -206,9 +205,9 @@ export default function Services() {
               <div className="bg-gray-50 rounded-xl p-8 h-full flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    MSP
+                    IaC
                   </div>
-                  <p className="text-text-light">Complete IT Management</p>
+                  <p className="text-text-light">Automated Infrastructure</p>
                 </div>
               </div>
             </div>
@@ -224,9 +223,9 @@ export default function Services() {
               <div className="bg-white rounded-xl p-8 h-full flex items-center justify-center order-2 md:order-1">
                 <div className="text-center">
                   <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    HD
+                    ML
                   </div>
-                  <p className="text-text-light">Fast Support</p>
+                  <p className="text-text-light">MLOps Pipelines</p>
                 </div>
               </div>
               <div className="order-1 md:order-2">
@@ -246,17 +245,13 @@ export default function Services() {
                   </svg>
                 </div>
                 <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-                  Helpdesk & IT Support
+                  MLOps & Model Deployment
                 </h2>
                 <p className="text-text-light mb-4 leading-relaxed">
-                  When your team needs IT help, we're here. Our helpdesk
-                  provides fast, reliable support to keep your business running
-                  smoothly.
+                  End-to-end ML pipelines with automated training, versioning, and deployment. GPU-optimized infrastructure for AI workloads with monitoring and scaling.
                 </p>
                 <p className="text-text-light mb-4 leading-relaxed">
-                  Whether it's a quick question or a technical issue, our team
-                  responds promptly and resolves problems efficiently. We offer
-                  both remote and on-site support to meet your needs.
+                  From data preprocessing to production deployment, we build complete MLOps workflows that enable your data science teams to ship models faster and with confidence.
                 </p>
                 <ul className="space-y-2 text-text-light">
                   <li className="flex items-start">
@@ -273,7 +268,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Remote support for quick resolution
+                    Automated model training & versioning
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -289,7 +284,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    On-site support when needed
+                    GPU-optimized infrastructure setup
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -305,7 +300,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Fast response times during business hours
+                    Model monitoring & drift detection
                   </li>
                   <li className="flex items-start">
                     <svg

@@ -378,11 +378,10 @@ export default function Home() {
               <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
             </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-              Our Managed IT Services
+              Our Cloud & DevOps Services
             </h2>
             <p className="text-lg text-text-light max-w-2xl mx-auto">
-              Comprehensive IT management designed to keep your business running
-              smoothly
+              Production-ready infrastructure solutions to accelerate your cloud journey and innovation
             </p>
           </div>
 
@@ -403,8 +402,8 @@ export default function Home() {
                   />
                 </svg>
               }
-              title="Cloud Services"
-              description="Complete IT management including proactive monitoring, maintenance, and support. We handle your technology so you can focus on growth."
+              title="Infrastructure as Code"
+              description="Automated, reusable cloud infrastructure pipelines using Terraform, Pulumi, and CloudFormation. Deploy production environments in hours, not weeks."
             />
             <ServiceCard
               icon={
@@ -422,8 +421,8 @@ export default function Home() {
                   />
                 </svg>
               }
-              title="Helpdesk Support"
-              description="Fast, reliable IT support when you need it. Remote and on-site assistance with quick response times to keep your team productive."
+              title="MLOps & Model Deployment"
+              description="End-to-end ML pipelines with automated training, versioning, and deployment. GPU-optimized infrastructure for AI workloads with monitoring and scaling."
             />
             <ServiceCard
               icon={
@@ -441,8 +440,8 @@ export default function Home() {
                   />
                 </svg>
               }
-              title="Cybersecurity"
-              description="Protect your business with endpoint protection, security monitoring, and best practices. Stay ahead of threats with proactive security management."
+              title="DevOps & CI/CD Automation"
+              description="Streamlined deployment pipelines with GitHub Actions, GitLab CI, and Jenkins. Automated testing, security scanning, and zero-downtime deployments."
             />
             <ServiceCard
               icon={
@@ -460,8 +459,8 @@ export default function Home() {
                   />
                 </svg>
               }
-              title="Cloud & Backup"
-              description="Microsoft 365 management, secure cloud backups, and disaster recovery planning. Keep your data safe and accessible from anywhere."
+              title="Cloud Migration & Auto-Scaling"
+              description="Seamless workload migration to AWS, Azure, or GCP with zero data breach risk. Auto-scaling infrastructure that adapts to your traffic and workload demands."
             />
             <ServiceCard
               icon={
@@ -479,8 +478,8 @@ export default function Home() {
                   />
                 </svg>
               }
-              title="Network Management"
-              description="Ongoing network monitoring, maintenance, and optimization. Ensure your infrastructure runs reliably and efficiently."
+              title="Kubernetes & Container Orchestration"
+              description="Production-ready Kubernetes clusters (EKS, GKE, AKS) with service mesh, ingress controllers, and monitoring. Containerize and orchestrate your applications at scale."
             />
             <ServiceCard
               icon={
@@ -498,8 +497,8 @@ export default function Home() {
                   />
                 </svg>
               }
-              title="IT Consulting & vCIO"
-              description="Strategic IT guidance and virtual CIO services. Make informed technology decisions aligned with your business goals."
+              title="MVP & POC Rapid Deployment"
+              description="Launch your proof-of-concept or minimum viable product in days. Pre-configured cloud environments with security, monitoring, and scalability built-in from day one."
             />
           </div>
         </div>
