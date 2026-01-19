@@ -211,7 +211,7 @@ export default function Home() {
                   />
                 </svg>
               }
-              title="Managed IT Services"
+              title="Cloud Services"
               description="Complete IT management including proactive monitoring, maintenance, and support. We handle your technology so you can focus on growth."
             />
             <ServiceCard
