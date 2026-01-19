@@ -6,6 +6,122 @@ import HeroIllustration from "@/components/HeroIllustration";
 export default function Home() {
   return (
     <>
+      {/* IAC Solutions Banner */}
+      <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 py-16 md:py-20">
+        {/* Animated Grid Background */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px)`,
+            backgroundSize: '50px 50px',
+            animation: 'grid-flow 20s linear infinite'
+          }}></div>
+        </div>
+        
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 via-blue-500/10 to-purple-500/5"></div>
+        
+        {/* Floating Particles Effect */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute w-2 h-2 bg-cyan-400 rounded-full opacity-20 animate-pulse" style={{ top: '20%', left: '10%' }}></div>
+          <div className="absolute w-2 h-2 bg-blue-400 rounded-full opacity-20 animate-pulse" style={{ top: '60%', right: '15%', animationDelay: '1s' }}></div>
+          <div className="absolute w-2 h-2 bg-purple-400 rounded-full opacity-20 animate-pulse" style={{ bottom: '30%', left: '20%', animationDelay: '2s' }}></div>
+        </div>
+
+        <div className="container-custom relative z-10">
+          <div className="max-w-5xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/20 rounded-full mb-4 backdrop-blur-sm border border-cyan-400/30">
+                <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
+                <span className="text-sm font-semibold text-cyan-300 tracking-wide">
+                  CLOUD INFRASTRUCTURE AS CODE
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 mb-4">
+                Pre-Built Cloud Based IAC Solutions
+              </h2>
+            </div>
+
+            {/* Main Content Card */}
+            <div className="bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-cyan-400/30 rounded-2xl p-8 md:p-10 shadow-2xl">
+              {/* Services Grid */}
+              <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-8">
+                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
+                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
+                  <span className="text-cyan-100 text-base md:text-lg font-medium">
+                    End-to-End IAC Build Pipelines
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
+                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
+                  <span className="text-cyan-100 text-base md:text-lg font-medium">
+                    Kubernetes Clusters • IAM Roles • AWS EKS & GKE
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
+                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
+                  <span className="text-cyan-100 text-base md:text-lg font-medium">
+                    GPU Pipelines for Your Next AI Project
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
+                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
+                  <span className="text-cyan-100 text-base md:text-lg font-medium">
+                    VM Scale Sets in Azure • Fully Code-Based Solutions
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
+                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
+                  <span className="text-cyan-100 text-base md:text-lg font-medium">
+                    MVP & POC Services for Cloud Migration
+                  </span>
+                </div>
+                
+                <div className="flex items-start gap-3 p-4 bg-black/20 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all">
+                  <span className="text-green-400 text-xl font-bold flex-shrink-0">✓</span>
+                  <span className="text-cyan-100 text-base md:text-lg font-medium">
+                    Workload Migration with Full Privacy
+                  </span>
+                </div>
+              </div>
+
+              {/* Value Proposition */}
+              <div className="text-center mb-8 p-6 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-lg border border-cyan-400/20">
+                <p className="text-lg md:text-xl text-cyan-200 font-semibold leading-relaxed">
+                  We help small, medium, and enterprise environments setup POC to production-level infrastructure in days on any cloud!
+                </p>
+                <p className="text-base md:text-lg text-cyan-300/90 mt-3 leading-relaxed">
+                  Ready to migrate to the cloud? We handle your workload migration with complete privacy and security.
+                </p>
+              </div>
+
+              {/* CTA Button */}
+              <div className="text-center">
+                <a
+                  href="https://calendly.com/talha-jilal-zaftech/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-4 px-8 md:px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/50 text-base md:text-lg group"
+                >
+                  <span>📅</span>
+                  <span>Book Your FREE 30-Min Consultation</span>
+                  <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  </svg>
+                </a>
+                <p className="text-sm md:text-base text-cyan-300/70 mt-4 font-medium">
+                  One-click away • Full privacy guaranteed • Meet with a leading IT professional
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-grid-animated relative overflow-hidden min-h-[90vh] flex items-center">
         {/* Decorative blobs */}

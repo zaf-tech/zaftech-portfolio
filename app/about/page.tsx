@@ -291,6 +291,127 @@ export default function About() {
         </div>
       </section>
 
+      {/* CEO Section */}
+      <section className="section bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+        <div className="decorative-blob w-96 h-96 top-0 right-0 opacity-30"></div>
+        <div className="container-custom relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="inline-block mb-6">
+                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                Leadership & Vision
+              </h2>
+              <p className="text-lg text-text-light max-w-2xl mx-auto">
+                Meet the visionary driving ZAFTECH's commitment to excellence
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-5 gap-12 items-center">
+              {/* CEO Image */}
+              <div className="md:col-span-2">
+                <div className="relative">
+                  <div className="absolute -inset-4 bg-gradient-to-br from-accent/20 to-accent-teal/20 rounded-2xl blur-2xl"></div>
+                  <div className="relative aspect-square rounded-2xl overflow-hidden border-4 border-white shadow-2xl">
+                    <div className="w-full h-full bg-gradient-to-br from-primary/10 via-accent/10 to-accent-teal/10 flex items-center justify-center">
+                      <div className="text-8xl">👤</div>
+                    </div>
+                  </div>
+                  {/* Decorative Elements */}
+                  <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-br from-accent to-accent-teal rounded-lg opacity-20 blur-xl"></div>
+                </div>
+              </div>
+
+              {/* CEO Content */}
+              <div className="md:col-span-3 space-y-6">
+                <div>
+                  <h3 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-2">
+                    Talha Jilal Kingrah
+                  </h3>
+                  <p className="text-xl text-accent-teal font-medium mb-4">
+                    Chief Executive Officer & Founder
+                  </p>
+                  <div className="flex items-center gap-4 mb-6">
+                    <a 
+                      href="https://www.linkedin.com/in/talha-jilal-kingrah/" 
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-accent hover:text-accent-teal transition-colors"
+                    >
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                      </svg>
+                      <span className="font-medium">Connect on LinkedIn</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div className="prose prose-lg max-w-none">
+                  <p className="text-text-light leading-relaxed text-lg">
+                    <span className="text-primary font-semibold">Talha Jilal Kingrah</span> is a visionary technology leader with a passion for empowering businesses through innovative IT solutions. As the founder and CEO of ZAFTECH, he combines deep technical expertise with strategic business acumen to help organizations navigate the complexities of modern technology.
+                  </p>
+                  <p className="text-text-light leading-relaxed text-lg">
+                    With extensive experience in <span className="text-accent-teal font-medium">cybersecurity, cloud infrastructure, and AI integration</span>, Talha has built ZAFTECH on the principles of reliability, partnership, and proactive innovation. His hands-on approach and commitment to client success have established ZAFTECH as a trusted MSP partner for businesses seeking to leverage technology as a competitive advantage.
+                  </p>
+                  <p className="text-text-light leading-relaxed text-lg">
+                    Under Talha's leadership, ZAFTECH has become synonymous with excellence in managed IT services, delivering enterprise-grade solutions tailored for small and medium businesses. His vision is clear: <span className="text-primary font-medium">technology should enable growth, not create obstacles</span>.
+                  </p>
+                </div>
+
+                {/* Key Highlights */}
+                <div className="grid grid-cols-2 gap-4 pt-6 border-t border-gray-200">
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal flex-shrink-0">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">Security Expert</h4>
+                      <p className="text-sm text-text-light">Cybersecurity & Compliance</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal flex-shrink-0">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">Cloud Architect</h4>
+                      <p className="text-sm text-text-light">Infrastructure & Migration</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal flex-shrink-0">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">AI Innovator</h4>
+                      <p className="text-sm text-text-light">AI Solutions & Automation</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal flex-shrink-0">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary">Business Partner</h4>
+                      <p className="text-sm text-text-light">Strategic IT Leadership</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Focus Section */}
       <section className="section">
         <div className="container-custom">
