@@ -316,7 +316,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    After-hours support available
+                    CI/CD integration for model deployment
                   </li>
                 </ul>
               </div>
@@ -347,18 +347,13 @@ export default function Services() {
                   </svg>
                 </div>
                 <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-                  Cybersecurity & Endpoint Protection
+                  DevOps & CI/CD Automation
                 </h2>
                 <p className="text-text-light mb-4 leading-relaxed">
-                  Protect your business from cyber threats with comprehensive
-                  security management. We implement multiple layers of
-                  protection to keep your data and systems secure.
+                  Streamlined deployment pipelines with GitHub Actions, GitLab CI, and Jenkins. Automated testing, security scanning, and zero-downtime deployments.
                 </p>
                 <p className="text-text-light mb-4 leading-relaxed">
-                  Our security approach includes endpoint protection, continuous
-                  monitoring, regular security assessments, and employee
-                  training to reduce your risk of cyberattacks and data
-                  breaches.
+                  We build complete CI/CD workflows that automate your software delivery, from code commit to production deployment, with built-in quality gates and rollback capabilities.
                 </p>
                 <ul className="space-y-2 text-text-light">
                   <li className="flex items-start">
@@ -375,7 +370,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Endpoint protection and antivirus management
+                    GitHub Actions, GitLab CI, Jenkins pipelines
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -391,7 +386,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Security monitoring and threat detection
+                    Automated testing & security scanning
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -407,7 +402,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Regular security updates and patch management
+                    Zero-downtime blue-green deployments
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -423,16 +418,16 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Security best practices and employee training
+                    Rollback strategies & quality gates
                   </li>
                 </ul>
               </div>
               <div className="bg-gray-50 rounded-xl p-8 h-full flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    SEC
+                    CI/CD
                   </div>
-                  <p className="text-text-light">Security First</p>
+                  <p className="text-text-light">Automated Pipelines</p>
                 </div>
               </div>
             </div>
@@ -448,9 +443,9 @@ export default function Services() {
               <div className="bg-white rounded-xl p-8 h-full flex items-center justify-center order-2 md:order-1">
                 <div className="text-center">
                   <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    CLD
+                    ☁️
                   </div>
-                  <p className="text-text-light">Cloud Services</p>
+                  <p className="text-text-light">Cloud Migration</p>
                 </div>
               </div>
               <div className="order-1 md:order-2">
@@ -470,17 +465,13 @@ export default function Services() {
                   </svg>
                 </div>
                 <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-                  Cloud Management & Backup
+                  Cloud Migration & Auto-Scaling
                 </h2>
                 <p className="text-text-light mb-4 leading-relaxed">
-                  Keep your data safe and accessible with professional cloud and
-                  backup management. We handle Microsoft 365, secure backups,
-                  and disaster recovery planning.
+                  Seamless workload migration to AWS, Azure, or GCP with zero data breach risk. Auto-scaling infrastructure that adapts to your traffic and workload demands.
                 </p>
                 <p className="text-text-light mb-4 leading-relaxed">
-                  Our cloud services ensure your business data is protected,
-                  backed up regularly, and recoverable in case of emergencies.
-                  We manage your cloud infrastructure so you don't have to.
+                  We handle the complete migration process from assessment to cutover, ensuring minimal downtime and maximum security. Your infrastructure scales automatically based on demand.
                 </p>
                 <ul className="space-y-2 text-text-light">
                   <li className="flex items-start">
@@ -497,7 +488,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Microsoft 365 setup and management
+                    AWS, Azure, GCP migration expertise
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -513,7 +504,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Automated secure backups
+                    Automated scaling policies & load balancing
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -529,7 +520,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Email management and security
+                    Zero data breach migration strategy
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -545,7 +536,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Disaster recovery planning and testing
+                    Cost optimization & resource monitoring
                   </li>
                 </ul>
               </div>
@@ -576,17 +567,13 @@ export default function Services() {
                   </svg>
                 </div>
                 <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-                  IT Consulting & vCIO Services
+                  Kubernetes & Container Orchestration
                 </h2>
                 <p className="text-text-light mb-4 leading-relaxed">
-                  Strategic IT guidance without the cost of a full-time CIO. Our
-                  virtual CIO (vCIO) services help you make informed technology
-                  decisions aligned with your business goals.
+                  Production-ready Kubernetes clusters (EKS, GKE, AKS) with service mesh, ingress controllers, and monitoring. Containerize and orchestrate your applications at scale.
                 </p>
                 <p className="text-text-light mb-4 leading-relaxed">
-                  We provide strategic planning, technology assessments, budget
-                  guidance, and IT roadmap development to ensure your technology
-                  investments support your business objectives.
+                  We deploy battle-tested Kubernetes setups with GitOps workflows, automated scaling, and comprehensive observability—giving you enterprise-grade container orchestration.
                 </p>
                 <ul className="space-y-2 text-text-light">
                   <li className="flex items-start">
@@ -603,7 +590,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Strategic IT planning and roadmaps
+                    EKS, GKE, AKS managed clusters
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -619,7 +606,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Technology assessments and audits
+                    Service mesh (Istio/Linkerd) integration
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -635,7 +622,7 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Budget planning and IT cost optimization
+                    GitOps with ArgoCD or Flux
                   </li>
                   <li className="flex items-start">
                     <svg
@@ -651,17 +638,112 @@ export default function Services() {
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    Vendor management and technology selection
+                    Prometheus/Grafana monitoring stack
                   </li>
                 </ul>
               </div>
               <div className="bg-gray-50 rounded-xl p-8 h-full flex items-center justify-center">
                 <div className="text-center">
                   <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    vCIO
+                    ☸️
                   </div>
-                  <p className="text-text-light">Strategic Guidance</p>
+                  <p className="text-text-light">Kubernetes</p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service 6 */}
+      <section className="section bg-white">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="bg-white rounded-xl p-8 h-full flex items-center justify-center order-2 md:order-1">
+                <div className="text-center">
+                  <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
+                    🚀
+                  </div>
+                  <p className="text-text-light">Rapid Launch</p>
+                </div>
+              </div>
+              <div className="order-1 md:order-2">
+                <h2 className="text-3xl font-heading font-bold text-primary mb-4">
+                  MVP & POC Rapid Deployment
+                </h2>
+                <p className="text-text-light mb-4 leading-relaxed">
+                  Launch production-grade MVPs and POCs in days, not months. Pre-configured cloud environments with security, monitoring, and CI/CD built-in from day one.
+                </p>
+                <p className="text-text-light mb-4 leading-relaxed">
+                  We provide turnkey infrastructure templates that let you validate ideas fast—complete with authentication, databases, and deployment pipelines ready to go.
+                </p>
+                <ul className="space-y-2 text-text-light">
+                  <li className="flex items-start">
+                    <svg
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Pre-configured cloud templates
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Authentication & databases included
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    CI/CD pipelines pre-configured
+                  </li>
+                  <li className="flex items-start">
+                    <svg
+                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    Production-ready in days
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -677,17 +759,16 @@ export default function Services() {
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Ready to Simplify Your IT?
+              Ready to Accelerate Your Cloud Journey?
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Let's discuss how our managed IT services can help your business
-              run more efficiently and securely.
+              Let's discuss how our Infrastructure as Code and DevOps expertise can help you deploy faster and scale confidently.
             </p>
             <a
               href="/contact"
               className="btn-secondary inline-block bg-white text-primary hover:bg-gray-100"
             >
-              Schedule a Free IT Assessment
+              Schedule a Free Cloud Assessment
             </a>
           </div>
         </div>
