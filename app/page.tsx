@@ -84,8 +84,200 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Why Choose Zaftech */}
+      <section className="section bg-gradient-to-b from-gray-50 via-white to-gray-50/50 relative overflow-hidden">
+        <div className="decorative-blob w-72 h-72 top-20 right-10 pulse-glow"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-pattern opacity-30"></div>
+        <div className="container-custom relative z-10">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12 md:mb-16">
+              <div className="inline-block mb-4">
+                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+                Why Choose Zaftech
+              </h2>
+              <p className="text-lg text-text-light">
+                What makes us the right managed IT services partner for your
+                business
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
+                  <svg
+                    className="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
+                    Proactive Monitoring & Support
+                  </h3>
+                  <p className="text-text-light">
+                    We prevent problems before they impact your business. Our
+                    proactive approach means fewer disruptions and more uptime.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
+                  <svg
+                    className="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
+                    Fast Response Times
+                  </h3>
+                  <p className="text-text-light">
+                    When issues arise, we respond quickly. Our team is available
+                    when you need us, minimizing downtime and keeping your
+                    business running.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
+                  <svg
+                    className="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
+                    Predictable Monthly Pricing
+                  </h3>
+                  <p className="text-text-light">
+                    No surprise IT bills. Our flat monthly fee gives you budget
+                    certainty and includes all the IT support your business
+                    needs.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
+                  <svg
+                    className="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
+                    Reduced Downtime
+                  </h3>
+                  <p className="text-text-light">
+                    Our proactive maintenance and monitoring significantly
+                    reduce system failures and keep your operations running
+                    smoothly.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
+                  <svg
+                    className="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
+                    Security-First Approach
+                  </h3>
+                  <p className="text-text-light">
+                    We prioritize your security with continuous monitoring,
+                    regular updates, and best practices to protect your business
+                    data.
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-4 group">
+                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
+                  <svg
+                    className="w-4 h-4 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
+                    Long-Term IT Partnership
+                  </h3>
+                  <p className="text-text-light">
+                    We're not just a vendor—we're your IT partner. We invest in
+                    understanding your business and building lasting
+                    relationships.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-grid-animated relative overflow-hidden min-h-[90vh] flex items-center">
+
         {/* Decorative blobs */}
         <div className="decorative-blob w-96 h-96 -top-48 -right-48 pulse-glow"></div>
         <div className="decorative-blob w-80 h-80 -bottom-32 -left-32"></div>
@@ -309,197 +501,6 @@ export default function Home() {
               title="IT Consulting & vCIO"
               description="Strategic IT guidance and virtual CIO services. Make informed technology decisions aligned with your business goals."
             />
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose Zaftech */}
-      <section className="section bg-gradient-to-b from-gray-50 via-white to-gray-50/50 relative overflow-hidden">
-        <div className="decorative-blob w-72 h-72 top-20 right-10 pulse-glow"></div>
-        <div className="absolute top-0 left-0 w-full h-full bg-pattern opacity-30"></div>
-        <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12 md:mb-16">
-              <div className="inline-block mb-4">
-                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-                Why Choose Zaftech
-              </h2>
-              <p className="text-lg text-text-light">
-                What makes us the right managed IT services partner for your
-                business
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Proactive Monitoring & Support
-                  </h3>
-                  <p className="text-text-light">
-                    We prevent problems before they impact your business. Our
-                    proactive approach means fewer disruptions and more uptime.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Fast Response Times
-                  </h3>
-                  <p className="text-text-light">
-                    When issues arise, we respond quickly. Our team is available
-                    when you need us, minimizing downtime and keeping your
-                    business running.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Predictable Monthly Pricing
-                  </h3>
-                  <p className="text-text-light">
-                    No surprise IT bills. Our flat monthly fee gives you budget
-                    certainty and includes all the IT support your business
-                    needs.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Reduced Downtime
-                  </h3>
-                  <p className="text-text-light">
-                    Our proactive maintenance and monitoring significantly
-                    reduce system failures and keep your operations running
-                    smoothly.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Security-First Approach
-                  </h3>
-                  <p className="text-text-light">
-                    We prioritize your security with continuous monitoring,
-                    regular updates, and best practices to protect your business
-                    data.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Long-Term IT Partnership
-                  </h3>
-                  <p className="text-text-light">
-                    We're not just a vendor—we're your IT partner. We invest in
-                    understanding your business and building lasting
-                    relationships.
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
