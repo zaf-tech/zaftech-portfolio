@@ -13,9 +13,7 @@ export default function Footer() {
               className="h-10 md:h-12 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-gray-300 mb-4 max-w-md">
-              Managed IT services provider offering proactive monitoring,
-              helpdesk support, cybersecurity, and cloud management. We manage
-              your IT so you can focus on your business.
+              Cloud infrastructure and DevOps automation specialists. We accelerate your cloud adoption with production-ready Infrastructure as Code, MLOps pipelines, and rapid MVP deployment—enabling your team to innovate faster.
             </p>
           </div>
 
