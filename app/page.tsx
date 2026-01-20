@@ -683,6 +683,103 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Team Section */}
+      <section id="team" className="section bg-white">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
+              Meet Our Team
+            </h2>
+            <p className="text-lg text-text-light max-w-2xl mx-auto">
+              Experienced cloud infrastructure and DevOps specialists dedicated to your success
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+            {/* Team Member 1 - Talha */}
+            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="bg-gradient-to-br from-cyan-500 to-blue-600 h-32 relative">
+                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 border-4 border-white flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                    T
+                  </div>
+                </div>
+              </div>
+              <div className="pt-16 pb-6 px-6 text-center">
+                <h3 className="text-xl font-heading font-bold text-primary mb-2">
+                  Talha
+                </h3>
+                <p className="text-accent-teal font-semibold mb-3">
+                  Cloud Architect & DevOps Engineer
+                </p>
+                <p className="text-text-light text-sm leading-relaxed mb-3">
+                  Expert in architecting enterprise systems and mastering cloud infrastructure automation. Transforms complex IT environments into streamlined, automated solutions across AWS, Azure, and GCP.
+                </p>
+                <p className="text-text-light text-xs mb-2">
+                  <span className="font-semibold text-primary">Credentials:</span> MSc Information Systems | GCIS | BSc Computer Science
+                </p>
+                <p className="text-text-light text-xs">
+                  <span className="font-semibold text-primary">Specialties:</span> Terraform, Ansible, Kubernetes, CI/CD Pipelines, ITIL, Multi-Cloud Architecture, AI/ML Infrastructure
+                </p>
+              </div>
+            </div>
+
+            {/* Team Member 2 - Ramish */}
+            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="bg-gradient-to-br from-blue-500 to-purple-600 h-32 relative">
+                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 border-4 border-white flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                    R
+                  </div>
+                </div>
+              </div>
+              <div className="pt-16 pb-6 px-6 text-center">
+                <h3 className="text-xl font-heading font-bold text-primary mb-2">
+                  Ramish
+                </h3>
+                <p className="text-accent-teal font-semibold mb-3">
+                  Software Engineer & Cloud Solutions Architect
+                </p>
+                <p className="text-text-light text-sm leading-relaxed mb-3">
+                  Delivers scalable web applications and cloud infrastructure that drive operational efficiency and product performance. Expert in building production-ready systems using Node.js, React, AWS, and GCP.
+                </p>
+                <p className="text-text-light text-xs">
+                  <span className="font-semibold text-primary">Specialties:</span> Full-Stack Development, MySQL & Prisma ORM, Cloud Architecture, CI/CD Automation
+                </p>
+              </div>
+            </div>
+
+            {/* Team Member 3 - Ahmad Baig */}
+            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="bg-gradient-to-br from-purple-500 to-pink-600 h-32 relative">
+                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 border-4 border-white flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                    AB
+                  </div>
+                </div>
+              </div>
+              <div className="pt-16 pb-6 px-6 text-center">
+                <h3 className="text-xl font-heading font-bold text-primary mb-2">
+                  Ahmad Baig
+                </h3>
+                <p className="text-accent-teal font-semibold mb-3">
+                  DevOps Engineer & Technical Project Manager
+                </p>
+                <p className="text-text-light text-sm leading-relaxed mb-3">
+                  Unique blend of project management expertise and cloud engineering. Delivers projects that align business goals with technical excellence—an engineer who understands project timelines and a PM who understands technology.
+                </p>
+                <p className="text-text-light text-xs mb-2">
+                  <span className="font-semibold text-primary">Credentials:</span> PMP Certified | Microsoft Certified Cloud Admin | Scrum Master
+                </p>
+                <p className="text-text-light text-xs">
+                  <span className="font-semibold text-primary">Specialties:</span> CI/CD Automation, Terraform, Kubernetes, Docker, Azure/AWS/GCP, Agile Delivery, Stakeholder Management
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Call To Action Section */}
       <section className="section bg-gradient-primary text-white relative overflow-hidden">
         {/* Decorative grid pattern */}
