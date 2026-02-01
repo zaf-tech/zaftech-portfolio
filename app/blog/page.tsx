@@ -4,6 +4,17 @@ import BlogCard from "@/components/BlogCard";
 // Sample blog posts data
 const blogPosts = [
   {
+    slug: "devops-best-practices-successful-mvps",
+    title: "DevOps Best Practices for Successful MVPs",
+    excerpt: "Implement core DevOps practices to streamline your MVP development and delivery.",
+    date: "February 1, 2026",
+    category: "DevOps",
+    image: "/images/blog/devops-mvp.jpg",
+    author: "ZAFTECH Team",
+    readTime: "8 min read"
+  },
+
+  {
     slug: "cybersecurity-best-practices-2026",
     title: "Top Cybersecurity Best Practices for 2026",
     excerpt: "Discover the latest cybersecurity strategies to protect your business from evolving threats in the digital landscape.",
