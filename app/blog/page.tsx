@@ -4,6 +4,16 @@ import BlogCard from "@/components/BlogCard";
 // Sample blog posts data
 const blogPosts = [
   {
+    slug: "ai-powered-cicd-pipeline-analysis",
+    title: "AI-Powered CI/CD Pipeline Analysis: How Smart Dashboards Cut Cloud Costs by 60%",
+    excerpt: "Learn how AI-powered pipeline analysis and intelligent dashboards reduce cloud costs by 60% while improving deployment efficiency and detecting infrastructure drift.",
+    date: "February 18, 2026",
+    category: "DevOps",
+    image: "/images/blog/cicd-ai-analysis.jpg",
+    author: "ZAFTECH Team",
+    readTime: "12 min read"
+  },
+  {
     slug: "devops-best-practices-successful-mvps",
     title: "DevOps Best Practices for Successful MVPs",
     excerpt: "Implement core DevOps practices to streamline your MVP development and delivery.",
