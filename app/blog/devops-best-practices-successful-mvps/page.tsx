@@ -1,65 +1,70 @@
+'use client';
+
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { useState } from "react";
 
-const blogPosts: Record<string, any> = {
-  "devops-best-practices-successful-mvps": {
-    title: "DevOps Best Practices for Successful MVPs",
-    date: "February 1, 2026",
-    category: "DevOps",
-    author: "ZAFTECH Team",
-    readTime: "8 min read",
-    content: `
-      <p>Building a successful Minimum Viable Product (MVP) requires balancing speed with stability. Implementing core DevOps practices can streamline development, improve reliability, and accelerate feedback loops.</p>
-
-      <h2>1. Infrastructure as Code (IaC)</h2>
-      <p>Define and manage your infrastructure using code. Tools like Terraform or CloudFormation ensure environments are reproducible, version-controlled, and easily shared among team members.</p>
-
-      <h2>2. Continuous Integration (CI)</h2>
-      <p>Automate builds and tests on every code commit. CI pipelines catch issues early, enforce code quality, and provide fast feedback to developers.</p>
-
-      <h2>3. Continuous Delivery (CD)</h2>
-      <p>Extend CI by automating deployments to staging environments. This practice reduces manual errors, speeds up delivery, and ensures your MVP is always deployable.</p>
-
-      <h2>4. Monitoring and Logging</h2>
-      <p>Equip your MVP with basic monitoring and logging. Visibility into application performance and errors lets you respond quickly to issues in production.</p>
-
-      <h2>5. Feature Flags</h2>
-      <p>Use feature flags to control which features are released. This enables safe experimentation, A/B testing, and quick rollbacks without redeploying code.</p>
-
-      <h2>6. Collaboration and Communication</h2>
-      <p>Foster a culture where developers and operations work closely. Shared responsibility and clear communication channels reduce friction and speed up problem resolution.</p>
-
-      <h2>Conclusion</h2>
-      <p>By adopting these DevOps best practices, you’ll build a more reliable MVP, accelerate delivery, and lay the foundation for scalable growth as your product evolves.</p>
-    `
-  }
+const post = {
+  title: "DevOps Best Practices for Successful MVPs",
+  date: "February 1, 2026",
+  category: "DevOps",
+  author: "ZAFTECH Team",
+  readTime: "8 min read",
+  image: "/images/blog/devops-mvp.jpg",
+  highlights: [
+    "Infrastructure as Code (IaC)",
+    "Continuous Integration (CI)",
+    "Continuous Delivery (CD)",
+    "Monitoring and Logging",
+    "Feature Flags",
+    "Collaboration and Communication"
+  ],
+  content: [
+    {
+      title: "Infrastructure as Code (IaC)",
+      body: "Define and manage your infrastructure using code. Tools like Terraform or CloudFormation ensure environments are reproducible, version-controlled, and easily shared among team members."
+    },
+    {
+      title: "Continuous Integration (CI)",
+      body: "Automate builds and tests on every code commit. CI pipelines catch issues early, enforce code quality, and provide fast feedback to developers."
+    },
+    {
+      title: "Continuous Delivery (CD)",
+      body: "Extend CI by automating deployments to staging environments. This practice reduces manual errors, speeds up delivery, and ensures your MVP is always deployable."
+    },
+    {
+      title: "Monitoring and Logging",
+      body: "Equip your MVP with basic monitoring and logging. Visibility into application performance and errors lets you respond quickly to issues in production."
+    },
+    {
+      title: "Feature Flags",
+      body: "Use feature flags to control which features are released. This enables safe experimentation, A/B testing, and quick rollbacks without redeploying code."
+    },
+    {
+      title: "Collaboration and Communication",
+      body: "Foster a culture where developers and operations work closely. Shared responsibility and clear communication channels reduce friction and speed up problem resolution."
+    }
+  ],
+  conclusion:
+    "By adopting these DevOps best practices, you’ll build a more reliable MVP, accelerate delivery, and lay the foundation for scalable growth as your product evolves."
 };
 
-interface PageProps {
-  params: {
-    slug: string;
+export default function BlogPost() {
+  const [feedback, setFeedback] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleFeedback = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
   };
-}
-
-export default function BlogPost({ params }: PageProps) {
-  const post = blogPosts[params.slug];
-
-  if (!post) {
-    notFound();
-  }
 
   return (
-    <main className="min-h-screen pt-24 pb-16">
+    <main className="min-h-screen pt-24 pb-16 bg-gradient-to-b from-white to-gray-50">
       {/* Breadcrumb */}
       <div className="container-custom mb-8">
         <div className="flex items-center gap-2 text-sm text-gray-600">
-          <Link href="/" className="hover:text-accent transition-colors">
-            Home
-          </Link>
+          <Link href="/" className="hover:text-accent transition-colors">Home</Link>
           <span>/</span>
-          <Link href="/blog" className="hover:text-accent transition-colors">
-            Blog
-          </Link>
+          <Link href="/blog" className="hover:text-accent transition-colors">Blog</Link>
           <span>/</span>
           <span className="text-gray-900">{post.title}</span>
         </div>
@@ -68,7 +73,12 @@ export default function BlogPost({ params }: PageProps) {
       {/* Article Header */}
       <article className="container-custom max-w-4xl">
         <header className="mb-12">
-          <div className="mb-4">
+          <div className="mb-4 flex items-center gap-4">
+            <div className="w-24 h-24 rounded-xl object-cover border border-gray-200 shadow bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center">
+              <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
             <span className="inline-block px-4 py-1 text-sm font-semibold rounded-full bg-gradient-to-r from-accent to-accent-teal text-white">
               {post.category}
             </span>
@@ -76,7 +86,6 @@ export default function BlogPost({ params }: PageProps) {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
             {post.title}
           </h1>
-
           <div className="flex flex-wrap items-center gap-6 text-gray-600">
             <div className="flex items-center gap-2">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,7 +108,51 @@ export default function BlogPost({ params }: PageProps) {
             </div>
           </div>
         </header>
-        <div className="prose prose-lg max-w-none mb-16 text-gray-700" dangerouslySetInnerHTML={{ __html: post.content }} />
+
+        {/* Highlights Section */}
+        <section className="mb-10">
+          <h2 className="text-2xl font-bold mb-4 text-accent">Key DevOps Practices</h2>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {post.highlights.map((item, idx) => (
+              <li key={idx} className="bg-accent/10 border-l-4 border-accent px-4 py-3 rounded shadow-sm text-primary font-semibold">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Content Section */}
+        <section className="prose prose-lg max-w-none mb-16 text-gray-700">
+          <p>Building a successful Minimum Viable Product (MVP) requires balancing speed with stability. Implementing core DevOps practices can streamline development, improve reliability, and accelerate feedback loops.</p>
+          {post.content.map((section, idx) => (
+            <div key={idx} className="mb-8">
+              <h3 className="text-xl font-bold text-accent-teal mb-2">{section.title}</h3>
+              <p>{section.body}</p>
+            </div>
+          ))}
+          <h3 className="text-xl font-bold text-primary mt-10 mb-2">Conclusion</h3>
+          <p>{post.conclusion}</p>
+        </section>
+
+        {/* Interactive Feedback Section */}
+        <section className="mb-10">
+          <h2 className="text-lg font-semibold mb-2 text-accent">Was this article helpful?</h2>
+          {!submitted ? (
+            <form onSubmit={handleFeedback} className="flex flex-col gap-2 max-w-md">
+              <textarea
+                className="border border-gray-300 rounded p-2 resize-none focus:outline-accent"
+                rows={3}
+                placeholder="Share your feedback or questions..."
+                value={feedback}
+                onChange={e => setFeedback(e.target.value)}
+                required
+              />
+              <button type="submit" className="bg-accent text-white px-4 py-2 rounded hover:bg-accent-teal transition-colors font-semibold">Submit</button>
+            </form>
+          ) : (
+            <div className="text-green-600 font-medium">Thank you for your feedback!</div>
+          )}
+        </section>
       </article>
     </main>
   );
