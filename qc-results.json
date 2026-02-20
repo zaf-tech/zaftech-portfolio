@@ -1,0 +1,116 @@
+{
+  "timestamp": "2026-02-20T03:33:32.739Z",
+  "summary": {
+    "passed": 13,
+    "failed": 0,
+    "warnings": 8,
+    "score": 62
+  },
+  "checks": [
+    {
+      "name": "Build Success",
+      "status": "pass",
+      "message": "No build errors"
+    },
+    {
+      "name": "TypeScript Types",
+      "status": "pass",
+      "message": "No type errors"
+    },
+    {
+      "name": "Page: /",
+      "status": "pass",
+      "message": ""
+    },
+    {
+      "name": "Page: /about",
+      "status": "pass",
+      "message": ""
+    },
+    {
+      "name": "Page: /services",
+      "status": "pass",
+      "message": ""
+    },
+    {
+      "name": "Page: /blog",
+      "status": "pass",
+      "message": ""
+    },
+    {
+      "name": "Page: /blog/ai-powered-cicd-pipeline-analysis",
+      "status": "pass",
+      "message": ""
+    },
+    {
+      "name": "Page: /blog/devops-best-practices-successful-mvps",
+      "status": "pass",
+      "message": ""
+    },
+    {
+      "name": "Page: /contact",
+      "status": "pass",
+      "message": ""
+    },
+    {
+      "name": "Homepage SEO",
+      "status": "warn",
+      "message": "Missing: metadata export, title, description"
+    },
+    {
+      "name": "About SEO",
+      "status": "pass",
+      "message": "Metadata properly configured"
+    },
+    {
+      "name": "Services SEO",
+      "status": "pass",
+      "message": "Metadata properly configured"
+    },
+    {
+      "name": "Blog SEO",
+      "status": "warn",
+      "message": "Missing: metadata export, description"
+    },
+    {
+      "name": "CI/CD Article SEO",
+      "status": "warn",
+      "message": "Missing: metadata export, title, description"
+    },
+    {
+      "name": "DevOps Article SEO",
+      "status": "warn",
+      "message": "Missing: metadata export, description"
+    },
+    {
+      "name": "Contact SEO",
+      "status": "warn",
+      "message": "Missing: metadata export, title, description"
+    },
+    {
+      "name": "Article structure",
+      "status": "pass",
+      "message": "Uses semantic HTML"
+    },
+    {
+      "name": "Blog post layout",
+      "status": "pass",
+      "message": "Uses semantic HTML"
+    },
+    {
+      "name": "Manual A11y Test",
+      "status": "warn",
+      "message": "Use axe DevTools or WAVE for detailed audit"
+    },
+    {
+      "name": "Dependencies Security",
+      "status": "warn",
+      "message": "Some vulnerabilities found - check severity"
+    },
+    {
+      "name": "File Size",
+      "status": "warn",
+      "message": "Could not check file sizes"
+    }
+  ]
+}
