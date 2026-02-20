@@ -798,12 +798,12 @@ export default function Home() {
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Stop Worrying About IT. Let Us Manage It for You.
+              Automate Everything. Deploy with Confidence.
             </h2>
             <p className="text-xl text-gray-300 mb-8">
-              Experience the peace of mind that comes with reliable, proactive
-              IT management. Focus on growing your business while we handle your
-              technology.
+              Experience seamless CI/CD pipelines and DevOps automation that accelerates
+              your development lifecycle. Focus on innovation while we handle the complexity
+              of continuous integration and deployment.
             </p>
             <Link
               href="/contact"
