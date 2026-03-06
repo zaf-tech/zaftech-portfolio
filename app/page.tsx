@@ -724,7 +724,35 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Team Member 2 - Ramish */}
+            {/* Team Member 2 - Dr Mujahid Tabassum */}
+            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="bg-gradient-to-br from-emerald-500 to-teal-600 h-32 relative">
+                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 border-4 border-white flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                    MT
+                  </div>
+                </div>
+              </div>
+              <div className="pt-16 pb-6 px-6 text-center">
+                <h3 className="text-xl font-heading font-bold text-primary mb-2">
+                  Dr Mujahid Tabassum
+                </h3>
+                <p className="text-accent-teal font-semibold mb-3">
+                  Senior IoT Researcher & Business Solutions Designer
+                </p>
+                <p className="text-text-light text-sm leading-relaxed mb-3">
+                  Pioneering solutions at the intersection of Internet of Things and enterprise business strategy. Transforms emerging IoT technologies into scalable business solutions that drive innovation and competitive advantage.
+                </p>
+                <p className="text-text-light text-xs mb-2">
+                  <span className="font-semibold text-primary">Credentials:</span> Ph.D. in Electronics & Telecommunications | Advanced IoT Systems Design | Business Strategy Certification
+                </p>
+                <p className="text-text-light text-xs">
+                  <span className="font-semibold text-primary">Specialties:</span> IoT Architecture, Embedded Systems, Business Solutions Design, Edge Computing, Industrial IoT, Smart Systems, Digital Transformation
+                </p>
+              </div>
+            </div>
+
+            {/* Team Member 3 - Ramish */}
             <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
               <div className="bg-gradient-to-br from-blue-500 to-purple-600 h-32 relative">
                 <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
@@ -749,7 +777,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Team Member 3 - Ahmad Baig */}
+            {/* Team Member 4 - Ahmad Baig */}
             <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
               <div className="bg-gradient-to-br from-purple-500 to-pink-600 h-32 relative">
                 <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
@@ -773,34 +801,6 @@ export default function Home() {
                 </p>
                 <p className="text-text-light text-xs">
                   <span className="font-semibold text-primary">Specialties:</span> CI/CD Automation, Terraform, Kubernetes, Docker, Azure/AWS/GCP, Agile Delivery, Stakeholder Management
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 4 - Dr Mujahid Tabassum */}
-            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
-              <div className="bg-gradient-to-br from-emerald-500 to-teal-600 h-32 relative">
-                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 border-4 border-white flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-                    MT
-                  </div>
-                </div>
-              </div>
-              <div className="pt-16 pb-6 px-6 text-center">
-                <h3 className="text-xl font-heading font-bold text-primary mb-2">
-                  Dr Mujahid Tabassum
-                </h3>
-                <p className="text-accent-teal font-semibold mb-3">
-                  Senior IoT Researcher & Business Solutions Designer
-                </p>
-                <p className="text-text-light text-sm leading-relaxed mb-3">
-                  Pioneering solutions at the intersection of Internet of Things and enterprise business strategy. Transforms emerging IoT technologies into scalable business solutions that drive innovation and competitive advantage.
-                </p>
-                <p className="text-text-light text-xs mb-2">
-                  <span className="font-semibold text-primary">Credentials:</span> Ph.D. in Electronics & Telecommunications | Advanced IoT Systems Design | Business Strategy Certification
-                </p>
-                <p className="text-text-light text-xs">
-                  <span className="font-semibold text-primary">Specialties:</span> IoT Architecture, Embedded Systems, Business Solutions Design, Edge Computing, Industrial IoT, Smart Systems, Digital Transformation
                 </p>
               </div>
             </div>
