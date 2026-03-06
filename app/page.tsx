@@ -688,14 +688,14 @@ export default function Home() {
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-              Meet Our Team
+              Meet Our Expert Team
             </h2>
             <p className="text-lg text-text-light max-w-2xl mx-auto">
-              Experienced cloud infrastructure and DevOps specialists dedicated to your success
+              Cloud infrastructure specialists, IoT researchers, and business solution designers dedicated to your success
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-8">
+          <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Team Member 1 - Talha */}
             <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
               <div className="bg-gradient-to-br from-cyan-500 to-blue-600 h-32 relative">
@@ -773,6 +773,34 @@ export default function Home() {
                 </p>
                 <p className="text-text-light text-xs">
                   <span className="font-semibold text-primary">Specialties:</span> CI/CD Automation, Terraform, Kubernetes, Docker, Azure/AWS/GCP, Agile Delivery, Stakeholder Management
+                </p>
+              </div>
+            </div>
+
+            {/* Team Member 4 - Dr Mujahid Tabassum */}
+            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
+              <div className="bg-gradient-to-br from-emerald-500 to-teal-600 h-32 relative">
+                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
+                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 border-4 border-white flex items-center justify-center text-white text-3xl font-bold shadow-lg">
+                    MT
+                  </div>
+                </div>
+              </div>
+              <div className="pt-16 pb-6 px-6 text-center">
+                <h3 className="text-xl font-heading font-bold text-primary mb-2">
+                  Dr Mujahid Tabassum
+                </h3>
+                <p className="text-accent-teal font-semibold mb-3">
+                  Senior IoT Researcher & Business Solutions Designer
+                </p>
+                <p className="text-text-light text-sm leading-relaxed mb-3">
+                  Pioneering solutions at the intersection of Internet of Things and enterprise business strategy. Transforms emerging IoT technologies into scalable business solutions that drive innovation and competitive advantage.
+                </p>
+                <p className="text-text-light text-xs mb-2">
+                  <span className="font-semibold text-primary">Credentials:</span> Ph.D. in Electronics & Telecommunications | Advanced IoT Systems Design | Business Strategy Certification
+                </p>
+                <p className="text-text-light text-xs">
+                  <span className="font-semibold text-primary">Specialties:</span> IoT Architecture, Embedded Systems, Business Solutions Design, Edge Computing, Industrial IoT, Smart Systems, Digital Transformation
                 </p>
               </div>
             </div>
