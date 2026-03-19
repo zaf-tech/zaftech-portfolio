@@ -2,7 +2,7 @@ name: Build and Create Artifact
 
 on:
   push:
-    branches: [ main, develop, devops ]
+    branches: [ main, develop, devops, develop/qa ]
   pull_request:
     branches: [ main, develop ]
   workflow_dispatch:
