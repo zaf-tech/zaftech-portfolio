@@ -2,7 +2,7 @@ name: Build and Create Artifact
 
 on:
   push:
-    branches: [ main, develop, devops ]
+    branches: [ main, develop, devops, develop/qa ]
   pull_request:
     branches: [ main, develop ]
   workflow_dispatch:
@@ -37,6 +37,34 @@ jobs:
       env:
         NODE_ENV: production
         
+    - name: Run Playwright E2E Tests
+      run: npm run test:e2e
+      continue-on-error: true
+      
+    - name: Upload Playwright HTML Report
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: playwright-report-${{ github.sha }}
+        path: playwright-report/
+        retention-days: 7
+        
+    - name: Upload Test Results (JSON)
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test-results-json-${{ github.sha }}
+        path: test-results/results.json
+        retention-days: 7
+        
+    - name: Upload Test Results (JUnit)
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: test-results-junit-${{ github.sha }}
+        path: test-results/junit.xml
+        retention-days: 7
+        
     - name: Upload build artifact
       uses: actions/upload-artifact@v4
       with:
@@ -47,7 +75,7 @@ jobs:
           package.json
           package-lock.json
           next.config.js
-        retention-days: 30
+        retention-days: 7
         
     - name: Create deployment package
       run: |
@@ -64,4 +92,4 @@ jobs:
       with:
         name: zaftech-portfolio-deployment-${{ github.sha }}
         path: zaftech-portfolio-${{ github.sha }}.tar.gz
-        retention-days: 30
+        retention-days: 7

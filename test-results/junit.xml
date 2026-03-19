@@ -1,0 +1,728 @@
+<testsuites id="" name="" tests="45" failures="45" skipped="0" errors="0" time="19.055774">
+<testsuite name="playwright.spec.ts" timestamp="2026-03-19T20:40:24.810Z" hostname="chromium" tests="15" failures="15" skipped="0" time="0.069" errors="0">
+<testcase name="Page loads: Homepage (/)" classname="playwright.spec.ts" time="0.005">
+<failure message="playwright.spec.ts:57:7 Page loads: Homepage (/)" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:57:7 › Page loads: Homepage (/) ──────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Homepage" classname="playwright.spec.ts" time="0.002">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Homepage" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:77:9 › Critical elements present: Homepage ───────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Homepage" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:93:9 SEO check: Homepage" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:93:9 › SEO check: Homepage ───────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: About Page (/about)" classname="playwright.spec.ts" time="0.005">
+<failure message="playwright.spec.ts:57:7 Page loads: About Page (/about)" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:57:7 › Page loads: About Page (/about) ───────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: About Page" classname="playwright.spec.ts" time="0.008">
+<failure message="playwright.spec.ts:77:9 Critical elements present: About Page" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:77:9 › Critical elements present: About Page ─────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: About Page" classname="playwright.spec.ts" time="0.006">
+<failure message="playwright.spec.ts:93:9 SEO check: About Page" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:93:9 › SEO check: About Page ─────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: Services Page (/services)" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:57:7 Page loads: Services Page (/services)" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:57:7 › Page loads: Services Page (/services) ─────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Services Page" classname="playwright.spec.ts" time="0.008">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Services Page" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:77:9 › Critical elements present: Services Page ──────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Services Page" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:93:9 SEO check: Services Page" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:93:9 › SEO check: Services Page ──────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: Blog Index (/blog)" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:57:7 Page loads: Blog Index (/blog)" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:57:7 › Page loads: Blog Index (/blog) ────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Blog Index" classname="playwright.spec.ts" time="0.005">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Blog Index" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:77:9 › Critical elements present: Blog Index ─────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Blog Index" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:93:9 SEO check: Blog Index" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:93:9 › SEO check: Blog Index ─────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: Contact Page (/contact)" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:57:7 Page loads: Contact Page (/contact)" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:57:7 › Page loads: Contact Page (/contact) ───────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Contact Page" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Contact Page" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:77:9 › Critical elements present: Contact Page ───────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Contact Page" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:93:9 SEO check: Contact Page" type="FAILURE">
+<![CDATA[  [chromium] › playwright.spec.ts:93:9 › SEO check: Contact Page ───────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="playwright.spec.ts" timestamp="2026-03-19T20:40:24.810Z" hostname="firefox" tests="15" failures="15" skipped="0" time="0.062" errors="0">
+<testcase name="Page loads: Homepage (/)" classname="playwright.spec.ts" time="0.002">
+<failure message="playwright.spec.ts:57:7 Page loads: Homepage (/)" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:57:7 › Page loads: Homepage (/) ───────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Homepage" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Homepage" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:77:9 › Critical elements present: Homepage ────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Homepage" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:93:9 SEO check: Homepage" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:93:9 › SEO check: Homepage ────────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: About Page (/about)" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:57:7 Page loads: About Page (/about)" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:57:7 › Page loads: About Page (/about) ────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: About Page" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:77:9 Critical elements present: About Page" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:77:9 › Critical elements present: About Page ──────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: About Page" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:93:9 SEO check: About Page" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:93:9 › SEO check: About Page ──────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: Services Page (/services)" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:57:7 Page loads: Services Page (/services)" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:57:7 › Page loads: Services Page (/services) ──────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Services Page" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Services Page" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:77:9 › Critical elements present: Services Page ───────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Services Page" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:93:9 SEO check: Services Page" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:93:9 › SEO check: Services Page ───────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: Blog Index (/blog)" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:57:7 Page loads: Blog Index (/blog)" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:57:7 › Page loads: Blog Index (/blog) ─────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Blog Index" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Blog Index" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:77:9 › Critical elements present: Blog Index ──────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Blog Index" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:93:9 SEO check: Blog Index" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:93:9 › SEO check: Blog Index ──────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: Contact Page (/contact)" classname="playwright.spec.ts" time="0.007">
+<failure message="playwright.spec.ts:57:7 Page loads: Contact Page (/contact)" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:57:7 › Page loads: Contact Page (/contact) ────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Contact Page" classname="playwright.spec.ts" time="0.008">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Contact Page" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:77:9 › Critical elements present: Contact Page ────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Contact Page" classname="playwright.spec.ts" time="0.005">
+<failure message="playwright.spec.ts:93:9 SEO check: Contact Page" type="FAILURE">
+<![CDATA[  [firefox] › playwright.spec.ts:93:9 › SEO check: Contact Page ────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\firefox-1509\firefox\firefox.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="playwright.spec.ts" timestamp="2026-03-19T20:40:24.810Z" hostname="webkit" tests="15" failures="15" skipped="0" time="0.048" errors="0">
+<testcase name="Page loads: Homepage (/)" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:57:7 Page loads: Homepage (/)" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:57:7 › Page loads: Homepage (/) ────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Homepage" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Homepage" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:77:9 › Critical elements present: Homepage ─────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Homepage" classname="playwright.spec.ts" time="0.005">
+<failure message="playwright.spec.ts:93:9 SEO check: Homepage" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:93:9 › SEO check: Homepage ─────────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: About Page (/about)" classname="playwright.spec.ts" time="0.005">
+<failure message="playwright.spec.ts:57:7 Page loads: About Page (/about)" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:57:7 › Page loads: About Page (/about) ─────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: About Page" classname="playwright.spec.ts" time="0.005">
+<failure message="playwright.spec.ts:77:9 Critical elements present: About Page" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:77:9 › Critical elements present: About Page ───────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: About Page" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:93:9 SEO check: About Page" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:93:9 › SEO check: About Page ───────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: Services Page (/services)" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:57:7 Page loads: Services Page (/services)" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:57:7 › Page loads: Services Page (/services) ───────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Services Page" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Services Page" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:77:9 › Critical elements present: Services Page ────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Services Page" classname="playwright.spec.ts" time="0.002">
+<failure message="playwright.spec.ts:93:9 SEO check: Services Page" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:93:9 › SEO check: Services Page ────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: Blog Index (/blog)" classname="playwright.spec.ts" time="0.004">
+<failure message="playwright.spec.ts:57:7 Page loads: Blog Index (/blog)" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:57:7 › Page loads: Blog Index (/blog) ──────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Blog Index" classname="playwright.spec.ts" time="0.003">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Blog Index" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:77:9 › Critical elements present: Blog Index ───────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Blog Index" classname="playwright.spec.ts" time="0.002">
+<failure message="playwright.spec.ts:93:9 SEO check: Blog Index" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:93:9 › SEO check: Blog Index ───────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Page loads: Contact Page (/contact)" classname="playwright.spec.ts" time="0.002">
+<failure message="playwright.spec.ts:57:7 Page loads: Contact Page (/contact)" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:57:7 › Page loads: Contact Page (/contact) ─────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Critical elements present: Contact Page" classname="playwright.spec.ts" time="0.002">
+<failure message="playwright.spec.ts:77:9 Critical elements present: Contact Page" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:77:9 › Critical elements present: Contact Page ─────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="SEO check: Contact Page" classname="playwright.spec.ts" time="0.002">
+<failure message="playwright.spec.ts:93:9 SEO check: Contact Page" type="FAILURE">
+<![CDATA[  [webkit] › playwright.spec.ts:93:9 › SEO check: Contact Page ─────────────────────────────────────
+
+    Error: browserType.launch: Executable doesn't exist at C:\Users\Admin\AppData\Local\ms-playwright\webkit-2248\Playwright.exe
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+</testsuite>
+</testsuites>

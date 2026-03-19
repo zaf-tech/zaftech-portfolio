@@ -13,7 +13,11 @@
     "qc:check": "npm run qc",
     "qc:content": "node scripts/content-quality.js",
     "qc:skills": "node scripts/content-quality.js",
-    "qc:qa": "npm run qc && npm run qc:content"
+    "qc:qa": "npm run qc && npm run qc:content",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
   },
   "dependencies": {
     "next": "^14.2.0",
@@ -21,6 +25,7 @@
     "react-dom": "^18.3.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.58.2",
     "@types/node": "^20.11.0",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
