@@ -7,7 +7,7 @@ import ServicesSlider from "@/components/ServicesSlider";
 export default function Home() {
   return (
     <>
-      {/* IAC Solutions Banner */}
+      {/* Data Science Solutions Banner */}
       <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 py-16 md:py-20">
         {/* Animated Grid Background */}
         <div className="absolute inset-0 opacity-20">
@@ -35,11 +35,11 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/20 rounded-full mb-4 backdrop-blur-sm border border-cyan-400/30">
                 <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
                 <span className="text-sm font-semibold text-cyan-300 tracking-wide">
-                  CLOUD INFRASTRUCTURE AS CODE
+                  AI-POWERED DATA INTELLIGENCE
                 </span>
               </div>
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 mb-4">
-                Pre-Built Cloud Based IAC Solutions
+                Transform Your Data Into Actionable Insights
               </h2>
             </div>
 
@@ -54,10 +54,10 @@ export default function Home() {
               {/* Value Proposition */}
               <div className="text-center mb-8 p-6 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-lg border border-cyan-400/20">
                 <p className="text-lg md:text-xl text-cyan-200 font-semibold leading-relaxed">
-                  We help small, medium, and enterprise environments setup POC to production-level infrastructure in days on any cloud!
+                  Unlock the power of your data with AI and machine learning solutions tailored to your business needs.
                 </p>
                 <p className="text-base md:text-lg text-cyan-300/90 mt-3 leading-relaxed">
-                  Ready to migrate to the cloud? We handle your workload migration with complete privacy and security.
+                  From predictive analytics to custom ML models, we help you make smarter, data-driven decisions with complete security and privacy.
                 </p>
               </div>
 
@@ -69,14 +69,14 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-4 px-8 md:px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/50 text-base md:text-lg group"
                 >
-                  <span>📅</span>
-                  <span>Book Your FREE 30-Min Consultation</span>
+                  <span>📊</span>
+                  <span>Book Your FREE Data Strategy Session</span>
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </a>
                 <p className="text-sm md:text-base text-cyan-300/70 mt-4 font-medium">
-                  One-click away • Full privacy guaranteed • Meet with a leading IT professional
+                  Book now • Confidential consultation • Expert data strategist
                 </p>
               </div>
             </div>
@@ -95,11 +95,10 @@ export default function Home() {
                 <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
               </div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-                Why Choose Zaftech
+                Why Partner With Zaftech
               </h2>
               <p className="text-lg text-text-light">
-                What makes us the right managed IT services partner for your
-                business
+                Your trusted partner for data-driven transformation and AI solutions
               </p>
             </div>
 
@@ -122,11 +121,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Proactive Monitoring & Support
+                    Expert Data Scientists
                   </h3>
                   <p className="text-text-light">
-                    We prevent problems before they impact your business. Our
-                    proactive approach means fewer disruptions and more uptime.
+                    Our team combines advanced degrees with real-world industry experience to deliver production-ready ML solutions.
                   </p>
                 </div>
               </div>
@@ -149,12 +147,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Fast Response Times
+                    Customized Solutions
                   </h3>
                   <p className="text-text-light">
-                    When issues arise, we respond quickly. Our team is available
-                    when you need us, minimizing downtime and keeping your
-                    business running.
+                    No one-size-fits-all templates. We build bespoke AI and ML models tailored to your specific business challenges.
                   </p>
                 </div>
               </div>
@@ -177,12 +173,10 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Predictable Monthly Pricing
+                    End-to-End Support
                   </h3>
                   <p className="text-text-light">
-                    No surprise IT bills. Our flat monthly fee gives you budget
-                    certainty and includes all the IT support your business
-                    needs.
+                    From data strategy and model development to deployment and monitoring, we manage every phase of your AI journey.
                   </p>
                 </div>
               </div>
@@ -326,33 +320,31 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-accent-teal/10 rounded-full mb-6 backdrop-blur-sm border border-accent-teal/20 w-fit">
                 <div className="w-1.5 h-1.5 bg-accent-teal rounded-full animate-pulse"></div>
                 <span className="text-xs font-medium text-accent-teal">
-                  Managed IT Services Provider
+                  Data Science & AI Solutions
                 </span>
               </div>
               <h1 className="text-3xl md:text-4xl lg:text-6xl font-heading font-bold text-primary mb-6 leading-tight">
-                We Manage Your IT So You Can
+                Turn Your Data Into
                 <br />
                 <span className="gradient-text-animated">
-                  Focus on Your Business
+                  Competitive Advantage
                 </span>
               </h1>
               <p className="text-lg md:text-xl text-text-light mb-8 leading-relaxed">
-                Proactive IT support, security, and monitoring—all in one
-                predictable monthly plan. Stop worrying about technology. Let us
-                handle it.
+                Custom machine learning models, predictive analytics, and AI-powered solutions built specifically for your business challenges. We transform raw data into actionable intelligence.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
                 <Link
                   href="/contact"
                   className="btn-primary inline-block text-base px-6 py-3"
                 >
-                  Schedule a Free IT Assessment
+                  Schedule a Data Strategy Call
                 </Link>
                 <Link
                   href="/services"
                   className="text-primary font-medium hover:text-accent-teal transition-colors text-sm sm:text-base"
                 >
-                  Learn more about our services →
+                  Explore our data science services →
                 </Link>
               </div>
             </div>
@@ -378,10 +370,10 @@ export default function Home() {
               <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
             </div>
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-              Our Cloud & DevOps Services
+              Our Data Science & AI Services
             </h2>
             <p className="text-lg text-text-light max-w-2xl mx-auto">
-              Production-ready infrastructure solutions to accelerate your cloud journey and innovation
+              End-to-end solutions from strategy to production for intelligent business transformation
             </p>
           </div>
 
@@ -398,88 +390,12 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-              }
-              title="Infrastructure as Code"
-              description="Automated, reusable cloud infrastructure pipelines using Terraform, Pulumi, and CloudFormation. Deploy production environments in hours, not weeks."
-            />
-            <ServiceCard
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              }
-              title="MLOps & Model Deployment"
-              description="End-to-end ML pipelines with automated training, versioning, and deployment. GPU-optimized infrastructure for AI workloads with monitoring and scaling."
-            />
-            <ServiceCard
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-              }
-              title="DevOps & CI/CD Automation"
-              description="Streamlined deployment pipelines with GitHub Actions, GitLab CI, and Jenkins. Automated testing, security scanning, and zero-downtime deployments."
-            />
-            <ServiceCard
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-                  />
-                </svg>
-              }
-              title="Cloud Migration & Auto-Scaling"
-              description="Seamless workload migration to AWS, Azure, or GCP with zero data breach risk. Auto-scaling infrastructure that adapts to your traffic and workload demands."
-            />
-            <ServiceCard
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
                     d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
                   />
                 </svg>
               }
-              title="Kubernetes & Container Orchestration"
-              description="Production-ready Kubernetes clusters (EKS, GKE, AKS) with service mesh, ingress controllers, and monitoring. Containerize and orchestrate your applications at scale."
+              title="Predictive Analytics & Forecasting"
+              description="Build ML models to predict customer behavior, demand, churn, and market trends. Make data-driven decisions with confidence."
             />
             <ServiceCard
               icon={
@@ -493,12 +409,88 @@ export default function Home() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                   />
                 </svg>
               }
-              title="MVP & POC Rapid Deployment"
-              description="Launch your proof-of-concept or minimum viable product in days. Pre-configured cloud environments with security, monitoring, and scalability built-in from day one."
+              title="Custom ML Model Development"
+              description="Develop proprietary machine learning models tailored to your unique business needs using TensorFlow, PyTorch, and scikit-learn."
+            />
+            <ServiceCard
+              icon={
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M7 12a3 3 0 110-6 3 3 0 010 6zM7 12a1 1 0 100-2 1 1 0 000 2z M17 12a3 3 0 110-6 3 3 0 010 6zm0 0a1 1 0 100-2 1 1 0 000 2z M12.92 12c1.47-1.26 4.44-.871 6.6.701.23.188.45.371.66.566M7 20.363a6 6 0 0110 0"
+                  />
+                </svg>
+              }
+              title="Customer Segmentation & Analytics"
+              description="Identify high-value customer segments, personalize experiences, and optimize marketing with advanced clustering algorithms."
+            />
+            <ServiceCard
+              icon={
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+                  />
+                </svg>
+              }
+              title="Data Engineering & Pipelines"
+              description="Build robust ETL pipelines, data warehouses, and data lakes using Python, Spark, and cloud platforms for seamless data integration."
+            />
+            <ServiceCard
+              icon={
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  />
+                </svg>
+              }
+              title="MLOps & Model Deployment"
+              description="Deploy and monitor production ML models with automated retraining, version control, and real-time performance tracking."
+            />
+            <ServiceCard
+              icon={
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                  />
+                </svg>
+              }
+              title="Data Strategy & Consultation"
+              description="Define your data maturity roadmap, identify high-impact ML use cases, and build data-driven organizational culture."
             />
           </div>
         </div>

@@ -120,25 +120,25 @@ export default function Contact() {
                 <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto md:mx-0 rounded-full"></div>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
-                Request Your <span className="gradient-text-animated">Free IT Assessment</span>
+                Schedule Your <span className="gradient-text-animated">Data Strategy Session</span>
               </h1>
               <p className="text-xl md:text-2xl text-text-light max-w-2xl leading-relaxed">
-                Talk to an MSP expert and discover how managed IT services can help your business
+                Talk to our data science experts and discover how AI and machine learning can transform your business
               </p>
 
               {/* Contact highlights */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
                 <div className="text-left p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-gray-100 shadow-sm">
-                  <div className="text-2xl font-heading font-bold text-accent-teal mb-2">Free</div>
-                  <div className="text-sm text-text-light">No Obligation</div>
+                  <div className="text-2xl font-heading font-bold text-accent-teal mb-2">Complimentary</div>
+                  <div className="text-sm text-text-light">Expert Consultation</div>
                 </div>
                 <div className="text-left p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-gray-100 shadow-sm">
-                  <div className="text-2xl font-heading font-bold text-accent-teal mb-2">&lt;24hr</div>
-                  <div className="text-sm text-text-light">Response Time</div>
+                  <div className="text-2xl font-heading font-bold text-accent-teal mb-2">Confidential</div>
+                  <div className="text-sm text-text-light">Your Data Safety</div>
                 </div>
                 <div className="text-left p-4 rounded-xl bg-white/70 backdrop-blur-sm border border-gray-100 shadow-sm">
                   <div className="text-2xl font-heading font-bold text-accent-teal mb-2">Expert</div>
-                  <div className="text-sm text-text-light">MSP Consultation</div>
+                  <div className="text-sm text-text-light">Data Science Team</div>
                 </div>
               </div>
             </div>
