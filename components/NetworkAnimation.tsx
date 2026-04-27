@@ -2,192 +2,148 @@
 
 import { useEffect, useRef } from 'react';
 
-interface Node {
-  x: number;
-  y: number;
-  vx: number;
-  vy: number;
-  radius: number;
-  opacity: number;
-  pulsePhase: number;
-}
-
 export default function NetworkAnimation() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set canvas size — fill full screen so it works as a background
-    const updateCanvasSize = () => {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    };
-    updateCanvasSize();
-    window.addEventListener('resize', updateCanvasSize);
-
-    // Configuration
     const NODE_COUNT = 55;
     const CONNECT_DIST = 130;
-    const BASE_COLOR = { r: 61, g: 140, b: 255 };
-    const ACCENT_COLOR = { r: 100, g: 200, b: 255 };
-    const NAVY_BG = '#0d1117';
+    const NAVY = '#0d1117';
 
-    // Initialize nodes
-    const nodes: Node[] = [];
-    for (let i = 0; i < NODE_COUNT; i++) {
-      nodes.push({
-        x: Math.random() * canvas.width,
-        y: Math.random() * canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        radius: Math.random() * 2 + 1,
-        opacity: Math.random() * 0.5 + 0.3,
-        pulsePhase: Math.random() * Math.PI * 2,
-      });
+    function resize() {
+      canvas!.width = window.innerWidth;
+      canvas!.height = window.innerHeight;
     }
+    resize();
+    window.addEventListener('resize', resize);
 
-    let mouseX = canvas.width / 2;
-    let mouseY = canvas.height / 2;
-    let time = 0;
+    const nodes = Array.from({ length: NODE_COUNT }, () => ({
+      x: Math.random() * canvas!.width,
+      y: Math.random() * canvas!.height,
+      vx: (Math.random() - 0.5) * 0.5,
+      vy: (Math.random() - 0.5) * 0.5,
+      r: Math.random() * 2.5 + 1.5,
+      pulse: Math.random() * Math.PI * 2,
+    }));
 
-    // Mouse tracking
+    // Mouse starts off-screen
+    let mouse = { x: -999, y: -999 };
+
     const handleMouseMove = (e: MouseEvent) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY - canvas.getBoundingClientRect().top;
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
     };
+    const handleMouseLeave = () => { mouse.x = -999; mouse.y = -999; };
 
-    canvas.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseleave', handleMouseLeave);
 
-    // Animation loop
-    const animate = () => {
-      // Clear canvas with navy background
-      ctx.fillStyle = NAVY_BG;
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    let animId: number;
 
-      // Add subtle grid pattern
-      ctx.strokeStyle = 'rgba(61, 140, 255, 0.03)';
-      ctx.lineWidth = 1;
-      const gridSize = 50;
-      for (let x = 0; x < canvas.width; x += gridSize) {
-        ctx.beginPath();
-        ctx.moveTo(x, 0);
-        ctx.lineTo(x, canvas.height);
-        ctx.stroke();
-      }
-      for (let y = 0; y < canvas.height; y += gridSize) {
-        ctx.beginPath();
-        ctx.moveTo(0, y);
-        ctx.lineTo(canvas.width, y);
-        ctx.stroke();
-      }
+    function draw() {
+      const w = canvas!.width;
+      const h = canvas!.height;
 
-      time += 0.01;
+      ctx!.clearRect(0, 0, w, h);
+      ctx!.fillStyle = NAVY;
+      ctx!.fillRect(0, 0, w, h);
 
-      // Update and draw nodes
-      nodes.forEach((node, i) => {
-        // Update position
-        node.x += node.vx;
-        node.y += node.vy;
+      // Move nodes
+      nodes.forEach(n => {
+        n.x += n.vx;
+        n.y += n.vy;
+        if (n.x < 0 || n.x > w) n.vx *= -1;
+        if (n.y < 0 || n.y > h) n.vy *= -1;
+        n.pulse += 0.02;
+      });
 
-        // Bounce off walls
-        if (node.x < 0 || node.x > canvas.width) node.vx *= -1;
-        if (node.y < 0 || node.y > canvas.height) node.vy *= -1;
-
-        // Keep in bounds
-        node.x = Math.max(0, Math.min(canvas.width, node.x));
-        node.y = Math.max(0, Math.min(canvas.height, node.y));
-
-        // Update pulse
-        node.pulsePhase += 0.02;
-
-        // Draw node with glow
-        const pulseAmount = Math.sin(node.pulsePhase) * 0.3 + 0.7;
-        const nodeRadius = node.radius * pulseAmount;
-
-        // Outer glow
-        const glowGradient = ctx.createRadialGradient(
-          node.x,
-          node.y,
-          0,
-          node.x,
-          node.y,
-          nodeRadius * 3
-        );
-        glowGradient.addColorStop(
-          0,
-          `rgba(${ACCENT_COLOR.r}, ${ACCENT_COLOR.g}, ${ACCENT_COLOR.b}, ${node.opacity * 0.6 * pulseAmount})`
-        );
-        glowGradient.addColorStop(
-          1,
-          `rgba(${BASE_COLOR.r}, ${BASE_COLOR.g}, ${BASE_COLOR.b}, 0)`
-        );
-        ctx.fillStyle = glowGradient;
-        ctx.fillRect(
-          node.x - nodeRadius * 3,
-          node.y - nodeRadius * 3,
-          nodeRadius * 6,
-          nodeRadius * 6
-        );
-
-        // Core node
-        ctx.fillStyle = `rgba(${ACCENT_COLOR.r}, ${ACCENT_COLOR.g}, ${ACCENT_COLOR.b}, ${node.opacity * pulseAmount})`;
-        ctx.beginPath();
-        ctx.arc(node.x, node.y, nodeRadius, 0, Math.PI * 2);
-        ctx.fill();
-
-        // Draw connections to nearby nodes
+      // Draw connections between nearby nodes
+      for (let i = 0; i < nodes.length; i++) {
         for (let j = i + 1; j < nodes.length; j++) {
-          const other = nodes[j];
-          const dx = other.x - node.x;
-          const dy = other.y - node.y;
-          const distance = Math.sqrt(dx * dx + dy * dy);
-
-          if (distance < CONNECT_DIST) {
-            const opacity = (1 - distance / CONNECT_DIST) * 0.3;
-            ctx.strokeStyle = `rgba(${BASE_COLOR.r}, ${BASE_COLOR.g}, ${BASE_COLOR.b}, ${opacity})`;
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(node.x, node.y);
-            ctx.lineTo(other.x, other.y);
-            ctx.stroke();
+          const a = nodes[i], b = nodes[j];
+          const dx = a.x - b.x, dy = a.y - b.y;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < CONNECT_DIST) {
+            const alpha = (1 - dist / CONNECT_DIST) * 0.4;
+            ctx!.beginPath();
+            ctx!.moveTo(a.x, a.y);
+            ctx!.lineTo(b.x, b.y);
+            ctx!.strokeStyle = `rgba(56, 140, 255, ${alpha})`;
+            ctx!.lineWidth = 0.6;
+            ctx!.stroke();
           }
         }
+      }
 
-        // Mouse interaction
-        const dx = mouseX - node.x;
-        const dy = mouseY - node.y;
-        const distance = Math.sqrt(dx * dx + dy * dy);
-        if (distance < 120) {
-          const force = (120 - distance) / 120;
-          node.vx -= (dx / distance) * force * 0.3;
-          node.vy -= (dy / distance) * force * 0.3;
+      // Draw spider-web lines from nodes to mouse cursor
+      const mouseR = 120;
+      nodes.forEach(n => {
+        const dx = n.x - mouse.x;
+        const dy = n.y - mouse.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < mouseR) {
+          const alpha = (1 - dist / mouseR) * 0.7;
+          ctx!.beginPath();
+          ctx!.moveTo(n.x, n.y);
+          ctx!.lineTo(mouse.x, mouse.y);
+          ctx!.strokeStyle = `rgba(100, 200, 255, ${alpha})`;
+          ctx!.lineWidth = 0.8;
+          ctx!.stroke();
         }
       });
 
-      // Draw branding text (optional - only if you want ZAFTECH displayed)
-      ctx.font = 'bold 14px "Inter", sans-serif';
-      ctx.fillStyle = 'rgba(61, 140, 255, 0.4)';
-      ctx.textAlign = 'left';
-      ctx.fillText('ZAFTECH', 20, canvas.height - 20);
+      // Draw nodes: core + soft outer glow
+      nodes.forEach(n => {
+        const glow = 0.6 + 0.4 * Math.sin(n.pulse);
 
-      // Performance stats (optional - helpful for debugging)
-      ctx.font = '12px "Inter", sans-serif';
-      ctx.fillStyle = 'rgba(100, 200, 255, 0.3)';
-      ctx.fillText(`${nodes.length} agents active`, 20, 20);
+        // Outer glow ring
+        ctx!.beginPath();
+        ctx!.arc(n.x, n.y, n.r * 2.2 * glow, 0, Math.PI * 2);
+        ctx!.fillStyle = `rgba(56, 120, 255, ${0.12 * glow})`;
+        ctx!.fill();
 
-      requestAnimationFrame(animate);
-    };
+        // Core dot
+        ctx!.beginPath();
+        ctx!.arc(n.x, n.y, n.r * glow, 0, Math.PI * 2);
+        ctx!.fillStyle = `rgba(80, 160, 255, ${0.7 * glow})`;
+        ctx!.fill();
+      });
 
-    animate();
+      // Draw cursor dot when on canvas
+      if (mouse.x !== -999) {
+        ctx!.beginPath();
+        ctx!.arc(mouse.x, mouse.y, 4, 0, Math.PI * 2);
+        ctx!.fillStyle = 'rgba(160, 220, 255, 0.9)';
+        ctx!.fill();
+
+        ctx!.beginPath();
+        ctx!.arc(mouse.x, mouse.y, 10, 0, Math.PI * 2);
+        ctx!.strokeStyle = 'rgba(100, 180, 255, 0.3)';
+        ctx!.lineWidth = 1;
+        ctx!.stroke();
+      }
+
+      // Subtle ZAFTECH watermark
+      ctx!.font = '500 13px sans-serif';
+      ctx!.fillStyle = 'rgba(255, 255, 255, 0.08)';
+      ctx!.textAlign = 'left';
+      ctx!.fillText('ZAFTECH', 24, h - 18);
+
+      animId = requestAnimationFrame(draw);
+    }
+
+    draw();
 
     return () => {
-      window.removeEventListener('resize', updateCanvasSize);
-      canvas.removeEventListener('mousemove', handleMouseMove);
+      cancelAnimationFrame(animId);
+      window.removeEventListener('resize', resize);
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
 
