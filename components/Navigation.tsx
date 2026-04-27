@@ -7,67 +7,47 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+    <nav className="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-blue-500/20">
       <div className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2 group">
             <div className="relative">
-              {/* <div className="absolute -inset-1 bg-gradient-to-r from-accent to-accent-teal rounded-lg opacity-20 group-hover:opacity-40 blur transition-all duration-300 group-hover:scale-110"></div> */}
               <img
                 src="/images/logo.svg"
                 alt="Zaftech Logo"
-                className="relative h-10 md:h-14 transition-all duration-300 "
+                className="relative h-10 md:h-14 transition-all duration-300"
               />
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <Link
-              href="/"
-              className="text-text hover:text-accent-teal transition-all duration-300 font-medium relative group"
-            >
-              <span className="relative z-10">Home</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
-            </Link>
-            <Link
-              href="/services"
-              className="text-text hover:text-accent-teal transition-all duration-300 font-medium relative group"
-            >
-              <span className="relative z-10">Services</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
-            </Link>
-            <Link
-              href="/about"
-              className="text-text hover:text-accent-teal transition-all duration-300 font-medium relative group"
-            >
-              <span className="relative z-10">About</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
-            </Link>
-            <Link
-              href="/#team"
-              className="text-text hover:text-accent-teal transition-all duration-300 font-medium relative group"
-            >
-              <span className="relative z-10">Our Team</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
-            </Link>
-            <Link
-              href="/blog"
-              className="text-text hover:text-accent-teal transition-all duration-300 font-medium relative group"
-            >
-              <span className="relative z-10">Blog</span>
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-accent to-accent-teal group-hover:w-full transition-all duration-300"></span>
-            </Link>
-            <Link href="/contact" className="btn-primary">
-              Free IT Assessment
+            {[
+              { href: "/", label: "Home" },
+              { href: "/services", label: "Services" },
+              { href: "/about", label: "About" },
+              { href: "/#team", label: "Our Team" },
+              { href: "/blog", label: "Blog" },
+            ].map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-blue-300/80 hover:text-blue-200 transition-all duration-300 font-medium relative group"
+              >
+                <span className="relative z-10">{label}</span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-blue-300 group-hover:w-full transition-all duration-300"></span>
+              </Link>
+            ))}
+            <Link href="/contact" className="btn-primary text-sm">
+              Book AI Assessment
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+            className="md:hidden p-2 rounded-lg text-blue-300 hover:bg-slate-800 transition-colors"
             aria-label="Toggle menu"
           >
             <svg
@@ -90,49 +70,30 @@ export default function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-gray-100">
+          <div className="md:hidden py-4 border-t border-blue-500/20">
             <div className="flex flex-col space-y-4">
-              <Link
-                href="/"
-                onClick={() => setIsOpen(false)}
-                className="text-text hover:text-accent-teal transition-colors font-medium py-2"
-              >
-                Home
-              </Link>
-              <Link
-                href="/services"
-                onClick={() => setIsOpen(false)}
-                className="text-text hover:text-accent-teal transition-colors font-medium py-2"
-              >
-                Services
-              </Link>
-              <Link
-                href="/about"
-                onClick={() => setIsOpen(false)}
-                className="text-text hover:text-accent-teal transition-colors font-medium py-2"
-              >
-                About
-              </Link>
-              <Link
-                href="/#team"
-                onClick={() => setIsOpen(false)}
-                className="text-text hover:text-accent-teal transition-colors font-medium py-2"
-              >
-                Our Team
-              </Link>
-              <Link
-                href="/blog"
-                onClick={() => setIsOpen(false)}
-                className="text-text hover:text-accent-teal transition-colors font-medium py-2"
-              >
-                Blog
-              </Link>
+              {[
+                { href: "/", label: "Home" },
+                { href: "/services", label: "Services" },
+                { href: "/about", label: "About" },
+                { href: "/#team", label: "Our Team" },
+                { href: "/blog", label: "Blog" },
+              ].map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => setIsOpen(false)}
+                  className="text-blue-300/80 hover:text-blue-200 transition-colors font-medium py-2"
+                >
+                  {label}
+                </Link>
+              ))}
               <Link
                 href="/contact"
                 onClick={() => setIsOpen(false)}
                 className="btn-primary inline-block text-center"
               >
-                Free IT Assessment
+                Book AI Assessment
               </Link>
             </div>
           </div>
