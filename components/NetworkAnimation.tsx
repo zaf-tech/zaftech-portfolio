@@ -31,7 +31,7 @@ export default function NetworkAnimation() {
       pulse: Math.random() * Math.PI * 2,
     }));
 
-    // Mouse starts off-screen
+    // Track mouse via window so events pass through the content layer above
     let mouse = { x: -999, y: -999 };
 
     const handleMouseMove = (e: MouseEvent) => {
@@ -40,8 +40,8 @@ export default function NetworkAnimation() {
     };
     const handleMouseLeave = () => { mouse.x = -999; mouse.y = -999; };
 
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseleave', handleMouseLeave);
+    window.addEventListener('mousemove', handleMouseMove, { passive: true });
+    document.addEventListener('mouseleave', handleMouseLeave);
 
     let animId: number;
 
@@ -143,14 +143,20 @@ export default function NetworkAnimation() {
       cancelAnimationFrame(animId);
       window.removeEventListener('resize', resize);
       window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseleave', handleMouseLeave);
+      document.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
 
   return (
     <canvas
       ref={canvasRef}
-      style={{ display: 'block', width: '100%', height: '100%', background: '#0d1117' }}
+      style={{
+        display: 'block',
+        width: '100%',
+        height: '100%',
+        background: '#0d1117',
+        pointerEvents: 'none', // let clicks/hover pass through to page content
+      }}
     />
   );
 }
