@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Banner */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-slate-950/80 via-slate-950/85 to-slate-950 py-16 md:py-20">
+      <section className="relative overflow-hidden bg-slate-950/10 py-16 md:py-20">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 to-slate-950/50"></div>
 
         <div className="container-custom relative z-10">
@@ -67,7 +67,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Zaftech */}
-      <section className="section bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 relative overflow-hidden">
+      <section className="section bg-transparent relative overflow-hidden">
         <div className="decorative-blob w-72 h-72 top-20 right-10 pulse-glow"></div>
         <div className="absolute top-0 left-0 w-full h-full bg-pattern opacity-30"></div>
         <div className="container-custom relative z-10">
@@ -128,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* Main Hero / Platform Statement */}
-      <section className="section bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
+      <section className="section bg-transparent relative overflow-hidden">
         <div className="decorative-blob w-96 h-96 -top-48 -right-48 pulse-glow"></div>
         <div className="decorative-blob w-80 h-80 -bottom-32 -left-32"></div>
 
@@ -168,7 +168,7 @@ export default function Home() {
       </section>
 
       {/* Services Overview */}
-      <section className="section bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 relative overflow-hidden">
+      <section className="section bg-transparent relative overflow-hidden">
         <div className="container-custom relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-300 mx-auto rounded-full mb-4"></div>
@@ -216,7 +216,7 @@ export default function Home() {
       </section>
 
       {/* Stats */}
-      <section className="section bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900 relative overflow-hidden">
+      <section className="section bg-transparent relative overflow-hidden">
         <div className="absolute inset-0 bg-pattern opacity-20"></div>
         <div className="container-custom relative z-10">
           <div className="max-w-5xl mx-auto">
@@ -251,7 +251,7 @@ export default function Home() {
       </section>
 
       {/* Our Process */}
-      <section className="section bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 relative overflow-hidden">
+      <section className="section bg-transparent relative overflow-hidden">
         <div className="container-custom relative z-10">
           <div className="text-center mb-12 md:mb-16">
             <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-300 mx-auto rounded-full mb-4"></div>
@@ -294,7 +294,7 @@ export default function Home() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="section bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+      <section id="team" className="section bg-transparent">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">

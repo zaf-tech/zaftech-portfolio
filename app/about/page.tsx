@@ -51,7 +51,7 @@ export default function About() {
       </section>
 
       {/* Mission Section */}
-      <section className="section bg-gradient-to-b from-slate-950/80 via-slate-900/60 to-slate-950/80 relative overflow-hidden">
+      <section className="section bg-slate-950/15 relative overflow-hidden">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-10">
@@ -86,7 +86,7 @@ export default function About() {
       </section>
 
       {/* Values Section */}
-      <section className="section bg-gradient-to-b from-slate-900/60 via-slate-950/80 to-slate-900/60 relative overflow-hidden">
+      <section className="section bg-slate-950/10 relative overflow-hidden">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
@@ -137,7 +137,7 @@ export default function About() {
       </section>
 
       {/* CEO Section */}
-      <section className="section bg-gradient-to-b from-slate-950/80 via-slate-900/60 to-slate-950/80 relative overflow-hidden">
+      <section className="section bg-slate-950/15 relative overflow-hidden">
         <div className="container-custom relative z-10">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-14">
@@ -225,7 +225,7 @@ export default function About() {
       </section>
 
       {/* Focus Section */}
-      <section className="section bg-gradient-to-b from-slate-900/60 via-slate-950/80 to-slate-900/60 relative overflow-hidden">
+      <section className="section bg-slate-950/10 relative overflow-hidden">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-10">

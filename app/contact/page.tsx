@@ -187,7 +187,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Form Section */}
-      <section className="section bg-gradient-to-b from-slate-950/80 via-slate-900/60 to-slate-950/80">
+      <section className="section bg-slate-950/15">
         <div className="container-custom">
           <div className="max-w-2xl mx-auto">
             <div className="card">
@@ -293,7 +293,7 @@ export default function Contact() {
       </section>
 
       {/* Contact Information Section */}
-      <section className="section bg-gradient-to-b from-slate-900/60 via-slate-950/80 to-slate-900/60">
+      <section className="section bg-slate-950/10">
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">

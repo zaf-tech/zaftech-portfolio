@@ -95,7 +95,7 @@ export default function BlogPage() {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="section bg-gradient-to-b from-slate-950/80 via-slate-900/60 to-slate-950/80">
+      <section className="section bg-slate-950/15">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (

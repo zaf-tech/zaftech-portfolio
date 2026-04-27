@@ -62,7 +62,7 @@ export default function Services() {
       </section>
 
       {/* Pillar 1 — Agentic AI Integration */}
-      <section className="section bg-gradient-to-b from-slate-950/80 via-slate-900/60 to-slate-950/80 relative overflow-hidden">
+      <section className="section bg-slate-950/15 relative overflow-hidden">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -123,7 +123,7 @@ export default function Services() {
       </section>
 
       {/* Pillar 2 — Private LLM Deployment */}
-      <section className="section bg-gradient-to-b from-slate-900/60 via-slate-950/80 to-slate-900/60 relative overflow-hidden">
+      <section className="section bg-slate-950/10 relative overflow-hidden">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -183,7 +183,7 @@ export default function Services() {
       </section>
 
       {/* Pillar 3 — AI for Finance & Accounting */}
-      <section className="section bg-gradient-to-b from-slate-950/80 via-slate-900/60 to-slate-950/80 relative overflow-hidden">
+      <section className="section bg-slate-950/15 relative overflow-hidden">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -244,7 +244,7 @@ export default function Services() {
       </section>
 
       {/* Pillar 4 — AI Compliance & Security */}
-      <section className="section bg-gradient-to-b from-slate-900/60 via-slate-950/80 to-slate-900/60 relative overflow-hidden">
+      <section className="section bg-slate-950/10 relative overflow-hidden">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -304,7 +304,7 @@ export default function Services() {
       </section>
 
       {/* Pillar 5 — AI-Powered Application Development */}
-      <section className="section bg-gradient-to-b from-slate-950/80 via-slate-900/60 to-slate-950/80 relative overflow-hidden">
+      <section className="section bg-slate-950/15 relative overflow-hidden">
         <div className="container-custom">
           <div className="max-w-5xl mx-auto">
             <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
