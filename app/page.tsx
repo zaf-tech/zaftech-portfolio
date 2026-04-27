@@ -7,76 +7,58 @@ import ServicesSlider from "@/components/ServicesSlider";
 export default function Home() {
   return (
     <>
-      {/* IAC Solutions Banner */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900 py-16 md:py-20">
-        {/* Animated Grid Background */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute inset-0" style={{
-            backgroundImage: `linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px)`,
-            backgroundSize: '50px 50px',
-            animation: 'grid-flow 20s linear infinite'
-          }}></div>
-        </div>
-        
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 via-blue-500/10 to-purple-500/5"></div>
-        
-        {/* Floating Particles Effect */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute w-2 h-2 bg-cyan-400 rounded-full opacity-20 animate-pulse" style={{ top: '20%', left: '10%' }}></div>
-          <div className="absolute w-2 h-2 bg-blue-400 rounded-full opacity-20 animate-pulse" style={{ top: '60%', right: '15%', animationDelay: '1s' }}></div>
-          <div className="absolute w-2 h-2 bg-purple-400 rounded-full opacity-20 animate-pulse" style={{ bottom: '30%', left: '20%', animationDelay: '2s' }}></div>
-        </div>
+      {/* Hero Banner */}
+      <section className="relative overflow-hidden bg-slate-950/10 py-16 md:py-20">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-950/20 to-slate-950/50"></div>
 
         <div className="container-custom relative z-10">
-          <div className="max-w-5xl mx-auto">
-            {/* Header */}
-            <div className="text-center mb-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/20 rounded-full mb-4 backdrop-blur-sm border border-cyan-400/30">
-                <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></div>
-                <span className="text-sm font-semibold text-cyan-300 tracking-wide">
-                  CLOUD INFRASTRUCTURE AS CODE
+          <div className="max-w-5xl mx-auto text-center">
+            <div className="mb-8">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 rounded-full mb-6 backdrop-blur-sm border border-blue-400/30">
+                <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                <span className="text-sm font-semibold text-blue-300 tracking-widest">
+                  ENTERPRISE AI ENABLEMENT
                 </span>
               </div>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 mb-4">
-                Pre-Built Cloud Based IAC Solutions
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 mb-6 leading-tight">
+                Intelligent AI Solutions
+                <br />
+                for the Modern Enterprise
               </h2>
             </div>
 
             {/* Main Content Card */}
-            <div className="bg-gradient-to-br from-cyan-500/10 via-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-cyan-400/30 rounded-2xl p-8 md:p-10 shadow-2xl">
-              
-              {/* Rotating Services Slider */}
-              <div className="mb-8">
+            <div className="bg-gradient-to-br from-slate-800/50 via-blue-900/40 to-slate-800/50 backdrop-blur-md border border-blue-500/40 rounded-2xl p-8 md:p-12 shadow-2xl shadow-blue-500/20 max-w-3xl mx-auto">
+              <div className="mb-10">
                 <ServicesSlider />
               </div>
 
-              {/* Value Proposition */}
-              <div className="text-center mb-8 p-6 bg-gradient-to-r from-cyan-500/10 to-blue-500/10 rounded-lg border border-cyan-400/20">
-                <p className="text-lg md:text-xl text-cyan-200 font-semibold leading-relaxed">
-                  We help small, medium, and enterprise environments setup POC to production-level infrastructure in days on any cloud!
+              <div className="mb-10 p-8 bg-gradient-to-r from-blue-500/15 to-blue-400/15 rounded-xl border border-blue-400/40">
+                <p className="text-lg md:text-xl text-blue-100 font-semibold leading-relaxed mb-4">
+                  We help organisations adopt AI with confidence — private,
+                  secure, and aligned with your compliance requirements.
                 </p>
-                <p className="text-base md:text-lg text-cyan-300/90 mt-3 leading-relaxed">
-                  Ready to migrate to the cloud? We handle your workload migration with complete privacy and security.
+                <p className="text-base md:text-lg text-blue-200/80 leading-relaxed">
+                  From streamlining finance and operations to deploying private
+                  LLMs your team can trust — Zaftech delivers AI enablement
+                  that creates measurable business value from day one.
                 </p>
               </div>
 
-              {/* CTA Button */}
-              <div className="text-center">
+              <div className="flex flex-col items-center">
                 <a
                   href="https://calendly.com/talha-jilal-zaftech/30min"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-bold py-4 px-8 md:px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/50 text-base md:text-lg group"
+                  className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-400 hover:to-blue-500 text-white font-semibold py-4 px-8 md:px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-blue-500/50 text-base md:text-lg group"
                 >
-                  <span>📅</span>
-                  <span>Book Your FREE 30-Min Consultation</span>
+                  <span>Book a Free AI Assessment</span>
                   <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                   </svg>
                 </a>
-                <p className="text-sm md:text-base text-cyan-300/70 mt-4 font-medium">
-                  One-click away • Full privacy guaranteed • Meet with a leading IT professional
+                <p className="text-sm text-blue-300/60 mt-4">
+                  No commitment · Expert consultation · Confidential
                 </p>
               </div>
             </div>
@@ -85,759 +67,330 @@ export default function Home() {
       </section>
 
       {/* Why Choose Zaftech */}
-      <section className="section bg-gradient-to-b from-gray-50 via-white to-gray-50/50 relative overflow-hidden">
+      <section className="section bg-transparent relative overflow-hidden">
         <div className="decorative-blob w-72 h-72 top-20 right-10 pulse-glow"></div>
         <div className="absolute top-0 left-0 w-full h-full bg-pattern opacity-30"></div>
         <div className="container-custom relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 md:mb-16">
-              <div className="inline-block mb-4">
-                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-                Why Choose Zaftech
+              <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-300 mx-auto rounded-full mb-4"></div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
+                Why Enterprises Choose Zaftech
               </h2>
-              <p className="text-lg text-text-light">
-                What makes us the right managed IT services partner for your
-                business
+              <p className="text-lg text-blue-300/70">
+                AI adoption done right — with your team in control and your
+                data fully protected
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
+              {[
+                {
+                  title: "Intelligent Process Automation",
+                  body: "Our AI solutions streamline high-volume, repetitive workflows — reducing manual overhead while keeping your team focused on decisions that require human judgement.",
+                },
+                {
+                  title: "End-to-End Implementation",
+                  body: "From strategy through to production deployment, we handle the full lifecycle. You get a working AI solution, not just a recommendation document.",
+                },
+                {
+                  title: "Industry-Tailored Solutions",
+                  body: "Purpose-built for finance, healthcare, legal, logistics, and professional services — industries where accuracy, compliance, and audit trails are non-negotiable.",
+                },
+                {
+                  title: "Accurate AI Utilisation Billing",
+                  body: "Full visibility into your AI spend. We instrument every deployment with usage tracking so you can attribute costs precisely and optimise continuously.",
+                },
+                {
+                  title: "Security & Compliance First",
+                  body: "Every solution we build is designed for your regulatory environment from day one — SOC 2, HIPAA, GDPR. Governance is built in, not bolted on.",
+                },
+                {
+                  title: "Long-Term AI Partnership",
+                  body: "We stay engaged beyond launch. As your business evolves, we help you expand, refine, and scale your AI capabilities over time.",
+                },
+              ].map(({ title, body }) => (
+                <div key={title} className="flex items-start space-x-4 group">
+                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-blue-400 to-blue-300 flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-blue-400/30">
+                    <svg className="w-4 h-4 text-slate-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-heading font-semibold text-blue-300 mb-2">{title}</h3>
+                    <p className="text-blue-200/70 text-sm leading-relaxed">{body}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Proactive Monitoring & Support
-                  </h3>
-                  <p className="text-text-light">
-                    We prevent problems before they impact your business. Our
-                    proactive approach means fewer disruptions and more uptime.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Fast Response Times
-                  </h3>
-                  <p className="text-text-light">
-                    When issues arise, we respond quickly. Our team is available
-                    when you need us, minimizing downtime and keeping your
-                    business running.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Predictable Monthly Pricing
-                  </h3>
-                  <p className="text-text-light">
-                    No surprise IT bills. Our flat monthly fee gives you budget
-                    certainty and includes all the IT support your business
-                    needs.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Reduced Downtime
-                  </h3>
-                  <p className="text-text-light">
-                    Our proactive maintenance and monitoring significantly
-                    reduce system failures and keep your operations running
-                    smoothly.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Security-First Approach
-                  </h3>
-                  <p className="text-text-light">
-                    We prioritize your security with continuous monitoring,
-                    regular updates, and best practices to protect your business
-                    data.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4 group">
-                <div className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-accent to-accent-teal flex items-center justify-center mt-1 group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-accent/20">
-                  <svg
-                    className="w-4 h-4 text-white"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M5 13l4 4L19 7"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl font-heading font-semibold text-primary mb-2">
-                    Long-Term IT Partnership
-                  </h3>
-                  <p className="text-text-light">
-                    We're not just a vendor—we're your IT partner. We invest in
-                    understanding your business and building lasting
-                    relationships.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Hero Section */}
-      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-grid-animated relative overflow-hidden min-h-[90vh] flex items-center">
-
-        {/* Decorative blobs */}
+      {/* Main Hero / Platform Statement */}
+      <section className="section bg-transparent relative overflow-hidden">
         <div className="decorative-blob w-96 h-96 -top-48 -right-48 pulse-glow"></div>
         <div className="decorative-blob w-80 h-80 -bottom-32 -left-32"></div>
-
-        {/* Floating tech icons */}
-        <div className="absolute top-20 left-10 w-16 h-16 text-accent-teal/20 float-icon hidden lg:block">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-            />
-          </svg>
-        </div>
-        <div
-          className="absolute top-40 right-20 w-12 h-12 text-accent-teal/15 float-icon hidden lg:block"
-          style={{ animationDelay: "1s" }}
-        >
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M13 10V3L4 14h7v7l9-11h-7z"
-            />
-          </svg>
-        </div>
-        <div
-          className="absolute bottom-40 left-20 w-14 h-14 text-accent-teal/15 float-icon hidden lg:block"
-          style={{ animationDelay: "2s" }}
-        >
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-            />
-          </svg>
-        </div>
 
         <div className="container-custom relative z-10">
           <div className="grid items-center gap-12 lg:gap-16 md:grid-cols-2">
             <div className="flex flex-col">
-              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-accent-teal/10 rounded-full mb-6 backdrop-blur-sm border border-accent-teal/20 w-fit">
-                <div className="w-1.5 h-1.5 bg-accent-teal rounded-full animate-pulse"></div>
-                <span className="text-xs font-medium text-accent-teal">
-                  Managed IT Services Provider
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-500/20 rounded-full mb-6 backdrop-blur-sm border border-blue-400/30 w-fit">
+                <div className="w-1.5 h-1.5 bg-blue-300 rounded-full animate-pulse"></div>
+                <span className="text-xs font-medium text-blue-300">
+                  AI Enablement Platform
                 </span>
               </div>
-              <h1 className="text-3xl md:text-4xl lg:text-6xl font-heading font-bold text-primary mb-6 leading-tight">
-                We Manage Your IT So You Can
+              <h1 className="text-3xl md:text-4xl lg:text-6xl font-heading font-bold text-blue-200 mb-6 leading-tight">
+                Your Operations,
                 <br />
                 <span className="gradient-text-animated">
-                  Focus on Your Business
+                  Elevated by AI
                 </span>
               </h1>
-              <p className="text-lg md:text-xl text-text-light mb-8 leading-relaxed">
-                Proactive IT support, security, and monitoring—all in one
-                predictable monthly plan. Stop worrying about technology. Let us
-                handle it.
+              <p className="text-lg md:text-xl text-blue-300/70 mb-8 leading-relaxed">
+                We integrate intelligent AI into your existing workflows —
+                reducing overhead, improving accuracy, and giving your team
+                better tools to make faster decisions.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
-                <Link
-                  href="/contact"
-                  className="btn-primary inline-block text-base px-6 py-3"
-                >
-                  Schedule a Free IT Assessment
+                <Link href="/contact" className="btn-primary inline-block text-base px-6 py-3">
+                  Book AI Consultation
                 </Link>
-                <Link
-                  href="/services"
-                  className="text-primary font-medium hover:text-accent-teal transition-colors text-sm sm:text-base"
-                >
-                  Learn more about our services →
+                <Link href="/services" className="text-blue-400 font-medium hover:text-blue-300 transition-colors text-sm sm:text-base">
+                  Explore our solutions →
                 </Link>
               </div>
             </div>
-
-            {/* Hero Illustration */}
             <HeroIllustration />
           </div>
         </div>
       </section>
 
       {/* Services Overview */}
-      <section className="section bg-gradient-animated relative overflow-hidden">
-        {/* Decorative geometric shapes */}
-        <div className="absolute top-20 right-10 w-32 h-32 bg-accent/5 rounded-full blur-3xl float-up hidden lg:block"></div>
-        <div
-          className="absolute bottom-20 left-10 w-40 h-40 bg-accent-teal/5 rounded-full blur-3xl float-up hidden lg:block"
-          style={{ animationDelay: "2s" }}
-        ></div>
-
+      <section className="section bg-transparent relative overflow-hidden">
         <div className="container-custom relative z-10">
           <div className="text-center mb-12 md:mb-16">
-            <div className="inline-block mb-4">
-              <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-              Our Cloud & DevOps Services
+            <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-300 mx-auto rounded-full mb-4"></div>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
+              AI Solutions We Deliver
             </h2>
-            <p className="text-lg text-text-light max-w-2xl mx-auto">
-              Production-ready infrastructure solutions to accelerate your cloud journey and innovation
+            <p className="text-lg text-blue-300/70 max-w-2xl mx-auto">
+              Practical, production-ready AI for every business function
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             <ServiceCard
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-              }
-              title="Infrastructure as Code"
-              description="Automated, reusable cloud infrastructure pipelines using Terraform, Pulumi, and CloudFormation. Deploy production environments in hours, not weeks."
+              icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z" /></svg>}
+              title="Customer Experience AI"
+              description="Intelligent assistants that handle enquiries, route support tickets, and resolve common issues across email, chat, and voice — with seamless handoff to your team when needed."
             />
             <ServiceCard
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-                  />
-                </svg>
-              }
-              title="MLOps & Model Deployment"
-              description="End-to-end ML pipelines with automated training, versioning, and deployment. GPU-optimized infrastructure for AI workloads with monitoring and scaling."
+              icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>}
+              title="Document Intelligence"
+              description="Extract, classify, validate, and process invoices, contracts, and forms at scale — with accuracy that exceeds manual review and a full audit trail on every document."
             />
             <ServiceCard
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-              }
-              title="DevOps & CI/CD Automation"
-              description="Streamlined deployment pipelines with GitHub Actions, GitLab CI, and Jenkins. Automated testing, security scanning, and zero-downtime deployments."
+              icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>}
+              title="Sales & Lead Intelligence"
+              description="Qualify inbound leads, enrich prospect data, personalise outreach, and surface your highest-value opportunities — so your sales team focuses on closing, not sorting."
             />
             <ServiceCard
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-                  />
-                </svg>
-              }
-              title="Cloud Migration & Auto-Scaling"
-              description="Seamless workload migration to AWS, Azure, or GCP with zero data breach risk. Auto-scaling infrastructure that adapts to your traffic and workload demands."
+              icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>}
+              title="Finance & Billing Automation"
+              description="Automate expense processing, invoice generation, recurring billing, and account reconciliation — with complete audit trails and cost attribution for every AI action."
             />
             <ServiceCard
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                  />
-                </svg>
-              }
-              title="Kubernetes & Container Orchestration"
-              description="Production-ready Kubernetes clusters (EKS, GKE, AKS) with service mesh, ingress controllers, and monitoring. Containerize and orchestrate your applications at scale."
+              icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>}
+              title="Data & Reporting Intelligence"
+              description="Connect your data sources, automate report generation, and surface actionable insights on demand — so your leadership team always has the information they need."
             />
             <ServiceCard
-              icon={
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-                  />
-                </svg>
-              }
-              title="MVP & POC Rapid Deployment"
-              description="Launch your proof-of-concept or minimum viable product in days. Pre-configured cloud environments with security, monitoring, and scalability built-in from day one."
+              icon={<svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>}
+              title="Compliance & Risk Monitoring"
+              description="Continuously monitor for policy violations, regulatory breaches, and anomalies — with automated reporting and alerts that keep your compliance team ahead of issues."
             />
           </div>
         </div>
       </section>
 
-      {/* Stats / Trust Indicators */}
-      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white relative overflow-hidden">
-        {/* Subtle animated background */}
+      {/* Stats */}
+      <section className="section bg-transparent relative overflow-hidden">
         <div className="absolute inset-0 bg-pattern opacity-20"></div>
         <div className="container-custom relative z-10">
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <div className="inline-block mb-4">
-                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
-              </div>
-              <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-                Our Service Commitments
+              <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-300 mx-auto rounded-full mb-4"></div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
+                Our Delivery Standards
               </h2>
-              <p className="text-lg text-text-light max-w-2xl mx-auto">
-                Transparent metrics that demonstrate our commitment to your IT
-                success
+              <p className="text-lg text-blue-300/70 max-w-2xl mx-auto">
+                The commitments we make to every client engagement
               </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-              <div className="card text-center group hover:scale-105 transition-transform duration-300">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
+              {[
+                { stat: "Weeks", label: "To Production", sub: "Not months" },
+                { stat: "<1hr", label: "Response Time", sub: "Expert support" },
+                { stat: "99.9%", label: "Uptime SLA", sub: "Guaranteed reliability" },
+                { stat: "100%", label: "Audit Trail", sub: "Every AI action logged" },
+              ].map(({ stat, label, sub }) => (
+                <div key={label} className="card text-center group hover:scale-105 transition-transform duration-300">
+                  <div className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent mb-2">
+                    {stat}
+                  </div>
+                  <div className="text-sm font-medium text-blue-200 mb-1">{label}</div>
+                  <div className="text-xs text-blue-400/50">{sub}</div>
                 </div>
-                <div className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-accent to-accent-teal bg-clip-text text-transparent mb-2">
-                  24/7
-                </div>
-                <div className="text-sm font-medium text-primary mb-1">
-                  Monitoring
-                </div>
-                <div className="text-xs text-text-light">
-                  Continuous oversight
-                </div>
-              </div>
-              <div className="card text-center group hover:scale-105 transition-transform duration-300">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M13 10V3L4 14h7v7l9-11h-7z"
-                    />
-                  </svg>
-                </div>
-                <div className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-accent to-accent-teal bg-clip-text text-transparent mb-2">
-                  &lt;1hr
-                </div>
-                <div className="text-sm font-medium text-primary mb-1">
-                  Response Time
-                </div>
-                <div className="text-xs text-text-light">Fast support</div>
-              </div>
-              <div className="card text-center group hover:scale-105 transition-transform duration-300">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
-                <div className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-accent to-accent-teal bg-clip-text text-transparent mb-2">
-                  99.9%
-                </div>
-                <div className="text-sm font-medium text-primary mb-1">
-                  Uptime SLA
-                </div>
-                <div className="text-xs text-text-light">
-                  Guaranteed reliability
-                </div>
-              </div>
-              <div className="card text-center group hover:scale-105 transition-transform duration-300">
-                <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mx-auto mb-4 group-hover:from-accent/20 group-hover:to-accent-teal/20 group-hover:scale-110 transition-all duration-300">
-                  <svg
-                    className="w-6 h-6"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
-                  </svg>
-                </div>
-                <div className="text-3xl md:text-4xl font-heading font-bold bg-gradient-to-r from-accent to-accent-teal bg-clip-text text-transparent mb-2">
-                  100%
-                </div>
-                <div className="text-sm font-medium text-primary mb-1">
-                  Proactive
-                </div>
-                <div className="text-xs text-text-light">
-                  Preventive approach
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* Our Process */}
-      <section className="section bg-gradient-to-b from-white via-gray-50/30 to-white relative overflow-hidden">
-        {/* Animated background elements */}
-        <div className="absolute top-0 left-1/4 w-64 h-64 bg-accent/3 rounded-full blur-3xl float-up hidden lg:block"></div>
-        <div
-          className="absolute bottom-0 right-1/4 w-56 h-56 bg-accent-teal/3 rounded-full blur-3xl float-up hidden lg:block"
-          style={{ animationDelay: "3s" }}
-        ></div>
-
+      <section className="section bg-transparent relative overflow-hidden">
         <div className="container-custom relative z-10">
           <div className="text-center mb-12 md:mb-16">
-            <div className="inline-block mb-4">
-              <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
-            </div>
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-              How We Get Started
+            <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-300 mx-auto rounded-full mb-4"></div>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
+              How We Engage
             </h2>
-            <p className="text-lg text-text-light max-w-2xl mx-auto">
-              Our proven MSP onboarding process ensures a smooth transition
+            <p className="text-lg text-blue-300/70 max-w-2xl mx-auto">
+              A structured approach that delivers working AI in weeks, not months
             </p>
           </div>
 
           <div className="max-w-4xl mx-auto space-y-8 md:space-y-12">
             <ProcessStep
               number="1"
-              title="Assess Your IT Environment"
-              description="We conduct a comprehensive assessment of your current IT infrastructure, identifying strengths, risks, and opportunities for improvement."
+              title="Discovery & Assessment"
+              description="We map your existing workflows, identify the highest-value AI opportunities, and assess your data landscape, compliance requirements, and technical environment."
             />
             <ProcessStep
               number="2"
-              title="Identify Risks & Improvements"
-              description="Our team analyzes your systems and provides a clear roadmap for addressing security gaps, performance issues, and operational inefficiencies."
+              title="Solution Design"
+              description="We design the AI architecture — selecting the right models, integration patterns, and deployment approach for your specific context and constraints."
             />
             <ProcessStep
               number="3"
-              title="Implement Monitoring & Security"
-              description="We set up proactive monitoring tools and security measures to protect your business and catch issues before they become problems."
+              title="Build & Integration"
+              description="We build and integrate the solution into your existing systems, with security controls, audit logging, and compliance checks built in from the start."
             />
             <ProcessStep
               number="4"
-              title="Ongoing Management & Support"
-              description="Your dedicated team handles day-to-day IT management, provides helpdesk support, and ensures your systems run smoothly."
+              title="Validation & Handover"
+              description="We validate accuracy, performance, and compliance before go-live, and ensure your team is fully trained and confident operating the new system."
             />
             <ProcessStep
               number="5"
-              title="Continuous Optimization"
-              description="We regularly review and optimize your IT infrastructure, making improvements to enhance performance, security, and efficiency."
+              title="Ongoing Optimisation"
+              description="Post-launch, we monitor performance, refine models, and expand capabilities as your needs evolve — a long-term partner, not a one-time vendor."
             />
           </div>
         </div>
       </section>
 
       {/* Team Section */}
-      <section id="team" className="section bg-white">
+      <section id="team" className="section bg-transparent">
         <div className="container-custom">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-primary mb-4">
-              Meet Our Expert Team
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
+              Meet Our Team
             </h2>
-            <p className="text-lg text-text-light max-w-2xl mx-auto">
-              Cloud infrastructure specialists, IoT researchers, and business solution designers dedicated to your success
+            <p className="text-lg text-blue-300/70 max-w-2xl mx-auto">
+              AI engineers, cloud architects, and compliance specialists
+              dedicated to your success
             </p>
           </div>
 
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Team Member 1 - Talha */}
-            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
-              <div className="bg-gradient-to-br from-cyan-500 to-blue-600 h-32 relative">
-                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-cyan-400 to-blue-500 border-4 border-white flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-                    T
+            {[
+              {
+                initials: "T",
+                gradient: "from-blue-500 to-blue-600",
+                avatarGradient: "from-blue-400 to-blue-500",
+                name: "Talha",
+                role: "Cloud Architect & AI Engineer",
+                bio: "Specialises in enterprise cloud infrastructure and AI/ML deployments. Designs scalable, secure systems across AWS, Azure, and GCP that form the backbone of production AI solutions.",
+                credentials: "MSc Information Systems · GCIS · BSc Computer Science",
+                specialties: "Terraform · Kubernetes · CI/CD · Multi-Cloud · AI/ML Infrastructure",
+              },
+              {
+                initials: "MT",
+                gradient: "from-emerald-500 to-teal-600",
+                avatarGradient: "from-emerald-400 to-teal-500",
+                name: "Dr Mujahid Tabassum",
+                role: "Senior IoT Researcher & Solutions Designer",
+                bio: "Bridges IoT and enterprise strategy to build scalable, data-driven solutions. Transforms emerging technologies into competitive business advantages.",
+                credentials: "Ph.D. Electronics & Telecommunications · Business Strategy Certification",
+                specialties: "IoT Architecture · Edge Computing · Industrial AI · Digital Transformation",
+              },
+              {
+                initials: "R",
+                gradient: "from-blue-500 to-purple-600",
+                avatarGradient: "from-blue-400 to-purple-500",
+                name: "Ramish",
+                role: "Software Engineer & Cloud Solutions Architect",
+                bio: "Builds production-ready AI applications and cloud infrastructure that drive measurable operational improvements.",
+                credentials: "",
+                specialties: "Full-Stack · Node.js · React · Cloud Architecture · CI/CD",
+              },
+              {
+                initials: "AB",
+                gradient: "from-purple-500 to-pink-600",
+                avatarGradient: "from-purple-400 to-pink-500",
+                name: "Ahmad Baig",
+                role: "DevOps Engineer & Technical Project Manager",
+                bio: "Combines engineering rigour with delivery discipline — ensuring AI projects ship on time, on scope, and aligned with business goals.",
+                credentials: "PMP Certified · Microsoft Certified Cloud Admin · Scrum Master",
+                specialties: "Terraform · Kubernetes · Azure/AWS/GCP · Agile Delivery",
+              },
+            ].map(({ initials, gradient, avatarGradient, name, role, bio, credentials, specialties }) => (
+              <div key={name} className="bg-slate-800/60 rounded-xl border border-blue-500/30 overflow-hidden hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300 group backdrop-blur-sm">
+                <div className={`bg-gradient-to-br ${gradient} h-32 relative`}>
+                  <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
+                    <div className={`w-24 h-24 rounded-full bg-gradient-to-br ${avatarGradient} border-4 border-slate-900 flex items-center justify-center text-white text-3xl font-bold shadow-lg`}>
+                      {initials}
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="pt-16 pb-6 px-6 text-center">
-                <h3 className="text-xl font-heading font-bold text-primary mb-2">
-                  Talha
-                </h3>
-                <p className="text-accent-teal font-semibold mb-3">
-                  Cloud Architect & DevOps Engineer
-                </p>
-                <p className="text-text-light text-sm leading-relaxed mb-3">
-                  Expert in architecting enterprise systems and mastering cloud infrastructure automation. Transforms complex IT environments into streamlined, automated solutions across AWS, Azure, and GCP.
-                </p>
-                <p className="text-text-light text-xs mb-2">
-                  <span className="font-semibold text-primary">Credentials:</span> MSc Information Systems | GCIS | BSc Computer Science
-                </p>
-                <p className="text-text-light text-xs">
-                  <span className="font-semibold text-primary">Specialties:</span> Terraform, Ansible, Kubernetes, CI/CD Pipelines, ITIL, Multi-Cloud Architecture, AI/ML Infrastructure
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 2 - Dr Mujahid Tabassum */}
-            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
-              <div className="bg-gradient-to-br from-emerald-500 to-teal-600 h-32 relative">
-                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 border-4 border-white flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-                    MT
-                  </div>
+                <div className="pt-16 pb-6 px-6 text-center">
+                  <h3 className="text-xl font-heading font-bold text-blue-200 mb-1">{name}</h3>
+                  <p className="text-blue-400 font-semibold text-sm mb-3">{role}</p>
+                  <p className="text-blue-300/60 text-sm leading-relaxed mb-3">{bio}</p>
+                  {credentials && (
+                    <p className="text-blue-400/50 text-xs mb-2">
+                      <span className="font-semibold text-blue-300/70">Credentials:</span> {credentials}
+                    </p>
+                  )}
+                  <p className="text-blue-400/50 text-xs">
+                    <span className="font-semibold text-blue-300/70">Specialties:</span> {specialties}
+                  </p>
                 </div>
               </div>
-              <div className="pt-16 pb-6 px-6 text-center">
-                <h3 className="text-xl font-heading font-bold text-primary mb-2">
-                  Dr Mujahid Tabassum
-                </h3>
-                <p className="text-accent-teal font-semibold mb-3">
-                  Senior IoT Researcher & Business Solutions Designer
-                </p>
-                <p className="text-text-light text-sm leading-relaxed mb-3">
-                  Pioneering solutions at the intersection of Internet of Things and enterprise business strategy. Transforms emerging IoT technologies into scalable business solutions that drive innovation and competitive advantage.
-                </p>
-                <p className="text-text-light text-xs mb-2">
-                  <span className="font-semibold text-primary">Credentials:</span> Ph.D. in Electronics & Telecommunications | Advanced IoT Systems Design | Business Strategy Certification
-                </p>
-                <p className="text-text-light text-xs">
-                  <span className="font-semibold text-primary">Specialties:</span> IoT Architecture, Embedded Systems, Business Solutions Design, Edge Computing, Industrial IoT, Smart Systems, Digital Transformation
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 3 - Ramish */}
-            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
-              <div className="bg-gradient-to-br from-blue-500 to-purple-600 h-32 relative">
-                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 border-4 border-white flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-                    R
-                  </div>
-                </div>
-              </div>
-              <div className="pt-16 pb-6 px-6 text-center">
-                <h3 className="text-xl font-heading font-bold text-primary mb-2">
-                  Ramish
-                </h3>
-                <p className="text-accent-teal font-semibold mb-3">
-                  Software Engineer & Cloud Solutions Architect
-                </p>
-                <p className="text-text-light text-sm leading-relaxed mb-3">
-                  Delivers scalable web applications and cloud infrastructure that drive operational efficiency and product performance. Expert in building production-ready systems using Node.js, React, AWS, and GCP.
-                </p>
-                <p className="text-text-light text-xs">
-                  <span className="font-semibold text-primary">Specialties:</span> Full-Stack Development, MySQL & Prisma ORM, Cloud Architecture, CI/CD Automation
-                </p>
-              </div>
-            </div>
-
-            {/* Team Member 4 - Ahmad Baig */}
-            <div className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 group">
-              <div className="bg-gradient-to-br from-purple-500 to-pink-600 h-32 relative">
-                <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2">
-                  <div className="w-24 h-24 rounded-full bg-gradient-to-br from-purple-400 to-pink-500 border-4 border-white flex items-center justify-center text-white text-3xl font-bold shadow-lg">
-                    AB
-                  </div>
-                </div>
-              </div>
-              <div className="pt-16 pb-6 px-6 text-center">
-                <h3 className="text-xl font-heading font-bold text-primary mb-2">
-                  Ahmad Baig
-                </h3>
-                <p className="text-accent-teal font-semibold mb-3">
-                  DevOps Engineer & Technical Project Manager
-                </p>
-                <p className="text-text-light text-sm leading-relaxed mb-3">
-                  Unique blend of project management expertise and cloud engineering. Delivers projects that align business goals with technical excellence—an engineer who understands project timelines and a PM who understands technology.
-                </p>
-                <p className="text-text-light text-xs mb-2">
-                  <span className="font-semibold text-primary">Credentials:</span> PMP Certified | Microsoft Certified Cloud Admin | Scrum Master
-                </p>
-                <p className="text-text-light text-xs">
-                  <span className="font-semibold text-primary">Specialties:</span> CI/CD Automation, Terraform, Kubernetes, Docker, Azure/AWS/GCP, Agile Delivery, Stakeholder Management
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Call To Action Section */}
-      <section className="section bg-gradient-primary text-white relative overflow-hidden">
-        {/* Decorative grid pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="bg-pattern-dense w-full h-full"></div>
-        </div>
-        <div className="decorative-blob w-96 h-96 -top-32 -left-32 opacity-20 pulse-glow"></div>
-        <div className="decorative-blob w-80 h-80 -bottom-24 -right-24 opacity-20"></div>
-        {/* Additional floating elements */}
-        <div className="absolute top-1/2 left-1/4 w-32 h-32 bg-white/5 rounded-full blur-2xl float-up"></div>
-        <div
-          className="absolute bottom-1/4 right-1/3 w-40 h-40 bg-accent-teal/10 rounded-full blur-3xl float-up"
-          style={{ animationDelay: "1.5s" }}
-        ></div>
-
+      {/* CTA Section */}
+      <section className="section relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-slate-900/80 to-slate-950/90"></div>
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Automate Everything. Deploy with Confidence.
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-6">
+              Ready to Adopt AI with Confidence?
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
-              Experience seamless CI/CD pipelines and DevOps automation that accelerates
-              your development lifecycle. Focus on innovation while we handle the complexity
-              of continuous integration and deployment.
+            <p className="text-xl text-blue-300/70 mb-8 leading-relaxed">
+              Book a free AI enablement assessment. We will identify your
+              highest-value opportunities and map a clear path to measurable
+              outcomes — without disrupting what already works.
             </p>
-            <Link
-              href="/contact"
-              className="btn-secondary inline-block bg-white text-primary hover:bg-gray-100"
-            >
-              Schedule a Free IT Assessment
+            <Link href="/contact" className="btn-primary inline-block text-lg px-8 py-4">
+              Book AI Enablement Assessment
             </Link>
           </div>
         </div>

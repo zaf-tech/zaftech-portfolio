@@ -1,213 +1,120 @@
 export const metadata = {
-  title: "Managed IT Services - Zaftech",
+  title: "Agentic AI Services - Zaftech",
   description:
-    "Comprehensive managed IT services including helpdesk support, network monitoring, cybersecurity, cloud management, and IT consulting for small to medium businesses.",
+    "From human accuracy to computer accuracy — private LLMs, pre-orchestrated AI agents, compliance-first AI adoption, and AI-powered application development for enterprise.",
 };
 
 export default function Services() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="section bg-gradient-to-b from-white via-gray-50/50 to-white bg-grid-animated relative overflow-hidden min-h-[70vh] flex items-center">
-        <div className="decorative-blob w-96 h-96 -top-48 -right-48 pulse-glow"></div>
-        <div className="decorative-blob w-72 h-72 -bottom-32 -left-32"></div>
-
-        {/* Floating service icons */}
-        <div className="absolute top-32 left-16 w-14 h-14 text-accent-teal/20 float-icon hidden lg:block">
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-            />
-          </svg>
-        </div>
-        <div
-          className="absolute bottom-32 right-20 w-12 h-12 text-accent-teal/15 float-icon hidden lg:block"
-          style={{ animationDelay: "1.5s" }}
-        >
-          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={1.5}
-              d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-            />
-          </svg>
-        </div>
-
+      <section className="relative overflow-hidden min-h-[70vh] flex items-center py-24">
         <div className="container-custom relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-8">
-              <div className="inline-block mb-6">
-                <div className="h-1 w-20 bg-gradient-to-r from-accent to-accent-teal mx-auto rounded-full"></div>
-              </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
-                Our Cloud & DevOps Services
-              </h1>
-              <p className="text-xl md:text-2xl text-text-light max-w-2xl mx-auto leading-relaxed">
-                Production-ready infrastructure solutions to accelerate your cloud adoption and innovation
-              </p>
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 rounded-full mb-8 backdrop-blur-sm border border-blue-400/30">
+              <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+              <span className="text-sm font-semibold text-blue-300 tracking-widest uppercase">
+                Agentic AI Enablement
+              </span>
             </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-blue-200 mb-6 leading-tight">
+              From Human Accuracy
+              <br />
+              <span className="bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 bg-clip-text text-transparent">
+                to Computer Accuracy
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl text-blue-300/70 max-w-3xl mx-auto leading-relaxed mb-10">
+              AI enablement built for enterprise — private, secure, and
+              production-ready from day one. We integrate state-of-the-art
+              agentic AI to replace your most accuracy-critical human workflows.
+            </p>
 
-            {/* Service highlights */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 max-w-3xl mx-auto">
-              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">
-                  6
+            {/* Stat pills */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 max-w-3xl mx-auto">
+              <div className="text-center p-5 rounded-xl bg-slate-800/60 backdrop-blur-sm border border-blue-500/30">
+                <div className="text-2xl font-heading font-bold text-blue-300 mb-1">
+                  Private LLMs
                 </div>
-                <div className="text-sm text-text-light">Cloud Solutions</div>
+                <div className="text-sm text-blue-400/60">
+                  Your data stays yours
+                </div>
               </div>
-              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">
-                  Days
+              <div className="text-center p-5 rounded-xl bg-slate-800/60 backdrop-blur-sm border border-blue-500/30">
+                <div className="text-2xl font-heading font-bold text-blue-300 mb-1">
+                  Security-First
                 </div>
-                <div className="text-sm text-text-light">To Production</div>
+                <div className="text-sm text-blue-400/60">
+                  Compliance by design
+                </div>
               </div>
-              <div className="text-center p-6 rounded-xl bg-white/60 backdrop-blur-sm border border-gray-100">
-                <div className="text-2xl font-heading font-bold text-accent-teal mb-2">
-                  100%
+              <div className="text-center p-5 rounded-xl bg-slate-800/60 backdrop-blur-sm border border-blue-500/30">
+                <div className="text-2xl font-heading font-bold text-blue-300 mb-1">
+                  Weeks to Deploy
                 </div>
-                <div className="text-sm text-text-light">IaC Automation</div>
+                <div className="text-sm text-blue-400/60">
+                  Not months
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Managed IT Services */}
-      <section className="section">
+      {/* Pillar 1 — Agentic AI Integration */}
+      <section className="section bg-slate-950/15 relative overflow-hidden">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
               <div>
-                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-6">
-                  <svg
-                    className="w-8 h-8"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                    />
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/20 rounded-full mb-6 border border-blue-400/30">
+                  <span className="text-xs font-semibold text-blue-300 tracking-wider">PILLAR 01</span>
+                </div>
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-400/10 flex items-center justify-center text-blue-400 mb-6 border border-blue-500/30">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-                  Managed IT Services
+                <h2 className="text-3xl font-heading font-bold text-blue-200 mb-4">
+                  Agentic AI Integration
                 </h2>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  Complete IT management for your business. We handle all
-                  aspects of your technology infrastructure so you can focus on
-                  what you do best—running your business.
+                <p className="text-blue-300/70 mb-4 leading-relaxed">
+                  Deploy pre-orchestrated AI agent pipelines that automate your
+                  end-to-end business processes — customer service, document
+                  routing, approval workflows, and lead qualification — running
+                  24/7 with zero human handoff required.
                 </p>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  Our managed IT services include proactive monitoring, regular
-                  maintenance, security management, and ongoing support—all
-                  included in one predictable monthly fee. No surprises, no
-                  hidden costs.
+                <p className="text-blue-300/70 mb-6 leading-relaxed">
+                  Our agents integrate directly into your existing systems — CRM,
+                  ERP, ticketing platforms — so you get automation without
+                  disruption. Every agent includes human-in-the-loop escalation
+                  for edge cases.
                 </p>
-                <p className="text-text-light mb-4 leading-relaxed font-medium">
-                  <strong>What's Included:</strong>
-                </p>
-                <ul className="space-y-2 text-text-light">
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    24/7 network monitoring and alerting
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Proactive maintenance and updates
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Helpdesk support for your team
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Security management and protection
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Cloud and backup management
-                  </li>
+                <ul className="space-y-3">
+                  {[
+                    "Pre-built agent templates for common workflows",
+                    "Multi-step workflow orchestration",
+                    "Human-in-the-loop escalation handling",
+                    "CRM, ERP & ticketing system integration",
+                    "Real-time monitoring & performance dashboards",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-blue-300/70 text-sm">{item}</span>
+                    </li>
+                  ))}
                 </ul>
-                <p className="text-text-light mt-4 leading-relaxed">
-                  <strong>Who It's For:</strong> Small to medium businesses that
-                  want reliable IT management without the cost and complexity of
-                  an in-house IT department.
-                </p>
               </div>
-              <div className="bg-gray-50 rounded-xl p-8 h-full flex items-center justify-center">
+              <div className="bg-slate-800/60 backdrop-blur-sm rounded-2xl p-10 border border-blue-500/30 flex items-center justify-center min-h-[280px]">
                 <div className="text-center">
-                  <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    IaC
+                  <div className="text-7xl font-heading font-black bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent mb-3">
+                    AI
                   </div>
-                  <p className="text-text-light">Automated Infrastructure</p>
+                  <div className="text-sm text-blue-400/60 font-medium tracking-widest uppercase">
+                    Agent Orchestration
+                  </div>
                 </div>
               </div>
             </div>
@@ -215,109 +122,59 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Helpdesk & Support */}
-      <section className="section bg-gray-50">
+      {/* Pillar 2 — Private LLM Deployment */}
+      <section className="section bg-slate-950/10 relative overflow-hidden">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="bg-white rounded-xl p-8 h-full flex items-center justify-center order-2 md:order-1">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+              <div className="bg-slate-800/60 backdrop-blur-sm rounded-2xl p-10 border border-blue-500/30 flex items-center justify-center min-h-[280px] order-2 md:order-1">
                 <div className="text-center">
-                  <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    ML
+                  <div className="text-7xl font-heading font-black bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent mb-3">
+                    LLM
                   </div>
-                  <p className="text-text-light">MLOps Pipelines</p>
+                  <div className="text-sm text-blue-400/60 font-medium tracking-widest uppercase">
+                    Private & Secure
+                  </div>
                 </div>
               </div>
               <div className="order-1 md:order-2">
-                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-6">
-                  <svg
-                    className="w-8 h-8"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"
-                    />
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/20 rounded-full mb-6 border border-blue-400/30">
+                  <span className="text-xs font-semibold text-blue-300 tracking-wider">PILLAR 02</span>
+                </div>
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-400/10 flex items-center justify-center text-blue-400 mb-6 border border-blue-500/30">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                 </div>
-                <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-                  MLOps & Model Deployment
+                <h2 className="text-3xl font-heading font-bold text-blue-200 mb-4">
+                  Private LLM Deployment
                 </h2>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  End-to-end ML pipelines with automated training, versioning, and deployment. GPU-optimized infrastructure for AI workloads with monitoring and scaling.
+                <p className="text-blue-300/70 mb-4 leading-relaxed">
+                  Run fully private, on-premises or VPC-hosted large language
+                  models tailored to your business. Your data never leaves your
+                  environment — no third-party API calls, no data exposure, full
+                  compliance with SOC 2, HIPAA, and GDPR.
                 </p>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  From data preprocessing to production deployment, we build complete MLOps workflows that enable your data science teams to ship models faster and with confidence.
+                <p className="text-blue-300/70 mb-6 leading-relaxed">
+                  We fine-tune models on your proprietary data, deploy them in
+                  air-gapped environments when required, and continuously monitor
+                  performance and accuracy over time.
                 </p>
-                <ul className="space-y-2 text-text-light">
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Automated model training & versioning
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    GPU-optimized infrastructure setup
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Model monitoring & drift detection
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    CI/CD integration for model deployment
-                  </li>
+                <ul className="space-y-3">
+                  {[
+                    "On-prem or private VPC-hosted deployment",
+                    "Fine-tuned on your proprietary business data",
+                    "Air-gapped deployment for regulated industries",
+                    "SOC 2 · HIPAA · GDPR compliant architecture",
+                    "Ongoing model performance monitoring",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-blue-300/70 text-sm">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -325,109 +182,60 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Cybersecurity */}
-      <section className="section">
+      {/* Pillar 3 — AI for Finance & Accounting */}
+      <section className="section bg-slate-950/15 relative overflow-hidden">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
               <div>
-                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-6">
-                  <svg
-                    className="w-8 h-8"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                    />
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/20 rounded-full mb-6 border border-blue-400/30">
+                  <span className="text-xs font-semibold text-blue-300 tracking-wider">PILLAR 03</span>
+                </div>
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-400/10 flex items-center justify-center text-blue-400 mb-6 border border-blue-500/30">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-                  DevOps & CI/CD Automation
+                <h2 className="text-3xl font-heading font-bold text-blue-200 mb-4">
+                  AI for Finance & Accounting
                 </h2>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  Streamlined deployment pipelines with GitHub Actions, GitLab CI, and Jenkins. Automated testing, security scanning, and zero-downtime deployments.
+                <p className="text-blue-300/70 mb-4 leading-relaxed">
+                  The most costly errors in business come from human accuracy
+                  limitations in financial workflows. We replace those with
+                  computer accuracy — automated reconciliation, invoice
+                  processing, expense classification, and accurate AI utilization
+                  billing with full audit trails on every transaction.
                 </p>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  We build complete CI/CD workflows that automate your software delivery, from code commit to production deployment, with built-in quality gates and rollback capabilities.
+                <p className="text-blue-300/70 mb-6 leading-relaxed">
+                  Our finance agents integrate with your existing accounting
+                  platforms, process documents in any format, and generate
+                  compliance-ready reports automatically.
                 </p>
-                <ul className="space-y-2 text-text-light">
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    GitHub Actions, GitLab CI, Jenkins pipelines
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Automated testing & security scanning
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Zero-downtime blue-green deployments
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Rollback strategies & quality gates
-                  </li>
+                <ul className="space-y-3">
+                  {[
+                    "Automated invoice & expense processing",
+                    "AI-driven ledger reconciliation",
+                    "Accurate AI utilization billing & cost attribution",
+                    "Audit trail generation for every transaction",
+                    "Integration with QuickBooks, SAP, Oracle, Xero",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-blue-300/70 text-sm">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
-              <div className="bg-gray-50 rounded-xl p-8 h-full flex items-center justify-center">
+              <div className="bg-slate-800/60 backdrop-blur-sm rounded-2xl p-10 border border-blue-500/30 flex items-center justify-center min-h-[280px]">
                 <div className="text-center">
-                  <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    CI/CD
+                  <div className="text-7xl font-heading font-black bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent mb-3">
+                    $AI
                   </div>
-                  <p className="text-text-light">Automated Pipelines</p>
+                  <div className="text-sm text-blue-400/60 font-medium tracking-widest uppercase">
+                    Finance Automation
+                  </div>
                 </div>
               </div>
             </div>
@@ -435,109 +243,59 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Cloud & Backup */}
-      <section className="section bg-gray-50">
+      {/* Pillar 4 — AI Compliance & Security */}
+      <section className="section bg-slate-950/10 relative overflow-hidden">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="bg-white rounded-xl p-8 h-full flex items-center justify-center order-2 md:order-1">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+              <div className="bg-slate-800/60 backdrop-blur-sm rounded-2xl p-10 border border-blue-500/30 flex items-center justify-center min-h-[280px] order-2 md:order-1">
                 <div className="text-center">
-                  <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    ☁️
+                  <div className="text-7xl font-heading font-black bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent mb-3">
+                    GRC
                   </div>
-                  <p className="text-text-light">Cloud Migration</p>
+                  <div className="text-sm text-blue-400/60 font-medium tracking-widest uppercase">
+                    Governance · Risk · Compliance
+                  </div>
                 </div>
               </div>
               <div className="order-1 md:order-2">
-                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-6">
-                  <svg
-                    className="w-8 h-8"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
-                    />
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/20 rounded-full mb-6 border border-blue-400/30">
+                  <span className="text-xs font-semibold text-blue-300 tracking-wider">PILLAR 04</span>
+                </div>
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-400/10 flex items-center justify-center text-blue-400 mb-6 border border-blue-500/30">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
                 </div>
-                <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-                  Cloud Migration & Auto-Scaling
+                <h2 className="text-3xl font-heading font-bold text-blue-200 mb-4">
+                  AI Compliance & Security
                 </h2>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  Seamless workload migration to AWS, Azure, or GCP with zero data breach risk. Auto-scaling infrastructure that adapts to your traffic and workload demands.
+                <p className="text-blue-300/70 mb-4 leading-relaxed">
+                  AI adoption must never outpace governance. Our compliance agents
+                  enforce policy rules in real time, generate regulatory reports
+                  automatically, and maintain immutable audit logs across every AI
+                  action your organisation takes.
                 </p>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  We handle the complete migration process from assessment to cutover, ensuring minimal downtime and maximum security. Your infrastructure scales automatically based on demand.
+                <p className="text-blue-300/70 mb-6 leading-relaxed">
+                  We build AI security frameworks that detect anomalies, prevent
+                  data leakage, and ensure every AI decision is traceable,
+                  explainable, and audit-ready.
                 </p>
-                <ul className="space-y-2 text-text-light">
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    AWS, Azure, GCP migration expertise
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Automated scaling policies & load balancing
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Zero data breach migration strategy
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Cost optimization & resource monitoring
-                  </li>
+                <ul className="space-y-3">
+                  {[
+                    "Real-time policy enforcement agents",
+                    "Regulatory reporting automation (SOC 2, ISO 27001)",
+                    "Anomaly & data breach detection",
+                    "Immutable audit log for every AI action",
+                    "Compliance documentation generation",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-blue-300/70 text-sm">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -545,205 +303,60 @@ export default function Services() {
         </div>
       </section>
 
-      {/* IT Consulting & vCIO */}
-      <section className="section">
+      {/* Pillar 5 — AI-Powered Application Development */}
+      <section className="section bg-slate-950/15 relative overflow-hidden">
         <div className="container-custom">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
               <div>
-                <div className="w-16 h-16 rounded-lg bg-gradient-to-br from-accent/10 to-accent-teal/10 flex items-center justify-center text-accent-teal mb-6">
-                  <svg
-                    className="w-8 h-8"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
-                    />
+                <div className="inline-flex items-center gap-2 px-3 py-1 bg-blue-500/20 rounded-full mb-6 border border-blue-400/30">
+                  <span className="text-xs font-semibold text-blue-300 tracking-wider">PILLAR 05</span>
+                </div>
+                <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-400/10 flex items-center justify-center text-blue-400 mb-6 border border-blue-500/30">
+                  <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>
                 </div>
-                <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-                  Kubernetes & Container Orchestration
+                <h2 className="text-3xl font-heading font-bold text-blue-200 mb-4">
+                  AI-Powered Application Development
                 </h2>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  Production-ready Kubernetes clusters (EKS, GKE, AKS) with service mesh, ingress controllers, and monitoring. Containerize and orchestrate your applications at scale.
+                <p className="text-blue-300/70 mb-4 leading-relaxed">
+                  Build production-grade applications with AI at the core — not
+                  bolted on. Document Q&A systems, intelligent decision engines,
+                  internal copilots, and customer-facing AI interfaces tailored
+                  to your exact domain and data.
                 </p>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  We deploy battle-tested Kubernetes setups with GitOps workflows, automated scaling, and comprehensive observability—giving you enterprise-grade container orchestration.
+                <p className="text-blue-300/70 mb-6 leading-relaxed">
+                  Every application we build is API-first, scalable, and designed
+                  for rapid iteration — from validated prototype to production
+                  deployment in weeks.
                 </p>
-                <ul className="space-y-2 text-text-light">
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    EKS, GKE, AKS managed clusters
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Service mesh (Istio/Linkerd) integration
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    GitOps with ArgoCD or Flux
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Prometheus/Grafana monitoring stack
-                  </li>
+                <ul className="space-y-3">
+                  {[
+                    "RAG-powered document intelligence systems",
+                    "Domain-specific AI copilots & chat interfaces",
+                    "Decision engines with explainable AI output",
+                    "API-first architecture for seamless integration",
+                    "Rapid prototyping to production in weeks",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3">
+                      <svg className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <span className="text-blue-300/70 text-sm">{item}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
-              <div className="bg-gray-50 rounded-xl p-8 h-full flex items-center justify-center">
+              <div className="bg-slate-800/60 backdrop-blur-sm rounded-2xl p-10 border border-blue-500/30 flex items-center justify-center min-h-[280px]">
                 <div className="text-center">
-                  <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    ☸️
+                  <div className="text-7xl font-heading font-black bg-gradient-to-r from-blue-400 to-blue-300 bg-clip-text text-transparent mb-3">
+                    DEV
                   </div>
-                  <p className="text-text-light">Kubernetes</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Service 6 */}
-      <section className="section bg-white">
-        <div className="container-custom">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div className="bg-white rounded-xl p-8 h-full flex items-center justify-center order-2 md:order-1">
-                <div className="text-center">
-                  <div className="text-6xl font-heading font-bold text-accent/20 mb-4">
-                    🚀
+                  <div className="text-sm text-blue-400/60 font-medium tracking-widest uppercase">
+                    AI Application Development
                   </div>
-                  <p className="text-text-light">Rapid Launch</p>
                 </div>
-              </div>
-              <div className="order-1 md:order-2">
-                <h2 className="text-3xl font-heading font-bold text-primary mb-4">
-                  MVP & POC Rapid Deployment
-                </h2>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  Launch production-grade MVPs and POCs in days, not months. Pre-configured cloud environments with security, monitoring, and CI/CD built-in from day one.
-                </p>
-                <p className="text-text-light mb-4 leading-relaxed">
-                  We provide turnkey infrastructure templates that let you validate ideas fast—complete with authentication, databases, and deployment pipelines ready to go.
-                </p>
-                <ul className="space-y-2 text-text-light">
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Pre-configured cloud templates
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Authentication & databases included
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    CI/CD pipelines pre-configured
-                  </li>
-                  <li className="flex items-start">
-                    <svg
-                      className="w-5 h-5 text-accent-teal mr-2 mt-0.5 flex-shrink-0"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
-                    Production-ready in days
-                  </li>
-                </ul>
               </div>
             </div>
           </div>
@@ -751,24 +364,29 @@ export default function Services() {
       </section>
 
       {/* CTA Section */}
-      <section className="section bg-gradient-primary text-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="bg-pattern-dense w-full h-full"></div>
-        </div>
-        <div className="decorative-blob w-96 h-96 -top-32 -left-32 opacity-20"></div>
+      <section className="section relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-slate-900/80 to-slate-950/90"></div>
         <div className="container-custom relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
-              Ready to Accelerate Your Cloud Journey?
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 rounded-full mb-6 backdrop-blur-sm border border-blue-400/30">
+              <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+              <span className="text-sm font-semibold text-blue-300 tracking-widest uppercase">
+                Get Started
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-6">
+              Ready to Enable AI Across Your Organisation?
             </h2>
-            <p className="text-xl text-gray-300 mb-8">
-              Let's discuss how our Infrastructure as Code and DevOps expertise can help you deploy faster and scale confidently.
+            <p className="text-xl text-blue-300/70 mb-8 leading-relaxed">
+              Book a free AI enablement assessment. We&apos;ll map your
+              highest-impact automation opportunities and show you exactly where
+              computer accuracy beats human accuracy in your workflows.
             </p>
             <a
               href="/contact"
-              className="btn-secondary inline-block bg-white text-primary hover:bg-gray-100"
+              className="btn-primary inline-block text-lg px-8 py-4"
             >
-              Schedule a Free Cloud Assessment
+              Book AI Enablement Assessment
             </a>
           </div>
         </div>

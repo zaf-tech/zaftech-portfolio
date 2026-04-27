@@ -1,7 +1,6 @@
 import Link from "next/link";
 import BlogCard from "@/components/BlogCard";
 
-// Sample blog posts data
 const blogPosts = [
   {
     slug: "ai-powered-cicd-pipeline-analysis",
@@ -11,7 +10,7 @@ const blogPosts = [
     category: "DevOps",
     image: "/images/blog/cicd-ai-analysis.jpg",
     author: "ZAFTECH Team",
-    readTime: "12 min read"
+    readTime: "12 min read",
   },
   {
     slug: "devops-best-practices-successful-mvps",
@@ -21,9 +20,8 @@ const blogPosts = [
     category: "DevOps",
     image: "/images/blog/devops-mvp.jpg",
     author: "ZAFTECH Team",
-    readTime: "8 min read"
+    readTime: "8 min read",
   },
-
   {
     slug: "cybersecurity-best-practices-2026",
     title: "Top Cybersecurity Best Practices for 2026",
@@ -32,7 +30,7 @@ const blogPosts = [
     category: "Cybersecurity",
     image: "/images/blog/cybersecurity.jpg",
     author: "ZAFTECH Team",
-    readTime: "5 min read"
+    readTime: "5 min read",
   },
   {
     slug: "cloud-migration-guide",
@@ -42,7 +40,7 @@ const blogPosts = [
     category: "Cloud Computing",
     image: "/images/blog/cloud.jpg",
     author: "ZAFTECH Team",
-    readTime: "7 min read"
+    readTime: "7 min read",
   },
   {
     slug: "ai-business-automation",
@@ -52,49 +50,52 @@ const blogPosts = [
     category: "AI Solutions",
     image: "/images/blog/ai.jpg",
     author: "ZAFTECH Team",
-    readTime: "6 min read"
-  }
+    readTime: "6 min read",
+  },
 ];
 
 export default function BlogPage() {
   return (
     <main className="min-h-screen pt-24 pb-16">
       {/* Hero Section */}
-      <section className="section bg-gradient-to-br from-primary/5 via-accent/5 to-accent-teal/5">
+      <section className="section relative overflow-hidden">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary mb-6">
-              Insights & Resources
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 rounded-full mb-6 backdrop-blur-sm border border-blue-400/30">
+              <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+              <span className="text-sm font-semibold text-blue-300 tracking-widest uppercase">
+                Insights & Resources
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-blue-200 mb-6">
+              AI Enablement Insights
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 mb-8">
-              Stay updated with the latest trends in cybersecurity, cloud computing, 
-              AI solutions, and managed IT services.
+            <p className="text-lg md:text-xl text-blue-300/70 mb-8 leading-relaxed">
+              Expert perspectives on agentic AI, private LLMs, compliance
+              frameworks, and the future of computer accuracy in enterprise
+              workflows.
             </p>
-            
+
             {/* Category Filter */}
             <div className="flex flex-wrap justify-center gap-3">
-              <button className="px-5 py-2 rounded-full bg-primary text-white font-medium hover:shadow-lg transition-all">
+              <button className="px-5 py-2 rounded-full bg-blue-500/30 text-blue-200 font-medium border border-blue-400/40 transition-all hover:bg-blue-500/40">
                 All Posts
               </button>
-              <button className="px-5 py-2 rounded-full bg-white text-gray-700 border border-gray-200 font-medium hover:border-primary hover:text-primary transition-all">
-                Cybersecurity
-              </button>
-              <button className="px-5 py-2 rounded-full bg-white text-gray-700 border border-gray-200 font-medium hover:border-primary hover:text-primary transition-all">
-                Cloud Computing
-              </button>
-              <button className="px-5 py-2 rounded-full bg-white text-gray-700 border border-gray-200 font-medium hover:border-primary hover:text-primary transition-all">
-                AI Solutions
-              </button>
-              <button className="px-5 py-2 rounded-full bg-white text-gray-700 border border-gray-200 font-medium hover:border-primary hover:text-primary transition-all">
-                Managed IT
-              </button>
+              {["Cybersecurity", "Cloud Computing", "AI Solutions", "DevOps"].map((cat) => (
+                <button
+                  key={cat}
+                  className="px-5 py-2 rounded-full bg-slate-800/60 text-blue-300/70 border border-blue-500/20 font-medium hover:border-blue-400/50 hover:text-blue-200 transition-all"
+                >
+                  {cat}
+                </button>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="section">
+      <section className="section bg-slate-950/15">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
@@ -105,24 +106,26 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="section bg-gradient-to-br from-primary via-accent to-accent-teal">
-        <div className="container-custom">
-          <div className="max-w-2xl mx-auto text-center text-white">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4">
-              Subscribe to Our Newsletter
+      <section className="section relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-slate-900/80 to-slate-950/90"></div>
+        <div className="container-custom relative z-10">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
+              Stay Ahead of AI Adoption
             </h2>
-            <p className="text-lg mb-8 text-white/90">
-              Get the latest IT insights and tips delivered directly to your inbox.
+            <p className="text-lg mb-8 text-blue-300/70">
+              Get the latest AI enablement insights, private LLM updates, and
+              compliance guides delivered directly to your inbox.
             </p>
             <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="flex-1 px-6 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white/50"
+                className="flex-1 px-6 py-3 rounded-lg bg-slate-800/80 text-blue-200 placeholder-blue-400/40 border border-blue-500/30 focus:outline-none focus:ring-2 focus:ring-blue-400/50 focus:border-blue-400/50"
               />
               <button
                 type="submit"
-                className="px-8 py-3 bg-white text-primary rounded-lg font-medium hover:shadow-xl transition-all hover:scale-105"
+                className="btn-primary px-8 py-3 rounded-lg font-medium whitespace-nowrap"
               >
                 Subscribe
               </button>
