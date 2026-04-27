@@ -22,10 +22,10 @@ export default function NetworkAnimation() {
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    // Set canvas size
+    // Set canvas size — fill full screen so it works as a background
     const updateCanvasSize = () => {
       canvas.width = window.innerWidth;
-      canvas.height = Math.min(window.innerHeight, 500);
+      canvas.height = window.innerHeight;
     };
     updateCanvasSize();
     window.addEventListener('resize', updateCanvasSize);
@@ -194,8 +194,7 @@ export default function NetworkAnimation() {
   return (
     <canvas
       ref={canvasRef}
-      className="w-full h-auto block bg-gradient-to-b from-slate-950 to-slate-900"
-      style={{ display: 'block', background: '#0d1117' }}
+      style={{ display: 'block', width: '100%', height: '100%', background: '#0d1117' }}
     />
   );
 }

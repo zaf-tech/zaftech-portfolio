@@ -92,8 +92,10 @@ export default function HeroIllustration() {
               width="98"
               height="18"
               rx="9"
-              fill="url(#nodeGradient)"
-              opacity="0.15"
+              fill="rgba(30, 41, 59, 0.6)"
+              stroke="url(#nodeGradient)"
+              strokeWidth="1"
+              opacity="1"
             />
             <circle
               cx="62"
@@ -128,7 +130,7 @@ export default function HeroIllustration() {
               width="200"
               height="16"
               rx="8"
-              fill="white"
+              fill="rgba(51, 65, 85, 0.7)"
               opacity="0.9"
             />
             <circle
@@ -145,7 +147,7 @@ export default function HeroIllustration() {
               width="160"
               height="14"
               rx="7"
-              fill="white"
+              fill="rgba(51, 65, 85, 0.7)"
               opacity="0.75"
             />
             <circle
@@ -162,7 +164,7 @@ export default function HeroIllustration() {
               width="140"
               height="14"
               rx="7"
-              fill="white"
+              fill="rgba(51, 65, 85, 0.7)"
               opacity="0.65"
             />
             <circle
@@ -179,7 +181,7 @@ export default function HeroIllustration() {
               width="120"
               height="14"
               rx="7"
-              fill="white"
+              fill="rgba(51, 65, 85, 0.7)"
               opacity="0.55"
             />
             <circle
@@ -196,7 +198,7 @@ export default function HeroIllustration() {
               cx="190"
               cy="200"
               r="16"
-              fill="white"
+              fill="rgba(30, 41, 59, 0.8)"
               stroke="url(#nodeGradient)"
               strokeWidth="4"
             />
@@ -213,7 +215,7 @@ export default function HeroIllustration() {
               cx="120"
               cy="200"
               r="12"
-              fill="white"
+              fill="rgba(30, 41, 59, 0.8)"
               stroke="url(#nodeGradient)"
               strokeWidth="3"
             />
@@ -229,7 +231,7 @@ export default function HeroIllustration() {
               cx="260"
               cy="200"
               r="12"
-              fill="white"
+              fill="rgba(30, 41, 59, 0.8)"
               stroke="url(#nodeGradient)"
               strokeWidth="3"
             />
