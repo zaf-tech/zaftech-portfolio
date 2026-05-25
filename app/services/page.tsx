@@ -1,12 +1,50 @@
+import JsonLd from "@/components/JsonLd"
+
 export const metadata = {
-  title: "Agentic AI Services - Zaftech",
+  title: "Agentic AI Services for Canadian Enterprises",
   description:
-    "From human accuracy to computer accuracy — private LLMs, pre-orchestrated AI agents, compliance-first AI adoption, and AI-powered application development for enterprise.",
-};
+    "Private LLMs, agentic AI agent pipelines, finance automation, AI compliance, and AI application development — built for Canadian enterprises. PIPEDA-compliant, production-ready in weeks.",
+  openGraph: {
+    title: "Agentic AI Services for Canadian Enterprises | Zaftech",
+    description:
+      "From human accuracy to computer accuracy. Zaftech deploys AI solutions for finance, healthcare, legal, and operations teams across Canada.",
+    url: "https://zaftech.ca/services",
+  },
+  alternates: {
+    canonical: "https://zaftech.ca/services",
+  },
+}
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Enterprise AI Enablement Services",
+  "provider": {
+    "@type": "Organization",
+    "name": "Zaftech",
+    "url": "https://zaftech.ca",
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Canada",
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "AI Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentic AI Integration" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private LLM Deployment" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI for Finance & Accounting" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Compliance & Security" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI-Powered Application Development" } },
+    ],
+  },
+}
 
 export default function Services() {
   return (
     <div>
+      <JsonLd data={serviceSchema as Record<string, unknown>} />
       {/* Hero Section */}
       <section className="relative overflow-hidden min-h-[70vh] flex items-center py-24">
         <div className="container-custom relative z-10">
