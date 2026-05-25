@@ -23,6 +23,11 @@ const localBusinessSchema = {
   "url": "https://zaftech.ca",
   "description":
     "Enterprise AI consulting and enablement services across Canada — private LLMs, agentic AI, and compliance-first AI adoption.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "url": "https://zaftech.ca/contact",
+  },
   "areaServed": [
     "Ontario", "British Columbia", "Alberta", "Quebec", "Manitoba",
     "Saskatchewan", "Nova Scotia", "New Brunswick", "Prince Edward Island",

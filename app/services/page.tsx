@@ -1,6 +1,7 @@
+import type { Metadata } from "next"
 import JsonLd from "@/components/JsonLd"
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Agentic AI Services for Canadian Enterprises",
   description:
     "Private LLMs, agentic AI agent pipelines, finance automation, AI compliance, and AI application development — built for Canadian enterprises. PIPEDA-compliant, production-ready in weeks.",

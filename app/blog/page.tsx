@@ -1,7 +1,8 @@
+import type { Metadata } from "next"
 import Link from "next/link";
 import BlogCard from "@/components/BlogCard";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "AI Insights & Resources for Canadian Enterprises",
   description:
     "Expert articles on enterprise AI adoption, private LLM deployment, PIPEDA compliance, and agentic AI for Canadian businesses across all provinces.",

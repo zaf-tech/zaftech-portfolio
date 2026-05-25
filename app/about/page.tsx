@@ -1,4 +1,6 @@
-export const metadata = {
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
   title: "About — AI Enablement Company Canada",
   description:
     "Zaftech is a Canadian enterprise AI enablement company. We help organisations across Ontario, BC, Alberta, and all provinces deploy private LLMs, agentic AI, and compliance-first automation.",
