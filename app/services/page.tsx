@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import JsonLd from "@/components/JsonLd"
+import { provinces } from "@/lib/provinces"
 
 export const metadata: Metadata = {
   title: "Agentic AI Services for Canadian Enterprises",
@@ -397,6 +399,33 @@ export default function Services() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Serving Canada */}
+      <section className="section bg-transparent">
+        <div className="container-custom">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-heading font-bold text-blue-200 mb-4">
+                Serving Enterprises Across Canada
+              </h2>
+              <p className="text-blue-300/70">
+                We deliver AI enablement to enterprises in every Canadian province and territory
+              </p>
+            </div>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+              {provinces.map((province) => (
+                <Link
+                  key={province.slug}
+                  href={`/ai-services/${province.slug}`}
+                  className="text-center p-3 rounded-lg bg-slate-800/40 border border-blue-500/20 text-blue-300/70 hover:text-blue-300 hover:border-blue-400/40 hover:bg-slate-800/60 transition-all text-sm font-medium"
+                >
+                  {province.name}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
