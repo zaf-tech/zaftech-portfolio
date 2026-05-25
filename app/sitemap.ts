@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next"
+import { provinces } from "@/lib/provinces"
 
 const BASE = "https://zaftech.ca"
 
@@ -29,5 +30,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }))
 
-  return [...staticPages, ...blogPages]
+  const provincialPages: MetadataRoute.Sitemap = provinces.map(({ slug }) => ({
+    url: `${BASE}/ai-services/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }))
+
+  return [...staticPages, ...blogPages, ...provincialPages]
 }
