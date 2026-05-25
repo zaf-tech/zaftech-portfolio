@@ -81,8 +81,8 @@ export const provinces: Province[] = [
   {
     slug: 'nunavut',
     name: 'Nunavut',
-    industries: ['Mining', 'Government', 'Remote Operations'],
-    industryDescription: 'mining, government, and remote operations sectors',
+    industries: ['Mining', 'Indigenous Governance', 'Remote Operations'],
+    industryDescription: 'mining, indigenous governance, and remote operations sectors',
   },
 ]
 
