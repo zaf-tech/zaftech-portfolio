@@ -1,5 +1,21 @@
+import type { Metadata } from "next"
 import Link from "next/link";
 import BlogCard from "@/components/BlogCard";
+
+export const metadata: Metadata = {
+  title: "AI Insights & Resources for Canadian Enterprises",
+  description:
+    "Expert articles on enterprise AI adoption, private LLM deployment, PIPEDA compliance, and agentic AI for Canadian businesses across all provinces.",
+  openGraph: {
+    title: "AI Insights & Resources for Canadian Enterprises | Zaftech",
+    description:
+      "Expert articles on enterprise AI adoption, private LLM deployment, PIPEDA compliance, and agentic AI for Canadian businesses.",
+    url: "https://zaftech.ca/blog",
+  },
+  alternates: {
+    canonical: "https://zaftech.ca/blog",
+  },
+}
 
 const blogPosts = [
   {

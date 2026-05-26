@@ -3,6 +3,24 @@ import ServiceCard from "@/components/ServiceCard";
 import ProcessStep from "@/components/ProcessStep";
 import HeroIllustration from "@/components/HeroIllustration";
 import ServicesSlider from "@/components/ServicesSlider";
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Zaftech — Enterprise AI Consulting Canada",
+  },
+  description:
+    "Zaftech helps Canadian enterprises adopt AI with confidence. Private LLMs, agentic AI agents, and compliance-first implementation across Ontario, BC, Alberta, and all provinces.",
+  openGraph: {
+    title: "Zaftech — Enterprise AI Consulting Canada",
+    description:
+      "Private LLMs, agentic AI agents, and compliance-first AI adoption for Canadian enterprises. Production-ready in weeks.",
+    url: "https://zaftech.ca",
+  },
+  alternates: {
+    canonical: "https://zaftech.ca",
+  },
+}
 
 export default function Home() {
   return (

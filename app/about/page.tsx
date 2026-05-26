@@ -1,8 +1,19 @@
-export const metadata = {
-  title: "About Zaftech - Agentic AI Enablement",
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About — AI Enablement Company Canada",
   description:
-    "Zaftech is a pioneer in agentic AI enablement — helping enterprises replace human-accuracy-dependent workflows with private LLMs, pre-orchestrated agents, and compliance-first AI adoption.",
-};
+    "Zaftech is a Canadian enterprise AI enablement company. We help organisations across Ontario, BC, Alberta, and all provinces deploy private LLMs, agentic AI, and compliance-first automation.",
+  openGraph: {
+    title: "About Zaftech — AI Enablement Company Canada",
+    description:
+      "Meet the team behind Zaftech — AI engineers, cloud architects, and compliance specialists helping Canadian enterprises adopt AI with confidence.",
+    url: "https://zaftech.ca/about",
+  },
+  alternates: {
+    canonical: "https://zaftech.ca/about",
+  },
+}
 
 export default function About() {
   return (

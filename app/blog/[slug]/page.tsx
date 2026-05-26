@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next"
+import JsonLd from "@/components/JsonLd"
 
 // This would typically come from a CMS or database
 const blogPosts: Record<string, any> = {
@@ -9,6 +11,8 @@ const blogPosts: Record<string, any> = {
       category: "DevOps",
       author: "ZAFTECH Team",
       readTime: "8 min read",
+      dateISO: "2026-02-01",
+      excerpt: "Implement core DevOps practices — IaC, CI/CD, monitoring, and feature flags — to streamline your MVP development and accelerate delivery.",
       content: `
         <p>Building a successful Minimum Viable Product (MVP) requires balancing speed with stability. Implementing core DevOps practices can streamline development, improve reliability, and accelerate feedback loops.</p>
 
@@ -40,6 +44,8 @@ const blogPosts: Record<string, any> = {
     category: "Cybersecurity",
     author: "ZAFTECH Team",
     readTime: "5 min read",
+    dateISO: "2026-01-05",
+    excerpt: "Discover the latest cybersecurity strategies — MFA, zero trust, endpoint protection, and regular audits — to protect your business from evolving threats in 2026.",
     content: `
       <p>In 2026, cybersecurity remains a critical concern for businesses of all sizes. As threats continue to evolve, staying ahead with robust security practices is essential.</p>
 
@@ -68,6 +74,8 @@ const blogPosts: Record<string, any> = {
     category: "Cloud Computing",
     author: "ZAFTECH Team",
     readTime: "7 min read",
+    dateISO: "2026-01-03",
+    excerpt: "A step-by-step guide to cloud migration for small and medium businesses — from assessment and planning through execution and ongoing optimisation.",
     content: `
       <p>Cloud migration can transform your business operations, but it requires careful planning and execution. This guide walks you through the essential steps.</p>
 
@@ -103,6 +111,8 @@ const blogPosts: Record<string, any> = {
     category: "AI Solutions",
     author: "ZAFTECH Team",
     readTime: "6 min read",
+    dateISO: "2025-12-28",
+    excerpt: "A practical introduction to AI in business — customer service automation, data analysis, and process automation with a step-by-step getting started framework.",
     content: `
       <p>Artificial Intelligence is revolutionizing how businesses operate. From customer service to data analysis, AI can automate routine tasks and provide valuable insights.</p>
 
@@ -140,6 +150,26 @@ interface PageProps {
   };
 }
 
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const post = blogPosts[params.slug]
+  if (!post) return {}
+  return {
+    title: post.title,
+    description: post.excerpt,
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: "article",
+      publishedTime: post.dateISO,
+      authors: [post.author],
+      url: `https://zaftech.ca/blog/${params.slug}`,
+    },
+    alternates: {
+      canonical: `https://zaftech.ca/blog/${params.slug}`,
+    },
+  }
+}
+
 export default function BlogPost({ params }: PageProps) {
   const post = blogPosts[params.slug];
 
@@ -147,8 +177,32 @@ export default function BlogPost({ params }: PageProps) {
     notFound();
   }
 
+  const blogPostingSchema = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": post.title,
+    "description": post.excerpt,
+    "datePublished": post.dateISO,
+    "author": {
+      "@type": "Organization",
+      "name": post.author,
+      "url": "https://zaftech.ca",
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Zaftech",
+      "url": "https://zaftech.ca",
+      "logo": { "@type": "ImageObject", "url": "https://zaftech.ca/images/logo.svg" },
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://zaftech.ca/blog/${params.slug}`,
+    },
+  }
+
   return (
     <main className="min-h-screen pt-24 pb-16">
+      <JsonLd data={blogPostingSchema as Record<string, unknown>} />
       {/* Breadcrumb */}
       <div className="container-custom mb-8">
         <div className="flex items-center gap-2 text-sm text-gray-600">
