@@ -161,9 +161,14 @@ export default function ProvinceServicePage({ province }: ProvinceServicePagePro
               Canada&apos;s Personal Information Protection and Electronic Documents Act (PIPEDA).
               Your data stays in Canada. Full audit trails. No third-party data exposure.
             </p>
-            <Link href="/services" className="text-blue-400 font-medium hover:text-blue-300 transition-colors">
-              Learn about our compliance-first approach →
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link href="/services" className="text-blue-400 font-medium hover:text-blue-300 transition-colors">
+                Learn about our compliance-first approach →
+              </Link>
+              <Link href="/blog/pipeda-compliance-enterprise-ai-canada" className="text-blue-400 font-medium hover:text-blue-300 transition-colors">
+                PIPEDA AI Compliance Guide →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

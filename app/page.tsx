@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     absolute: "Zaftech — Enterprise AI Consulting Canada",
   },
   description:
-    "Zaftech helps Canadian enterprises adopt AI with confidence. Private LLMs, agentic AI agents, and compliance-first implementation across Ontario, BC, Alberta, and all provinces.",
+    "Zaftech helps Canadian enterprises adopt AI with confidence. Private LLMs, agentic AI agents, and PIPEDA-compliant implementation across all provinces.",
   openGraph: {
     title: "Zaftech — Enterprise AI Consulting Canada",
     description:

@@ -19,7 +19,7 @@ Run these checks every session:
 ```bash
 curl -s http://localhost:3000/sitemap.xml | grep -o '<loc>[^<]*</loc>' | wc -l
 ```
-Expected: 30+ URLs. If fewer, check `app/sitemap.ts` — a new page may be missing.
+Expected: 25+ URLs (6 static + blog posts + 13 provincial). If fewer, check `app/sitemap.ts` — a new page may be missing.
 
 **1.2 Robots.txt**
 ```bash
@@ -51,7 +51,7 @@ Target: **1 post per session** from the keyword cluster below. Pick the next unp
 
 | # | Target Keyword | Title | Pillar | Status |
 |---|---------------|-------|--------|--------|
-| 1 | PIPEDA AI compliance | PIPEDA Compliance for Enterprise AI in Canada: What You Need to Know | Compliance | - |
+| 1 | PIPEDA AI compliance | PIPEDA Compliance for Enterprise AI in Canada: What You Need to Know | Compliance | done |
 | 2 | private LLM Canada | Private LLM vs Public API: The Canadian Enterprise Decision | Private LLM | - |
 | 3 | AI agents Ontario finance | How AI Agents Are Transforming Ontario Financial Services | Agentic AI | - |
 | 4 | AI invoice processing Canada | AI-Powered Invoice Processing: 5 Ways Canadian Firms Save 60+ Hours/Month | Finance AI | - |

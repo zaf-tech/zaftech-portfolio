@@ -19,6 +19,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "pipeda-compliance-enterprise-ai-canada",
+    title: "PIPEDA Compliance for Enterprise AI in Canada: What You Need to Know",
+    excerpt: "PIPEDA compliance for enterprise AI means governing how your AI collects, uses, and stores personal data. Learn what Canadian enterprises need to do.",
+    date: "May 27, 2026",
+    category: "Compliance",
+    image: "/images/blog/pipeda-compliance-ai.jpg",
+    author: "ZAFTECH Team",
+    readTime: "10 min read",
+  },
+  {
     slug: "ai-powered-cicd-pipeline-analysis",
     title: "AI-Powered CI/CD Pipeline Analysis: How Smart Dashboards Cut Cloud Costs by 60%",
     excerpt: "Learn how AI-powered pipeline analysis and intelligent dashboards reduce cloud costs by 60% while improving deployment efficiency and detecting infrastructure drift.",

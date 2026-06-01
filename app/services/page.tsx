@@ -6,7 +6,7 @@ import { provinces } from "@/lib/provinces"
 export const metadata: Metadata = {
   title: "Agentic AI Services for Canadian Enterprises",
   description:
-    "Private LLMs, agentic AI agent pipelines, finance automation, AI compliance, and AI application development — built for Canadian enterprises. PIPEDA-compliant, production-ready in weeks.",
+    "Private LLMs, agentic AI pipelines, finance automation, and AI compliance for Canadian enterprises. PIPEDA-compliant and production-ready in weeks.",
   openGraph: {
     title: "Agentic AI Services for Canadian Enterprises | Zaftech",
     description:
