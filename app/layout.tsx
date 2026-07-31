@@ -4,6 +4,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import NetworkAnimation from "@/components/NetworkAnimation";
 import JsonLd from "@/components/JsonLd";
+import ChatWidget from "@/components/ChatWidget";
 
 const organizationSchema = {
   "@context": "https://schema.org",
@@ -65,6 +66,7 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
+        <ChatWidget />
       </body>
     </html>
   );

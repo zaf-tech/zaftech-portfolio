@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/Admin/.claude/plugins/cache/claude-plugins-official/superpowers/5.1.0/skills/subagent-driven-development/**)",
+      "Read(//c/Users/Admin/.claude/plugins/**)",
+      "Bash(Get-ChildItem -Path \"C:\\\\git\\\\zaftech-portfolio\" -Force)",
+      "Bash(Select-Object Name)",
+      "PowerShell(New-Item -ItemType Directory -Path \"C:\\\\git\\\\zaftech-portfolio\\\\lib\" -Force)",
+      "Bash(npx tsc *)",
+      "Bash(git stash *)",
+      "Bash(mkdir -p \"C:/git/zaftech-portfolio/app/ai-services/[province]\")",
+      "Bash(grep -E '\\\\.html$')",
+      "Bash(npm test *)",
+      "PowerShell(Set-Location c:\\\\git\\\\zaftech-portfolio; $GIT_DIR = \\(git rev-parse --git-dir\\); $GIT_COMMON = \\(git rev-parse --git-common-dir\\); Write-Output \"GIT_DIR: $GIT_DIR\"; Write-Output \"GIT_COMMON: $GIT_COMMON\"; Write-Output \"Same: $\\($GIT_DIR -eq $GIT_COMMON\\)\"; git branch --show-current)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(gh pr create --title 'feat\\(seo\\): Canada-wide SEO foundation — Phase 1 & 2' --body ' *)",
+      "PowerShell(Get-Command gh -ErrorAction SilentlyContinue; \\(Get-Command git\\).Source)",
+      "PowerShell(git remote get-url origin)",
+      "PowerShell(winget install --id GitHub.cli --silent --accept-package-agreements --accept-source-agreements)",
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\GitHub CLI\"; gh auth status)",
+      "PowerShell($env:PATH = $env:PATH + \";C:\\\\Program Files\\\\GitHub CLI\"; gh auth login --git-protocol ssh --hostname github.com --web)",
+      "Bash(mkdir -p \"c:/git/zaftech-portfolio/.claude/skills/seo-daily\")",
+      "Edit(/.claude/skills/seo-daily/**)",
+      "Bash(curl -s http://localhost:3000/sitemap.xml)",
+      "Bash(curl -s http://localhost:3000/robots.txt)"
+    ],
+    "additionalDirectories": [
+      "C:\\git\\zaftech-portfolio\\app\\ai-services",
+      "c:\\git\\zaftech-portfolio\\.claude\\skills"
+    ]
+  }
+}

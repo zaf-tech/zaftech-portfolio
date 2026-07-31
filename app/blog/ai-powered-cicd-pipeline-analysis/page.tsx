@@ -100,7 +100,7 @@ export default function BlogPost() {
               
               <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded mb-6">
                 <p className="text-gray-800 leading-relaxed">
-                  <span className="font-bold">You're losing money you don't see.</span> Most engineering teams waste 30-50% of their pipeline and infrastructure budget on redundant builds, unused storage, and configuration failures.
+                  <span className="font-bold">You&apos;re losing money you don&apos;t see.</span> Most engineering teams waste 30-50% of their pipeline and infrastructure budget on redundant builds, unused storage, and configuration failures.
                 </p>
               </div>
 
@@ -120,7 +120,7 @@ export default function BlogPost() {
               </div>
 
               <p className="text-gray-700">
-                This isn't from bad architecture. It's from lack of visibility. You can't optimize what you can't see.
+                This isn&apos;t from bad architecture. It&apos;s from lack of visibility. You can&apos;t optimize what you can&apos;t see.
               </p>
             </section>
 
@@ -172,7 +172,7 @@ export default function BlogPost() {
               <h2 className="text-4xl font-bold text-primary mb-6">The Solution: Intelligence</h2>
 
               <p className="text-gray-700 mb-8">
-                AI-powered analysis reveals what's happening in your pipelines. Once you see it, you can optimize it.
+                AI-powered analysis reveals what&apos;s happening in your pipelines. Once you see it, you can optimize it.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -322,7 +322,7 @@ export default function BlogPost() {
             {/* CTA */}
             <div className="mt-12 p-8 bg-gradient-to-r from-accent to-accent-teal rounded-lg text-white text-center">
               <h3 className="text-2xl font-bold mb-3">Ready to Optimize?</h3>
-              <p className="mb-6 opacity-90">Let's discuss your specific situation and find quick wins.</p>
+              <p className="mb-6 opacity-90">Let&apos;s discuss your specific situation and find quick wins.</p>
               <Link 
                 href="/contact"
                 className="inline-block px-8 py-3 bg-white text-accent font-semibold rounded hover:shadow-lg transition-all"

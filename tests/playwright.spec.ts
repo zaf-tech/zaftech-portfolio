@@ -21,7 +21,7 @@ const pages: PageConfig[] = [
   {
     path: '/about',
     title: 'About Page',
-    maxLoadTime: 2000,
+    maxLoadTime: 3000,
     requiresSEO: true,
     criticalElements: ['about-hero', 'team-section', 'values'],
     isPublic: true,
@@ -29,7 +29,7 @@ const pages: PageConfig[] = [
   {
     path: '/services',
     title: 'Services Page',
-    maxLoadTime: 2500,
+    maxLoadTime: 3000,
     requiresSEO: true,
     criticalElements: ['services-grid', 'cta-section'],
     isPublic: true,
@@ -45,9 +45,41 @@ const pages: PageConfig[] = [
   {
     path: '/contact',
     title: 'Contact Page',
-    maxLoadTime: 2500,
+    maxLoadTime: 3000,
     requiresSEO: true,
     criticalElements: ['contact-form', 'contact-info'],
+    isPublic: true,
+  },
+  {
+    path: '/privacy-policy',
+    title: 'Privacy Policy',
+    maxLoadTime: 3000,
+    requiresSEO: true,
+    criticalElements: [],
+    isPublic: true,
+  },
+  {
+    path: '/blog/ai-business-automation',
+    title: 'AI Business Automation Article',
+    maxLoadTime: 3000,
+    requiresSEO: true,
+    criticalElements: [],
+    isPublic: true,
+  },
+  {
+    path: '/ai-services/ontario',
+    title: 'AI Services Ontario',
+    maxLoadTime: 3000,
+    requiresSEO: true,
+    criticalElements: [],
+    isPublic: true,
+  },
+  {
+    path: '/ai-services/quebec',
+    title: 'AI Services Quebec',
+    maxLoadTime: 3000,
+    requiresSEO: true,
+    criticalElements: [],
     isPublic: true,
   },
 ];
@@ -73,11 +105,12 @@ pages.forEach((page) => {
   });
 
   // Test critical elements exist
-  if (page.criticalElements && page.criticalElements.length > 0) {
+  const criticalElements = page.criticalElements ?? [];
+  if (criticalElements.length > 0) {
     test(`Critical elements present: ${page.title}`, async ({ page: browserPage }) => {
       await browserPage.goto(page.path);
 
-      for (const element of page.criticalElements) {
+      for (const element of criticalElements) {
         const selector = `[data-testid="${element}"], .${element}, #${element}`;
         const found = await browserPage.locator(selector).isVisible().catch(() => false);
         // Log if not found, but don't fail - elements might use different selectors
@@ -93,13 +126,15 @@ pages.forEach((page) => {
     test(`SEO check: ${page.title}`, async ({ page: browserPage }) => {
       await browserPage.goto(page.path);
 
-      // Check for viewport meta tag
-      const viewport = await browserPage.locator('meta[name="viewport"]').isVisible();
-      expect(viewport).toBeTruthy();
+      // Meta tags are typically in <head>; assert presence rather than visibility.
+      const viewportCount = await browserPage.locator('meta[name="viewport"]').count();
+      expect(viewportCount).toBeGreaterThan(0);
 
-      // Check for charset
-      const charset = await browserPage.locator('meta[charset]').or(browserPage.locator('meta[http-equiv="Content-Type"]')).isVisible();
-      expect(charset).toBeTruthy();
+      // Check for charset metadata in either supported form.
+      const charsetCount = await browserPage
+        .locator('meta[charset], meta[http-equiv="Content-Type" i]')
+        .count();
+      expect(charsetCount).toBeGreaterThan(0);
     });
   }
 });

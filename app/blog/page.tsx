@@ -19,6 +19,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "ai-doctor-clinics-patient-experience",
+    title: "How AI Helps Doctor Clinics Improve Patient Experience",
+    excerpt: "See how AI dashboards and voice-call automation reduce no-shows, improve communication, and deliver faster, more personalized patient experiences in clinics.",
+    date: "July 31, 2026",
+    category: "AI Solutions",
+    image: "/images/blog/ai-doctor-clinics.jpg",
+    author: "ZAFTECH Team",
+    readTime: "10 min read",
+  },
+  {
     slug: "ai-powered-cicd-pipeline-analysis",
     title: "AI-Powered CI/CD Pipeline Analysis: How Smart Dashboards Cut Cloud Costs by 60%",
     excerpt: "Learn how AI-powered pipeline analysis and intelligent dashboards reduce cloud costs by 60% while improving deployment efficiency and detecting infrastructure drift.",
