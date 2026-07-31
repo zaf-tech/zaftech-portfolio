@@ -1,10 +1,10 @@
 {
-  "timestamp": "2026-03-19T20:16:14.999Z",
+  "timestamp": "2026-07-31T18:56:33.111Z",
   "summary": {
-    "passed": 13,
+    "passed": 17,
     "failed": 0,
-    "warnings": 8,
-    "score": 62
+    "warnings": 5,
+    "score": 77
   },
   "checks": [
     {
@@ -54,8 +54,8 @@
     },
     {
       "name": "Homepage SEO",
-      "status": "warn",
-      "message": "Missing: metadata export, title, description"
+      "status": "pass",
+      "message": "Metadata properly configured"
     },
     {
       "name": "About SEO",
@@ -69,8 +69,8 @@
     },
     {
       "name": "Blog SEO",
-      "status": "warn",
-      "message": "Missing: metadata export, description"
+      "status": "pass",
+      "message": "Metadata properly configured"
     },
     {
       "name": "CI/CD Article SEO",
@@ -108,9 +108,14 @@
       "message": "Some vulnerabilities found - check severity"
     },
     {
-      "name": "File Size",
-      "status": "warn",
-      "message": "Could not check file sizes"
+      "name": "Dependencies",
+      "status": "pass",
+      "message": "package.json: 1.11 KB"
+    },
+    {
+      "name": "Build Size",
+      "status": "pass",
+      "message": "122.63 MB (check if reasonable)"
     }
   ]
 }

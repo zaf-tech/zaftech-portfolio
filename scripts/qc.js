@@ -106,9 +106,16 @@ class QCChecker {
       execSync('npx tsc --noEmit', { stdio: 'pipe' });
       this.check('TypeScript Types', 'pass', 'No type errors');
     } catch (error) {
-      const errorOutput = error.toString();
+      const errorOutput = [
+        error?.stdout ? error.stdout.toString() : '',
+        error?.stderr ? error.stderr.toString() : '',
+        error?.toString ? error.toString() : '',
+      ].join('\n');
       const errorCount = (errorOutput.match(/error TS/g) || []).length;
-      this.check('TypeScript Types', 'fail', `${errorCount} type errors found`);
+      const message = errorCount > 0
+        ? `${errorCount} type errors found`
+        : 'TypeScript check failed (see command output)';
+      this.check('TypeScript Types', 'fail', message);
     }
   }
 
@@ -259,13 +266,41 @@ class QCChecker {
     this.header('7. FILE SIZE VALIDATION');
 
     try {
-      // Check package size
-      const packageSize = execSync('ls -lh package.json').toString();
-      this.check('Dependencies', 'pass', 'package.json is reasonable size');
+      const formatBytes = (bytes) => {
+        if (bytes < 1024) return `${bytes} B`;
+        const units = ['KB', 'MB', 'GB'];
+        let size = bytes / 1024;
+        let unitIndex = 0;
+        while (size >= 1024 && unitIndex < units.length - 1) {
+          size /= 1024;
+          unitIndex++;
+        }
+        return `${size.toFixed(2)} ${units[unitIndex]}`;
+      };
+
+      const getDirectorySize = (dirPath) => {
+        let total = 0;
+        const entries = fs.readdirSync(dirPath, { withFileTypes: true });
+        for (const entry of entries) {
+          const entryPath = path.join(dirPath, entry.name);
+          if (entry.isDirectory()) {
+            total += getDirectorySize(entryPath);
+          } else if (entry.isFile()) {
+            total += fs.statSync(entryPath).size;
+          }
+        }
+        return total;
+      };
+
+      // Check package.json size
+      const packagePath = path.join(process.cwd(), 'package.json');
+      const packageBytes = fs.statSync(packagePath).size;
+      this.check('Dependencies', 'pass', `package.json: ${formatBytes(packageBytes)}`);
 
       // Check if .next exists
       if (fs.existsSync(path.join(process.cwd(), '.next'))) {
-        const nextSize = execSync('du -sh .next').toString().split('\t')[0];
+        const nextBytes = getDirectorySize(path.join(process.cwd(), '.next'));
+        const nextSize = formatBytes(nextBytes);
         this.log(`  Build output size: ${nextSize}`, 'dim');
         this.check('Build Size', 'pass', `${nextSize} (check if reasonable)`);
       }
