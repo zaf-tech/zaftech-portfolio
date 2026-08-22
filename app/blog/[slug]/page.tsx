@@ -282,12 +282,15 @@ export default function BlogPost({ params }: PageProps) {
     notFound();
   }
 
+  const blogUrl = `https://zaftech.ca/blog/${params.slug}`
+
   const blogPostingSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.excerpt,
     "datePublished": post.dateISO,
+    "dateModified": post.dateISO,
     "author": {
       "@type": "Organization",
       "name": post.author,
@@ -301,13 +304,41 @@ export default function BlogPost({ params }: PageProps) {
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://zaftech.ca/blog/${params.slug}`,
+      "@id": blogUrl,
     },
+    "articleSection": post.category,
+    "timeRequired": post.readTime,
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://zaftech.ca",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://zaftech.ca/blog",
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": blogUrl,
+      },
+    ],
   }
 
   return (
     <main className="min-h-screen pt-24 pb-16">
       <JsonLd data={blogPostingSchema as Record<string, unknown>} />
+      <JsonLd data={breadcrumbSchema as Record<string, unknown>} />
       {/* Breadcrumb */}
       <div className="container-custom mb-8">
         <div className="flex items-center gap-2 text-sm text-gray-600">

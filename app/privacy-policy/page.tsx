@@ -1,7 +1,18 @@
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Privacy Policy | Zaftech",
   description:
     "Learn how Zaftech collects, uses, protects, and retains personal information in accordance with applicable Canadian privacy laws.",
+  openGraph: {
+    title: "Privacy Policy | Zaftech",
+    description:
+      "Learn how Zaftech collects, uses, protects, and retains personal information in accordance with applicable Canadian privacy laws.",
+    url: "https://zaftech.ca/privacy-policy",
+  },
+  alternates: {
+    canonical: "https://zaftech.ca/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyPage() {

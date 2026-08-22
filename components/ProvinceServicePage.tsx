@@ -7,6 +7,8 @@ interface ProvinceServicePageProps {
 }
 
 export default function ProvinceServicePage({ province }: ProvinceServicePageProps) {
+  const provinceUrl = `https://zaftech.ca/ai-services/${province.slug}`
+
   const provinceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -22,11 +24,38 @@ export default function ProvinceServicePage({ province }: ProvinceServicePagePro
       "containedIn": { "@type": "Country", "name": "Canada" },
     },
     "description": `Zaftech provides enterprise AI consulting, private LLM deployment, and agentic AI automation for businesses in ${province.name}.`,
+    "url": provinceUrl,
+  }
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://zaftech.ca",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "AI Services",
+        "item": "https://zaftech.ca/services",
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": province.name,
+        "item": provinceUrl,
+      },
+    ],
   }
 
   return (
     <div>
       <JsonLd data={provinceSchema as Record<string, unknown>} />
+      <JsonLd data={breadcrumbSchema as Record<string, unknown>} />
 
       {/* Hero */}
       <section className="relative overflow-hidden min-h-[60vh] flex items-center py-24">
