@@ -5,6 +5,10 @@ import { useEffect, useState } from "react";
 const services = [
   {
     type: "service",
+    content: "Generative AI as a Service (GAAS) for Secure AI Adoption"
+  },
+  {
+    type: "service",
     content: "End-to-End IAC Build Pipelines"
   },
   {
