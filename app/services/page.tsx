@@ -4,13 +4,13 @@ import JsonLd from "@/components/JsonLd"
 import { provinces } from "@/lib/provinces"
 
 export const metadata: Metadata = {
-  title: "Agentic AI Services for Canadian Enterprises",
+  title: "Generative AI as a Service (GAAS) for Canadian Businesses | Zaftech",
   description:
-    "Private LLMs, agentic AI agent pipelines, finance automation, AI compliance, and AI application development — built for Canadian enterprises. PIPEDA-compliant, production-ready in weeks.",
+    "Generative AI as a Service for businesses in Canada. Private GenAI solutions, AI automation, AI copilots, and secure enterprise AI implementation for finance, healthcare, operations, and professional services.",
   openGraph: {
-    title: "Agentic AI Services for Canadian Enterprises | Zaftech",
+    title: "Generative AI as a Service (GAAS) | Zaftech",
     description:
-      "From human accuracy to computer accuracy. Zaftech deploys AI solutions for finance, healthcare, legal, and operations teams across Canada.",
+      "Private AI, generative AI automation, and AI consulting for Canadian businesses. Production-ready GAAS solutions for secure and scalable AI adoption.",
     url: "https://zaftech.ca/services",
   },
   alternates: {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Enterprise AI Enablement Services",
+  "name": "Generative AI as a Service (GAAS)",
   "provider": {
     "@type": "Organization",
     "name": "Zaftech",
@@ -33,11 +33,12 @@ const serviceSchema = {
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "AI Services",
+    "name": "GAAS & AI Services",
     "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Agentic AI Integration" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Generative AI as a Service (GAAS)" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Private LLM Deployment" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI for Finance & Accounting" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Copilot Development" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Automation for Business Operations" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Compliance & Security" } },
       { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI-Powered Application Development" } },
     ],
@@ -55,48 +56,114 @@ export default function Services() {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 rounded-full mb-8 backdrop-blur-sm border border-blue-400/30">
               <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
               <span className="text-sm font-semibold text-blue-300 tracking-widest uppercase">
-                Agentic AI Enablement
+                Generative AI as a Service
               </span>
             </div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-blue-200 mb-6 leading-tight">
-              From Human Accuracy
+              Generative AI as a Service
               <br />
               <span className="bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 bg-clip-text text-transparent">
-                to Computer Accuracy
+                (GAAS) for Modern Businesses
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-blue-300/70 max-w-3xl mx-auto leading-relaxed mb-10">
-              AI enablement built for enterprise — private, secure, and
-              production-ready from day one. We integrate state-of-the-art
-              agentic AI to replace your most accuracy-critical human workflows.
+              Zaftech delivers GAAS, including private AI copilots, document intelligence, AI workflow automation, and enterprise AI consulting for teams that need secure, scalable, and production-ready AI without building an internal AI department.
             </p>
 
             {/* Stat pills */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 max-w-3xl mx-auto">
               <div className="text-center p-5 rounded-xl bg-slate-800/60 backdrop-blur-sm border border-blue-500/30">
                 <div className="text-2xl font-heading font-bold text-blue-300 mb-1">
-                  Private LLMs
+                  Private AI
                 </div>
                 <div className="text-sm text-blue-400/60">
-                  Your data stays yours
+                  Your data stays protected
                 </div>
               </div>
               <div className="text-center p-5 rounded-xl bg-slate-800/60 backdrop-blur-sm border border-blue-500/30">
                 <div className="text-2xl font-heading font-bold text-blue-300 mb-1">
-                  Security-First
+                  AI Automation
                 </div>
                 <div className="text-sm text-blue-400/60">
-                  Compliance by design
+                  Faster operations & lower cost
                 </div>
               </div>
               <div className="text-center p-5 rounded-xl bg-slate-800/60 backdrop-blur-sm border border-blue-500/30">
                 <div className="text-2xl font-heading font-bold text-blue-300 mb-1">
-                  Weeks to Deploy
+                  Deploy in Weeks
                 </div>
                 <div className="text-sm text-blue-400/60">
-                  Not months
+                  Not months of delay
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-slate-950/15 relative overflow-hidden">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
+                What is Generative AI as a Service?
+              </h2>
+              <p className="text-lg text-blue-300/70 max-w-3xl mx-auto leading-relaxed">
+                Generative AI as a Service is a managed model for AI adoption where businesses get secure AI strategy, private model deployment, workflow automation, and ongoing optimisation without the overhead of hiring a large in-house AI team.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  title: "AI Strategy & Discovery",
+                  body: "We identify your highest-value AI opportunities in customer service, document processing, sales support, and internal operations.",
+                },
+                {
+                  title: "Private GenAI Deployment",
+                  body: "We deploy private LLMs and AI copilots in secure environments that meet your compliance, privacy, and governance requirements.",
+                },
+                {
+                  title: "Managed AI Optimisation",
+                  body: "We monitor performance, improve prompts and workflows, and keep your AI systems aligned with business goals over time.",
+                },
+              ].map((item) => (
+                <div key={item.title} className="rounded-2xl border border-blue-500/20 bg-slate-800/50 p-6">
+                  <h3 className="text-xl font-heading font-semibold text-blue-200 mb-3">{item.title}</h3>
+                  <p className="text-blue-300/70 leading-relaxed text-sm">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-transparent relative overflow-hidden">
+        <div className="container-custom">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
+                GAAS Use Cases for Business Teams
+              </h2>
+              <p className="text-lg text-blue-300/70 max-w-3xl mx-auto leading-relaxed">
+                From support to operations, generative AI helps teams move faster while staying aligned with business rules and security requirements.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                "Customer support AI assistants and chatbots",
+                "Knowledge base search and internal employee copilots",
+                "Intelligent intake and document triage",
+                "AI-powered sales and proposal drafting",
+                "Finance automation and invoice review",
+                "Operations workflow orchestration and case routing",
+              ].map((useCase) => (
+                <div key={useCase} className="flex items-start gap-3 rounded-2xl border border-blue-500/20 bg-slate-800/40 p-4 text-blue-300/80">
+                  <svg className="w-5 h-5 text-blue-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>{useCase}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

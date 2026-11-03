@@ -7,14 +7,14 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Zaftech — Enterprise AI Consulting Canada",
+    absolute: "Generative AI as a Service (GAAS) Canada | Zaftech",
   },
   description:
-    "Zaftech helps Canadian enterprises adopt AI with confidence. Private LLMs, agentic AI agents, and compliance-first implementation across Ontario, BC, Alberta, and all provinces.",
+    "Generative AI as a Service (GAAS) for Canadian businesses. Private AI, AI automation, AI copilots, and secure enterprise AI solutions for Ontario, BC, Alberta, and all provinces.",
   openGraph: {
-    title: "Zaftech — Enterprise AI Consulting Canada",
+    title: "Generative AI as a Service (GAAS) Canada | Zaftech",
     description:
-      "Private LLMs, agentic AI agents, and compliance-first AI adoption for Canadian enterprises. Production-ready in weeks.",
+      "Secure GAAS solutions for Canadian businesses. Private LLMs, AI workflow automation, and enterprise AI consulting for measurable results.",
     url: "https://zaftech.ca",
   },
   alternates: {
@@ -35,13 +35,13 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 rounded-full mb-6 backdrop-blur-sm border border-blue-400/30">
                 <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
                 <span className="text-sm font-semibold text-blue-300 tracking-widest">
-                  ENTERPRISE AI ENABLEMENT
+                  GENERATIVE AI AS A SERVICE (GAAS)
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 mb-6 leading-tight">
-                Intelligent AI Solutions
+                AI That Saves Time,
                 <br />
-                for the Modern Enterprise
+                Cuts Cost, and Protects Data
               </h2>
             </div>
 
@@ -53,14 +53,19 @@ export default function Home() {
 
               <div className="mb-10 p-8 bg-gradient-to-r from-blue-500/15 to-blue-400/15 rounded-xl border border-blue-400/40">
                 <p className="text-lg md:text-xl text-blue-100 font-semibold leading-relaxed mb-4">
-                  We help organisations adopt AI with confidence — private,
-                  secure, and aligned with your compliance requirements.
+                  We help businesses adopt Generative AI as a Service (GAAS) without the risk, complexity, or internal AI hiring burden.
                 </p>
                 <p className="text-base md:text-lg text-blue-200/80 leading-relaxed">
-                  From streamlining finance and operations to deploying private
-                  LLMs your team can trust — Zaftech delivers AI enablement
-                  that creates measurable business value from day one.
+                  From AI automation and private LLM deployment to AI copilots, document intelligence, and smarter internal workflows, Zaftech builds practical generative AI solutions that reduce manual work, accelerate decisions, and keep your data protected.
                 </p>
+              </div>
+
+              <div className="flex flex-wrap justify-center gap-3 mb-8 text-sm text-blue-200/80">
+                {['Private LLMs', 'AI Copilots', 'Workflow Automation', 'Document Intelligence', 'Business AI Strategy'].map((item) => (
+                  <span key={item} className="rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1.5">
+                    {item}
+                  </span>
+                ))}
               </div>
 
               <div className="flex flex-col items-center">
@@ -79,6 +84,43 @@ export default function Home() {
                   No commitment · Expert consultation · Confidential
                 </p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section bg-transparent relative overflow-hidden">
+        <div className="container-custom relative z-10">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-10">
+              <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-300 mx-auto rounded-full mb-4"></div>
+              <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
+                Where GAAS Delivers Real Business Value
+              </h2>
+              <p className="text-lg text-blue-300/70 max-w-3xl mx-auto">
+                Practical AI use cases that reduce manual effort, improve service quality, and create measurable ROI.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  title: "AI Copilots for Teams",
+                  body: "Give your staff instant access to knowledge, summaries, and task support without exposing sensitive data to public AI tools.",
+                },
+                {
+                  title: "Document & Workflow Automation",
+                  body: "Automate invoice review, contract processing, intake routing, and internal operational workflows across your business.",
+                },
+                {
+                  title: "Private AI for Compliance",
+                  body: "Deploy enterprise AI in secure environments designed for finance, legal, healthcare, and regulated operations.",
+                },
+              ].map((item) => (
+                <div key={item.title} className="rounded-2xl border border-blue-500/20 bg-slate-800/50 p-6">
+                  <h3 className="text-xl font-heading font-semibold text-blue-200 mb-3">{item.title}</h3>
+                  <p className="text-blue-300/70 leading-relaxed text-sm">{item.body}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
