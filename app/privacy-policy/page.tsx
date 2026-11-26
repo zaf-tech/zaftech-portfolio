@@ -208,7 +208,7 @@ export default function PrivacyPolicyPage() {
                   If you have questions about this Privacy Policy or want to
                   exercise your privacy rights, contact Zaftech at:
                 </p>
-                <p className="text-blue-200 font-medium">Email: info@zaftech.com</p>
+                <p className="text-blue-200 font-medium">Email: info@zaftech.ca</p>
                 <p className="text-blue-200 font-medium">Phone: +1 (289) 802-5001</p>
                 <p className="text-blue-200 font-medium">
                   Address: 400 Applewood Crescent, Concord, ON L4K 0C3

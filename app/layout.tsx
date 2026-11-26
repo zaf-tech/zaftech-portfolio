@@ -13,7 +13,7 @@ const organizationSchema = {
   "url": "https://zaftech.ca",
   "logo": "https://zaftech.ca/images/logo.svg",
   "description":
-    "Enterprise AI enablement company specializing in private LLMs, agentic AI agents, and compliance-first AI adoption for Canadian enterprises.",
+    "AI services provider specializing in AI agent orchestration, AI workflow automation, and private LLM deployment for Canadian businesses.",
   "areaServed": { "@type": "Country", "name": "Canada" },
   "contactPoint": {
     "@type": "ContactPoint",
@@ -25,23 +25,23 @@ const organizationSchema = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://zaftech.ca"),
   title: {
-    default: "Zaftech — Enterprise AI Consulting Canada",
+    default: "Zaftech — AI Agent Orchestration & Automation Services Canada",
     template: "%s | Zaftech",
   },
   description:
-    "From human accuracy to computer accuracy. Zaftech deploys private LLMs, pre-orchestrated AI agents, and compliance-first AI adoption for Canadian enterprises — secure, production-ready, weeks to deploy.",
+    "Zaftech designs, orchestrates, and manages AI agents that automate your business workflows — customer service, documents, sales, and finance. Private, secure, and live in weeks.",
   openGraph: {
     type: "website",
     siteName: "Zaftech",
-    title: "Zaftech — Enterprise AI Consulting Canada",
+    title: "Zaftech — AI Agent Orchestration & Automation Services Canada",
     description:
-      "From human accuracy to computer accuracy. Zaftech deploys private LLMs, pre-orchestrated AI agents, and compliance-first AI adoption for Canadian enterprises.",
+      "Zaftech designs, orchestrates, and manages AI agents that automate your business workflows. Private, secure, and live in weeks.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zaftech — Enterprise AI Consulting Canada",
+    title: "Zaftech — AI Agent Orchestration & Automation Services Canada",
     description:
-      "From human accuracy to computer accuracy. Zaftech deploys private LLMs, pre-orchestrated AI agents, and compliance-first AI adoption for Canadian enterprises.",
+      "Zaftech designs, orchestrates, and manages AI agents that automate your business workflows. Private, secure, and live in weeks.",
   },
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,

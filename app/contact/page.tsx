@@ -313,8 +313,8 @@ export default function Contact() {
                   </svg>
                 </div>
                 <h3 className="text-xl font-heading font-semibold text-blue-200 mb-2">Email</h3>
-                <a href="mailto:info@zaftech.com" className="text-blue-400 hover:text-blue-300 transition-colors">
-                  info@zaftech.com
+                <a href="mailto:info@zaftech.ca" className="text-blue-400 hover:text-blue-300 transition-colors">
+                  info@zaftech.ca
                 </a>
                 <p className="text-sm text-blue-400/50 mt-2">We respond within one business day</p>
               </div>
