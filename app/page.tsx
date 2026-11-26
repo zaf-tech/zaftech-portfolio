@@ -7,14 +7,14 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Generative AI as a Service (GAAS) Canada | Zaftech",
+    absolute: "AI Agent Orchestration & Automation Services Canada | Zaftech",
   },
   description:
-    "Generative AI as a Service (GAAS) for Canadian businesses. Private AI, AI automation, AI copilots, and secure enterprise AI solutions for Ontario, BC, Alberta, and all provinces.",
+    "AI services provider for Canadian businesses. We build and orchestrate AI agents that automate customer service, documents, sales, and finance workflows. Private, secure, live in weeks.",
   openGraph: {
-    title: "Generative AI as a Service (GAAS) Canada | Zaftech",
+    title: "AI Agent Orchestration & Automation Services Canada | Zaftech",
     description:
-      "Secure GAAS solutions for Canadian businesses. Private LLMs, AI workflow automation, and enterprise AI consulting for measurable results.",
+      "AI agent orchestration and workflow automation for Canadian businesses, with private LLMs and managed optimisation.",
     url: "https://zaftech.ca",
   },
   alternates: {
@@ -35,13 +35,13 @@ export default function Home() {
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 rounded-full mb-6 backdrop-blur-sm border border-blue-400/30">
                 <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
                 <span className="text-sm font-semibold text-blue-300 tracking-widest">
-                  GENERATIVE AI AS A SERVICE (GAAS)
+                  AI AGENT ORCHESTRATION · AI AUTOMATION SERVICES
                 </span>
               </div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-300 to-blue-200 mb-6 leading-tight">
-                AI That Saves Time,
+                AI Agents That Run Your Workflows,
                 <br />
-                Cuts Cost, and Protects Data
+                Save Time, and Protect Your Data
               </h2>
             </div>
 
@@ -53,15 +53,15 @@ export default function Home() {
 
               <div className="mb-10 p-8 bg-gradient-to-r from-blue-500/15 to-blue-400/15 rounded-xl border border-blue-400/40">
                 <p className="text-lg md:text-xl text-blue-100 font-semibold leading-relaxed mb-4">
-                  We help businesses adopt Generative AI as a Service (GAAS) without the risk, complexity, or internal AI hiring burden.
+                  Zaftech is an AI services provider. We design, orchestrate, and manage AI agents that automate the work your team repeats every day.
                 </p>
                 <p className="text-base md:text-lg text-blue-200/80 leading-relaxed">
-                  From AI automation and private LLM deployment to AI copilots, document intelligence, and smarter internal workflows, Zaftech builds practical generative AI solutions that reduce manual work, accelerate decisions, and keep your data protected.
+                  We connect AI agents to your email, CRM, documents, and accounting tools, coordinate them into end-to-end workflows with human approval where it matters, and keep them improving after launch. No in-house AI team required.
                 </p>
               </div>
 
               <div className="flex flex-wrap justify-center gap-3 mb-8 text-sm text-blue-200/80">
-                {['Private LLMs', 'AI Copilots', 'Workflow Automation', 'Document Intelligence', 'Business AI Strategy'].map((item) => (
+                {['AI Agent Orchestration', 'Workflow Automation', 'Customer Service Agents', 'Document Intelligence', 'Private LLMs'].map((item) => (
                   <span key={item} className="rounded-full border border-blue-400/30 bg-blue-500/10 px-3 py-1.5">
                     {item}
                   </span>
@@ -95,17 +95,17 @@ export default function Home() {
             <div className="text-center mb-10">
               <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-300 mx-auto rounded-full mb-4"></div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
-                Where GAAS Delivers Real Business Value
+                Where AI Agents Deliver Real Business Value
               </h2>
               <p className="text-lg text-blue-300/70 max-w-3xl mx-auto">
-                Practical AI use cases that reduce manual effort, improve service quality, and create measurable ROI.
+                Practical automations that reduce manual effort and improve service quality.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  title: "AI Copilots for Teams",
-                  body: "Give your staff instant access to knowledge, summaries, and task support without exposing sensitive data to public AI tools.",
+                  title: "Multi-Agent Workflow Orchestration",
+                  body: "Chain specialised AI agents together to handle a process end to end — intake, decisions, follow-up — with human approval for edge cases.",
                 },
                 {
                   title: "Document & Workflow Automation",
@@ -135,7 +135,7 @@ export default function Home() {
             <div className="text-center mb-12 md:mb-16">
               <div className="h-1 w-20 bg-gradient-to-r from-blue-400 to-blue-300 mx-auto rounded-full mb-4"></div>
               <h2 className="text-3xl md:text-4xl font-heading font-bold text-blue-200 mb-4">
-                Why Enterprises Choose Zaftech
+                Why Businesses Choose Zaftech
               </h2>
               <p className="text-lg text-blue-300/70">
                 AI adoption done right — with your team in control and your
