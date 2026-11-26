@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd"
 import { provinces } from "@/lib/provinces"
 
 export const metadata: Metadata = {
-  title: "Generative AI as a Service (GAAS) for Canadian Businesses | Zaftech",
+  title: "Generative AI as a Service (GAAS) for Canadian Businesses",
   description:
     "Generative AI as a Service for businesses in Canada. Private GenAI solutions, AI automation, AI copilots, and secure enterprise AI implementation for finance, healthcare, operations, and professional services.",
   openGraph: {
