@@ -50,10 +50,10 @@ export default function Footer() {
             <ul className="space-y-2 text-blue-300/60 text-sm">
               <li>
                 <a
-                  href="mailto:info@zaftech.com"
+                  href="mailto:info@zaftech.ca"
                   className="hover:text-blue-300 transition-colors"
                 >
-                  info@zaftech.com
+                  info@zaftech.ca
                 </a>
               </li>
               <li>
