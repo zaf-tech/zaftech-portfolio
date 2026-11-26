@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Privacy Policy | Zaftech",
+  title: "Privacy Policy",
   description:
     "Learn how Zaftech collects, uses, protects, and retains personal information in accordance with applicable Canadian privacy laws.",
 };
