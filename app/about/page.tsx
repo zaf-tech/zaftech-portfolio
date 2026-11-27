@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "About — AI Enablement Company Canada",
   description:
-    "Zaftech is a Canadian enterprise AI enablement company. We help organisations across Ontario, BC, Alberta, and all provinces deploy private LLMs, agentic AI, and compliance-first automation.",
+    "Zaftech is a Canadian enterprise AI company. We deploy private LLMs, agentic AI, and compliance-first automation for enterprises across all provinces.",
   openGraph: {
     title: "About Zaftech — AI Enablement Company Canada",
     description:
@@ -279,9 +279,14 @@ export default function About() {
               Let&apos;s discuss your highest-impact AI opportunities and build a
               roadmap to computer accuracy across your critical workflows.
             </p>
-            <a href="/contact" className="btn-primary inline-block text-lg px-8 py-4">
-              Book AI Enablement Assessment
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="/contact" className="btn-primary inline-block text-lg px-8 py-4">
+                Book AI Enablement Assessment
+              </a>
+              <a href="/blog" className="inline-block text-blue-400 font-medium hover:text-blue-300 transition-colors py-4">
+                Read our AI insights →
+              </a>
+            </div>
           </div>
         </div>
       </section>

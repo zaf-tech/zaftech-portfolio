@@ -19,6 +19,16 @@ export const metadata: Metadata = {
 
 const blogPosts = [
   {
+    slug: "pipeda-compliance-enterprise-ai-canada",
+    title: "PIPEDA Compliance for Enterprise AI in Canada: What You Need to Know",
+    excerpt: "PIPEDA compliance for enterprise AI means governing how your AI collects, uses, and stores personal data. Learn what Canadian enterprises need to do.",
+    date: "November 27, 2026",
+    category: "Compliance",
+    image: "/images/blog/pipeda-compliance-ai.jpg",
+    author: "ZAFTECH Team",
+    readTime: "10 min read",
+  },
+  {
     slug: "ai-doctor-clinics-patient-experience",
     title: "How AI Helps Doctor Clinics Improve Patient Experience",
     excerpt: "See how AI dashboards and voice-call automation reduce no-shows, improve communication, and deliver faster, more personalized patient experiences in clinics.",
