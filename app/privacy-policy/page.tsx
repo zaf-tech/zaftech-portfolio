@@ -2,6 +2,9 @@ export const metadata = {
   title: "Privacy Policy",
   description:
     "Learn how Zaftech collects, uses, protects, and retains personal information in accordance with applicable Canadian privacy laws.",
+  alternates: {
+    canonical: "https://zaftech.ca/privacy-policy",
+  },
 };
 
 export default function PrivacyPolicyPage() {
