@@ -112,11 +112,11 @@ const blogPosts: Record<string, any> = {
   },
   "pipeda-compliance-enterprise-ai-canada": {
     title: "PIPEDA Compliance for Enterprise AI in Canada: What You Need to Know",
-    date: "May 27, 2026",
+    date: "November 27, 2026",
     category: "Compliance",
     author: "ZAFTECH Team",
     readTime: "10 min read",
-    dateISO: "2026-05-27",
+    dateISO: "2026-11-27",
     excerpt: "PIPEDA compliance for enterprise AI means governing how your AI collects, uses, and stores personal data. Learn what Canadian enterprises need to do.",
     content: `
       <p>Canada's <strong>Personal Information Protection and Electronic Documents Act (PIPEDA)</strong> governs how private-sector organizations collect, use, and disclose personal information in commercial activity. As Canadian enterprises accelerate AI adoption, PIPEDA AI compliance has become one of the most pressing governance challenges facing CTOs and compliance officers alike.</p>

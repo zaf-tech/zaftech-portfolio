@@ -4,8 +4,8 @@ import { provinces } from "@/lib/provinces"
 const BASE = "https://zaftech.ca"
 
 const blogSlugs: { slug: string; date: string }[] = [
+  { slug: "pipeda-compliance-enterprise-ai-canada", date: "2026-11-27" },
   { slug: "ai-doctor-clinics-patient-experience", date: "2026-07-31" },
-  { slug: "pipeda-compliance-enterprise-ai-canada", date: "2026-05-27" },
   { slug: "ai-powered-cicd-pipeline-analysis", date: "2026-02-18" },
   { slug: "devops-best-practices-successful-mvps", date: "2026-02-01" },
   { slug: "cybersecurity-best-practices-2026", date: "2026-01-05" },
